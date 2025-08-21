@@ -7,15 +7,15 @@ from config import commands_list
 # 获取服务器配置
 vsphere_data = settings.get_vsphere_config(os.getenv('project_env',"prod"))
 print(vsphere_data)
-# BASE_URL = vsphere_data["HOST"]
-# USERNAME = vsphere_data["USERNAME"]
-# PASSWORD = vsphere_data["PASSWORD"]
-BASE_URL = vsphere_data["vc-tj-01.vsphere.aiib.org"]
-USERNAME = vsphere_data["psa-infra-pbi@aiib.org"]
-PASSWORD = vsphere_data["8At#q0^BL8T*gx03"]
+BASE_URL = vsphere_data["HOST"]
+USERNAME = vsphere_data["USERNAME"]
+PASSWORD = vsphere_data["PASSWORD"]
+# BASE_URL = vsphere_data["vc-tj-01.vsphere.aiib.org"]
+# USERNAME = vsphere_data["psa-infra-pbi@aiib.org"]
+# PASSWORD = vsphere_data["8At#q0^BL8T*gx03"]
 
 # 获取执行命令
-commands = commands_list.commands_list_test()
+commands = commands_list.commands_list_def()
 
 def run_powershell(script: str):
     """执行 PowerShell 脚本并返回 stdout/stderr"""
@@ -53,7 +53,7 @@ def main():
             # 无需执行命令，写空结果占位
             continue
         ps_parts.append(f'Write-Host "---BEGIN {c["NO"]}---"')
-        ps_parts.append(f'{c["cmd"]} | ConvertTo-Json -Depth 5')
+        ps_parts.append(f'{c["cmd"]} | Select-Object * | ConvertTo-Json -Depth 5')
         ps_parts.append(f'Write-Host "---END {c["NO"]}---"')
 
     ps_script = "\n".join(ps_parts)
