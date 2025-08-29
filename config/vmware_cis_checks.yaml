@@ -13,3 +13,11 @@ checks:
     type: snmp_manual
   - id: no_2.5
     type: dcui_timeout
+  - id: no_2.6
+    type: shell_warning_manual
+  - id: no_2.7
+    type: password_complexity_manual
+  - id: no_2.8
+    type: account_lock_failure
+  - id: no_2.9
+    type: account_unlock_time
