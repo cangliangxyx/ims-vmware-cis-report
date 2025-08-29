@@ -1,0 +1,17 @@
+# config/vmware_cis_checks.yaml
+checks:
+  - id: no_1.2
+    type: ntp
+  - id: no_1.4
+    type: advanced_setting
+    key: "Mem.ShareForceSalting"
+  - id: no_2.1
+    type: service
+    key: "TSM-SSH"
+  - id: no_2.2
+    type: service
+    key: "TSM"
+  - id: no_2.3
+    type: advanced_setting
+    key: "Config.HostAgent.plugins.solo.enableMob"
+

@@ -1,4 +1,4 @@
-# vmware-cis/2.3_get_hosts_solo_enable_moob.py
+# vmware_cis_checks/solo_enable_moob.py
 
 import logging
 from typing import List, Dict, Any

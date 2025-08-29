@@ -1,4 +1,4 @@
-# vmware-cis/1.2_ntp_info.py
+# vmware_cis_checks/ntp_info.py
 
 import logging
 from typing import List, Dict, Any

@@ -1,4 +1,4 @@
-# vmware-cis/1.4_mem_share_salt.py
+# vmware_cis_checks/mem_share_salt.py
 
 import logging
 from typing import List, Dict, Any
