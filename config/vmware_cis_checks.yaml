@@ -1,23 +1,66 @@
 checks:
   - id: no_1.2
     type: ntp
+    name: Host must have reliable time synchronization sources
+    CIS.NO: 2.6
+    cmd: 'Get-VMHost | Select-Object Name, @{Name="NTPSetting"; Expression={ ($_ | Get-VMHostNtpServer)}}'
+
   - id: no_1.4
     type: advanced_setting
+    name: Host must restrict inter-VM transparent page sharing (Automated)
+    CIS.NO: 2.10
+    cmd: 'Get-VMHost | Get-AdvancedSetting -Name Mem.ShareForceSalting | Select-Object Name, Value, Type, Description'
+
   - id: no_2.1
     type: service_tsm_ssh
+    name: Host should deactivate SSH (Automated)
+    CIS.NO: 3.1
+    cmd: 'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM-SSH" } | Select Key, Label, Policy, Running, Required'
+
   - id: no_2.2
     type: service_tsm
+    name: Host must deactivate the ESXi shell (Automated)
+    CIS.NO: 3.2
+    cmd: 'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM" } | Select Key, Label, Policy, Running, Required'
+
   - id: no_2.3
     type: advanced_setting
+    name: Host must restrict inter-VM transparent page sharing (Automated)
+    CIS.NO: 2.10
+    cmd: 'Get-VMHost | Get-AdvancedSetting -Name Mem.ShareForceSalting | Select-Object Name, Value, Type, Description'
+
   - id: no_2.4
     type: snmp_manual
+    name: Host should deactivate SNMP (Manual)
+    CIS.NO: 3.6
+    cmd: 'None'
+
   - id: no_2.5
     type: dcui_timeout
+    name: Host must automatically terminate idle DCUI sessions (Automated)
+    CIS.NO: 3.7
+    cmd: 'Get-VMHost | Get-AdvancedSetting -Name UserVars.DcuiTimeOut'
+
   - id: no_2.6
     type: shell_warning_manual
+    name: Host must not suppress warnings that the shell is enabled (Manual)
+    CIS.NO: 3.10
+    cmd: 'None'
+
   - id: no_2.7
     type: password_complexity_manual
+    name: Host must enforce password complexity (Manual)
+    CIS.NO: 3.11
+    cmd: 'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM-SSH" } | Select VMHost, Key, Label, Policy, Running, Required'
+
   - id: no_2.8
     type: account_lock_failure
+    name: Host must lock an account after a specified number of failed login attempts (Automated)
+    CIS.NO: 3.12
+    cmd: 'Get-VMHost | Get-AdvancedSetting -Name Security.AccountLockFailure'
+
   - id: no_2.9
     type: account_unlock_time
+    name: Host must unlock accounts after a specified timeout period (Automated)
+    CIS.NO: 3.13
+    cmd: 'Get-VMHost | Get-AdvancedSetting -Name Security.AccountUnlockTime'

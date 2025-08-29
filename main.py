@@ -1,27 +1,34 @@
 import logging
 import yaml
 import os
+from typing import Callable, Tuple, Dict, Any, List
 
 from config.vsphere_conn import VsphereConnection
 from config.export_to_json import export_to_json
 
-from vmware_cis_checks import ntp_info as ntp
-from vmware_cis_checks import mem_share_salt as mem_salt
-from vmware_cis_checks import tsm_ssh as tsm_ssh
-from vmware_cis_checks import tsm as tsm
-from vmware_cis_checks import solo_enable_moob as solo
-from vmware_cis_checks import snmp_manual as snmp
-from vmware_cis_checks import dcui_timeout as dcui
-from vmware_cis_checks import shell_warning_manual as shell_warning
-from vmware_cis_checks import password_complexity_manual as password_complexity
-from vmware_cis_checks import account_lock_failure as lock_failure
-from vmware_cis_checks import account_unlock_time as unlock_time
+from vmware_cis_checks import (
+    ntp_info as ntp,
+    mem_share_salt as mem_salt,
+    tsm_ssh as tsm_ssh,
+    tsm as tsm,
+    solo_enable_moob as solo,
+    snmp_manual as snmp,
+    dcui_timeout as dcui,
+    shell_warning_manual as shell_warning,
+    password_complexity_manual as password_complexity,
+    account_lock_failure as lock_failure,
+    account_unlock_time as unlock_time,
+)
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("vmware_cis")
 
-# 存储 (函数, 文件名后缀)
-CHECK_TYPE_MAPPING = {
+# v1.0.3 新增检查只需更新 YAML + 注册函数，无需改 main.py
+
+# ------------------------------
+# 配置检查映射
+# ------------------------------
+CHECK_TYPE_MAPPING: Dict[str, Tuple[Callable[[Any], List[Dict[str, Any]]], str]] = {
     "ntp": (ntp.get_hosts_ntp, "ntp"),
     "advanced_setting": (mem_salt.get_hosts_mem_share_salt, "mem_share_salt"),
     "service_tsm_ssh": (tsm_ssh.get_hosts_ssh_service, "tsm_ssh"),
@@ -36,35 +43,60 @@ CHECK_TYPE_MAPPING = {
 }
 
 
+# ------------------------------
+# 辅助函数
+# ------------------------------
+def load_checks_config(path: str) -> List[Dict[str, Any]]:
+    """从 YAML 文件加载检查配置"""
+    with open(path, "r", encoding="utf-8") as f:
+        return yaml.safe_load(f).get("checks", [])
+
+
+def run_check(
+    check: Dict[str, Any],
+    content: Any,
+    log_dir: str
+):
+    """执行单个检查，导出 JSON 并记录日志"""
+    check_id = check["id"]
+    check_type = check["type"]
+
+    if check_type not in CHECK_TYPE_MAPPING:
+        logger.warning("未知检查类型: %s", check_type)
+        return
+
+    func, file_suffix = CHECK_TYPE_MAPPING[check_type]
+    try:
+        results = func(content)
+
+        # 为每条记录补充 YAML 元数据
+        for item in results:
+            item.setdefault("NO", check.get("id"))
+            item.setdefault("name", check.get("name"))
+            item.setdefault("CIS.NO", check.get("CIS.NO"))
+            item.setdefault("cmd", check.get("cmd"))
+
+        filename = os.path.join(log_dir, f"{check_id}_{file_suffix}.json")
+        export_to_json(results, filename)
+        logger.info("检查 %s 完成，导出到 %s", check_id, filename)
+    except Exception as e:
+        logger.error("检查 %s 执行失败: %s", check_id, e)
+
+
+# ------------------------------
+# 主执行函数
+# ------------------------------
 def main():
-    # 根目录和 log 目录
     root_dir = os.path.dirname(os.path.abspath(__file__))
     log_dir = os.path.join(root_dir, "log")
     os.makedirs(log_dir, exist_ok=True)
 
-    # 读取配置
-    with open(os.path.join(root_dir, "config", "vmware_cis_checks.yaml"), "r", encoding="utf-8") as f:
-        checks_config = yaml.safe_load(f)
+    checks_config = load_checks_config(os.path.join(root_dir, "config", "vmware_cis_checks.yaml"))
 
-    # 连接 vSphere
     with VsphereConnection() as si:
         content = si.RetrieveContent()
-
-        for check in checks_config["checks"]:
-            check_type = check["type"]
-
-            if check_type in CHECK_TYPE_MAPPING:
-                func, suffix = CHECK_TYPE_MAPPING[check_type]
-                # 手工检查也统一调用
-                result = func(content)
-            else:
-                logger.warning("未知检查类型: %s", check_type)
-                continue
-
-            # 文件名加后缀：例如 no_1.2_ntp.json
-            filename = os.path.join(log_dir, f"{check['id']}_{suffix}.json")
-            export_to_json(result, filename)
-            logger.info("检查 %s 完成，导出到 %s", check['id'], filename)
+        for check in checks_config:
+            run_check(check, content, log_dir)
 
 
 if __name__ == "__main__":
