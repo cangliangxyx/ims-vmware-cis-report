@@ -1,5 +1,3 @@
-# vmware_cis_checks/mem_share_salt.py
-
 import logging
 from typing import List, Dict, Any
 from pyVmomi import vim
@@ -21,22 +19,27 @@ def get_hosts_mem_share_salt(content) -> List[Dict[str, Any]]:
     results = []
     for host in hosts:
         try:
-            # QueryOptions 返回列表，这里只取第一个匹配
             adv_settings = host.configManager.advancedOption.QueryOptions("Mem.ShareForceSalting")
             if adv_settings:
                 setting = adv_settings[0]
                 results.append({
                     "host": host.name,
-                    "name": setting.key,
+                    "NO": "1.4",
+                    "name": "Host must restrict inter-VM transparent page sharing (Automated)",
+                    "CIS.NO": "2.10",
+                    "cmd": r'Get-VMHost | Get-AdvancedSetting -Name Mem.ShareForceSalting | Select-Object Name, Value, Type, Description',
                     "value": setting.value,
                     "type": type(setting.value).__name__,
-                    "description": "Memory page sharing salt"
+                    "description": "Memory page sharing salt",
                 })
                 logger.info("主机: %s, %s = %s", host.name, setting.key, setting.value)
             else:
                 results.append({
                     "host": host.name,
-                    "name": "Mem.ShareForceSalting",
+                    "NO": "1.4",
+                    "name": "Host must restrict inter-VM transparent page sharing (Automated)",
+                    "CIS.NO": "2.10",
+                    "cmd": r'Get-VMHost | Get-AdvancedSetting -Name Mem.ShareForceSalting | Select-Object Name, Value, Type, Description',
                     "value": None,
                     "type": None,
                     "description": "Not configured"
@@ -46,7 +49,10 @@ def get_hosts_mem_share_salt(content) -> List[Dict[str, Any]]:
         except Exception as e:
             results.append({
                 "host": host.name,
-                "name": "Mem.ShareForceSalting",
+                "NO": "1.4",
+                "name": "Host must restrict inter-VM transparent page sharing (Automated)",
+                "CIS.NO": "2.10",
+                "cmd": r'Get-VMHost | Get-AdvancedSetting -Name Mem.ShareForceSalting | Select-Object Name, Value, Type, Description',
                 "value": None,
                 "error": str(e)
             })
@@ -60,7 +66,7 @@ def main():
     with VsphereConnection() as si:
         content = si.RetrieveContent()
         mem_salt_info = get_hosts_mem_share_salt(content)
-        export_to_json(mem_salt_info, "../log/1.4_mem_share_salt.json")
+        export_to_json(mem_salt_info, "../log/no_1.4_mem_share_salt.json")
 
 
 if __name__ == "__main__":

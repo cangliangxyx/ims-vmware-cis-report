@@ -1,6 +1,10 @@
 import os
 from cryptography.fernet import Fernet
 
+# 设置环境变量
+os.environ["SECRET_KEY"] = "HDfPkbdM7X-Qn4cCqMC-sJTVi5DSLA3j1p_Xi5s3lJI="
+
+
 def load_key():
     key = os.getenv("SECRET_KEY")  # 从环境变量'SECRET_KEY'读取密钥
     if not key:
