@@ -64,3 +64,9 @@ checks:
     name: Host must unlock accounts after a specified timeout period (Automated)
     CIS.NO: 3.13
     cmd: 'Get-VMHost | Get-AdvancedSetting -Name Security.AccountUnlockTime'
+
+  - id: no_2.10
+    type: password_history_manual
+    name: Host must configure the password history setting to restrict the reuse of passwords (Manual)
+    CIS.NO: 3.14
+    cmd: 'Get-VMHost | Get-AdvancedSetting Security.PasswordHistory'

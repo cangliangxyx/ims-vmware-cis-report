@@ -18,6 +18,7 @@ from vmware_cis_checks import (
     password_complexity_manual as password_complexity,
     account_lock_failure as lock_failure,
     account_unlock_time as unlock_time,
+    password_history_manual as password_history,
 )
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -28,6 +29,7 @@ logger = logging.getLogger("vmware_cis")
 # ------------------------------
 # 配置检查映射
 # ------------------------------
+
 CHECK_TYPE_MAPPING: Dict[str, Tuple[Callable[[Any], List[Dict[str, Any]]], str]] = {
     "ntp": (ntp.get_hosts_ntp, "ntp"),
     "advanced_setting": (mem_salt.get_hosts_mem_share_salt, "mem_share_salt"),
@@ -40,6 +42,7 @@ CHECK_TYPE_MAPPING: Dict[str, Tuple[Callable[[Any], List[Dict[str, Any]]], str]]
     "password_complexity_manual": (password_complexity.get_hosts_password_complexity, "password_complexity_manual"),
     "account_lock_failure": (lock_failure.get_hosts_account_lock_failure, "account_lock_failure"),
     "account_unlock_time": (unlock_time.get_hosts_account_unlock_time, "account_unlock_time"),
+    "password_history_manual": (password_history.get_hosts_password_history, "password_history_manual"),
 }
 
 
