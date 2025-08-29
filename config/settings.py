@@ -3,7 +3,6 @@ import os
 import platform
 from config.decrypt_message import decrypt_message
 
-
 # MySQL 数据库配置
 DATABASE_CONFIG = {
     "test":{
@@ -54,7 +53,6 @@ if __name__ == "__main__":
 
     vsphere_data = get_vsphere_config(project_env)
     print("Vsphere Config:", vsphere_data)
-
 
     db_config = get_database_config(project_env)
     print("Database Config:", db_config)

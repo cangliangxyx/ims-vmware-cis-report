@@ -10,9 +10,6 @@ print(vsphere_data)
 BASE_URL = vsphere_data["HOST"]
 USERNAME = vsphere_data["USERNAME"]
 PASSWORD = vsphere_data["PASSWORD"]
-# BASE_URL = vsphere_data["vc-tj-01.vsphere.aiib.org"]
-# USERNAME = vsphere_data["psa-infra-pbi@aiib.org"]
-# PASSWORD = vsphere_data["8At#q0^BL8T*gx03"]
 
 # 获取执行命令
 commands = commands_list.commands_list_def()
