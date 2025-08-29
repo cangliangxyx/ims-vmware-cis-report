@@ -10,6 +10,8 @@ from vmware_cis_checks import mem_share_salt as mem_salt
 from vmware_cis_checks import tsm_ssh as tsm_ssh
 from vmware_cis_checks import tsm as tsm
 from vmware_cis_checks import solo_enable_moob as solo
+from vmware_cis_checks import snmp_manual as snmp
+from vmware_cis_checks import dcui_timeout as dcui
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
@@ -21,6 +23,8 @@ CHECK_TYPE_MAPPING = {
     "service_tsm_ssh": (tsm_ssh.get_hosts_ssh_service, "tsm_ssh"),
     "service_tsm": (tsm.get_hosts_tsm_service, "tsm"),
     "solo_enable_mob": (solo.get_hosts_solo_enable_mob, "solo_enable_mob"),
+    "snmp_manual": (snmp.get_hosts_snmp_manual, "snmp_manual"),
+    "dcui_timeout": (dcui.get_hosts_dcui_timeout, "dcui_timeout"),
 }
 
 def main():
@@ -42,14 +46,11 @@ def main():
             if check_type in CHECK_TYPE_MAPPING:
                 func, suffix = CHECK_TYPE_MAPPING[check_type]
                 result = func(content)
-            elif check_type.startswith("service"):
-                func, suffix = CHECK_TYPE_MAPPING[check_type]
-                result = func(content)
             else:
                 logger.warning("未知检查类型: %s", check_type)
                 continue
 
-            # 文件名加后缀
+            # 文件名加后缀：例如 no_1.2_ntp.json
             filename = os.path.join(log_dir, f"{check['id']}_{suffix}.json")
             export_to_json(result, filename)
             logger.info("检查 %s 完成，导出到 %s", check['id'], filename)

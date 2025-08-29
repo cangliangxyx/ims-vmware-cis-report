@@ -1,4 +1,3 @@
-# config/vmware_cis_checks.yaml
 checks:
   - id: no_1.2
     type: ntp
@@ -10,5 +9,7 @@ checks:
     type: service_tsm
   - id: no_2.3
     type: advanced_setting
-
-
+  - id: no_2.4
+    type: snmp_manual
+  - id: no_2.5
+    type: dcui_timeout
