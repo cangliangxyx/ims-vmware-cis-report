@@ -4,14 +4,11 @@ checks:
     type: ntp
   - id: no_1.4
     type: advanced_setting
-    key: "Mem.ShareForceSalting"
   - id: no_2.1
-    type: service
-    key: "TSM-SSH"
+    type: service_tsm_ssh
   - id: no_2.2
-    type: service
-    key: "TSM"
+    type: service_tsm
   - id: no_2.3
     type: advanced_setting
-    key: "Config.HostAgent.plugins.solo.enableMob"
+
 
