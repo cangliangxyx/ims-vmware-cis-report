@@ -449,7 +449,8 @@ commands_def = [
         "name": "Host must isolate management communications (Manual)",
         "CIS.NO": "5.11",
         "cmd": 'None'
-    },{
+    },
+    {
         "NO": "5.1",
         "name": "Host must ensure all datastores have unique names (Manual)",
         "CIS.NO": "6.2.2",

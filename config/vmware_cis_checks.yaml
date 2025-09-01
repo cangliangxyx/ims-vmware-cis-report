@@ -169,6 +169,29 @@ checks:
     CIS.NO: 5.7
     cmd: 'Get-VirtualSwitch -Standard | Select ... MacChanges'
 
+  - id: no_4.6
+    type: vss_promiscuous_mode
+    name: Host should reject promiscuous mode requests on standard virtual switches and port groups (Automated)
+    CIS.NO: 5.8
+    cmd: 'Get-VirtualSwitch -Standard | Select VMHost, Name, MacChanges, PromiscuousMode, ForgedTransmits'
+
+  - id: no_4.7
+    type: vss_vlan_restrict
+    name: Host must restrict access to a default or native VLAN on standard virtual switches (Automated)
+    CIS.NO: 5.9
+    cmd: 'Get-VirtualPortGroup -Standard | Select virtualSwitch, Name, VlanID'
+
+  - id: no_4.8
+    type: vss_vgt_check
+    name: Host must restrict the use of Virtual Guest Tagging (VGT) on standard virtual switches (Automated)
+    CIS.NO: 5.10
+    cmd: 'Get-VirtualPortGroup -Standard | Select virtualSwitch, Name, VlanID'
+
+  - id: no_4.9
+    type: management_network_manual
+    name: Host must isolate management communications (Manual)
+    CIS.NO: 5.11
+    cmd: 'None'
 
 
 

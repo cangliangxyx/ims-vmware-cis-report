@@ -37,6 +37,7 @@ from vmware_cis_checks import (
     bpdu_filter_manual as bpdu_filter_manual,            # 新增 4.3
     forged_transmits as forged_transmits,                # 新增 4.5
     mac_changes as mac_changes,                          # 新增 4.5
+vss_promiscuous_mode, vss_vlan_restrict,vss_vgt_check,management_network_manual
 )
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -77,6 +78,11 @@ CHECK_TYPE_MAPPING: Dict[str, Tuple[Callable[[Any], List[Dict[str, Any]]], str]]
     "bpdu_filter_manual": (bpdu_filter_manual.get_hosts_bpdu_filter, "bpdu_filter_manual"),
     "forged_transmits": (forged_transmits.get_hosts_forged_transmits, "forged_transmits"),
     "mac_changes": (mac_changes.get_hosts_mac_changes, "mac_changes"),
+    "vss_promiscuous_mode": (vss_promiscuous_mode.get_vss_security_policies, "vss_promiscuous_mode"),
+    "vss_vlan_restrict": (vss_vlan_restrict.get_vss_portgroup_vlans, "vss_vlan_restrict"),
+    "vss_vgt_check": (vss_vgt_check.get_vss_vgt_usage, "vss_vgt_check"),
+    "management_network_manual": (management_network_manual.get_management_networks, "management_network_manual"),
+
 }
 
 
