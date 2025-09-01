@@ -1,3 +1,5 @@
+# config/vmware_cis_checks.yaml
+
 checks:
   - id: no_1.2
     type: ntp
@@ -70,3 +72,11 @@ checks:
     name: Host must configure the password history setting to restrict the reuse of passwords (Manual)
     CIS.NO: 3.14
     cmd: 'Get-VMHost | Get-AdvancedSetting Security.PasswordHistory'
+
+  - id: no_2.11
+    type: password_max_days_manual
+    name: Host must be configured with an appropriate maximum password age (Manual)
+    CIS.NO: 3.15
+    cmd: 'Get-VMHost | Get-AdvancedSetting Security.PasswordMaxDays'
+
+

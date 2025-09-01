@@ -1,3 +1,5 @@
+# main.py
+
 import logging
 import yaml
 import os
@@ -19,6 +21,7 @@ from vmware_cis_checks import (
     account_lock_failure as lock_failure,
     account_unlock_time as unlock_time,
     password_history_manual as password_history,
+    password_max_days_manual as password_max_days,
 )
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -43,6 +46,7 @@ CHECK_TYPE_MAPPING: Dict[str, Tuple[Callable[[Any], List[Dict[str, Any]]], str]]
     "account_lock_failure": (lock_failure.get_hosts_account_lock_failure, "account_lock_failure"),
     "account_unlock_time": (unlock_time.get_hosts_account_unlock_time, "account_unlock_time"),
     "password_history_manual": (password_history.get_hosts_password_history, "password_history_manual"),
+    "password_max_days_manual": (password_max_days.get_hosts_password_max_days, "password_max_days_manual"),  # 新增
 }
 
 
