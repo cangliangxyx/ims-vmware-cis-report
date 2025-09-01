@@ -143,7 +143,7 @@ checks:
     type: firewall_services_manual
     name: Host firewall must only allow traffic from authorized networks (Manual)
     CIS.NO: 5.1
-    cmd: 'Get-VMHost HOST1 | Get-VMHostService'
+    cmd: 'Get-VMHost | Get-VMHostFirewallException'
 
   - id: no_4.2
     type: dvfilter_manual
