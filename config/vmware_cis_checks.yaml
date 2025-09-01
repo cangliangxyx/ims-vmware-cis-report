@@ -79,4 +79,64 @@ checks:
     CIS.NO: 3.15
     cmd: 'Get-VMHost | Get-AdvancedSetting Security.PasswordMaxDays'
 
+  - id: no_2.12
+    type: session_timeout_api_manual
+    name: Host must configure a session timeout for the API (Manual)
+    CIS.NO: 3.16
+    cmd: 'None'
+
+  - id: no_2.13
+    type: idle_host_client_manual
+    name: Host must automatically terminate idle host client sessions (Manual)
+    CIS.NO: 3.17
+    cmd: 'None'
+
+  - id: no_2.14
+    type: dcui_access_manual
+    name: Host must have an accurate DCUI.Access list (Manual)
+    CIS.NO: 3.18
+    cmd: 'Get-VMHost | Get-AdvancedSetting -Name DCUI.Access'
+
+  - id: no_2.15
+    type: exception_users_manual
+    name: Host must have an accurate Exception Users list (Manual)
+    CIS.NO: 3.19
+    cmd: 'None'
+
+  - id: no_2.16
+    type: tls_version_manual
+    name: Host must enable the highest version of TLS supported (Manual)
+    CIS.NO: 3.26
+    cmd: 'None'
+
+  - id: no_3.1
+    type: syslog_persistent_manual
+    name: Host must configure a persistent log location for all locally stored system logs (Manual)
+    CIS.NO: 4.1
+    cmd: 'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir'
+
+  - id: no_3.2
+    type: advanced_setting
+    name: Host must transmit system logs to a remote log collector (Automated)
+    CIS.NO: 4.2
+    cmd: 'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logHost'
+
+  - id: no_3.3
+    type: syslog_info_level_manual
+    name: Host must set the logging informational level to info (Manual)
+    CIS.NO: 4.4
+    cmd: 'None'
+
+  - id: no_3.4
+    type: log_filtering_manual
+    name: Host must deactivate log filtering (Manual)
+    CIS.NO: 4.5
+    cmd: 'None'
+
+  - id: no_3.5
+    type: tls_log_verify_manual
+    name: Host must verify certificates for TLS remote logging endpoints (Manual)
+    CIS.NO: 4.10
+    cmd: 'None'
+
 

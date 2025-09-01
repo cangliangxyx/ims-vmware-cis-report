@@ -22,6 +22,16 @@ from vmware_cis_checks import (
     account_unlock_time as unlock_time,
     password_history_manual as password_history,
     password_max_days_manual as password_max_days,
+    session_timeout_api_manual as session_timeout_api,   # 新增 2.12
+    idle_host_client_manual as idle_host_client,         # 新增 2.13
+    dcui_access_manual as dcui_access,                   # 新增 2.14
+    exception_users_manual as exception_users,           # 新增 2.15
+    tls_version_manual as tls_version,                   # 新增 2.16
+    syslog_persistent_manual as syslog_persistent,       # 新增 3.1
+    syslog_remote_loghost as syslog_remote,              # 新增 3.2
+    syslog_info_level_manual as syslog_info_level,       # 新增 3.3
+    log_filtering_manual as log_filtering,               # 新增 3.4
+    tls_log_verify_manual as tls_log_verify,             # 新增 3.5
 )
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -46,7 +56,17 @@ CHECK_TYPE_MAPPING: Dict[str, Tuple[Callable[[Any], List[Dict[str, Any]]], str]]
     "account_lock_failure": (lock_failure.get_hosts_account_lock_failure, "account_lock_failure"),
     "account_unlock_time": (unlock_time.get_hosts_account_unlock_time, "account_unlock_time"),
     "password_history_manual": (password_history.get_hosts_password_history, "password_history_manual"),
-    "password_max_days_manual": (password_max_days.get_hosts_password_max_days, "password_max_days_manual"),  # 新增
+    "password_max_days_manual": (password_max_days.get_hosts_password_max_days, "password_max_days_manual"),
+    "session_timeout_api_manual": (session_timeout_api.get_hosts_session_timeout_api, "session_timeout_api_manual"),
+    "idle_host_client_manual": (idle_host_client.get_hosts_idle_host_client_timeout, "idle_host_client_manual"),
+    "dcui_access_manual": (dcui_access.get_hosts_dcui_access, "dcui_access_manual"),
+    "exception_users_manual": (exception_users.get_hosts_exception_users, "exception_users_manual"),
+    "tls_version_manual": (tls_version.get_hosts_tls_version, "tls_version_manual"),
+    "syslog_persistent_manual": (syslog_persistent.get_hosts_syslog_persistent, "syslog_persistent_manual"),
+    "syslog_remote_loghost": (syslog_remote.get_hosts_syslog_remote_loghost, "syslog_remote_loghost"),
+    "syslog_info_level_manual": (syslog_info_level.get_hosts_syslog_info_level, "syslog_info_level_manual"),
+    "log_filtering_manual": (log_filtering.get_hosts_log_filtering, "log_filtering_manual"),
+    "tls_log_verify_manual": (tls_log_verify.get_hosts_tls_log_verify, "tls_log_verify_manual"),
 }
 
 

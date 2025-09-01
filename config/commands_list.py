@@ -365,7 +365,8 @@ commands_def = [
         "name": "Host must enable the highest version of TLS supported (Manual)",
         "CIS.NO": "3.26",
         "cmd": 'None'
-    },{
+    },
+    {
         "NO": "3.1",
         "name": "Host must configure a persistent log location for all locally stored system logs (Manual)",
         "CIS.NO": "4.1",
