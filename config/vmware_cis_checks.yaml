@@ -139,4 +139,37 @@ checks:
     CIS.NO: 4.10
     cmd: 'None'
 
+  - id: no_4.1
+    type: firewall_services_manual
+    name: Host firewall must only allow traffic from authorized networks (Manual)
+    CIS.NO: 5.1
+    cmd: 'Get-VMHost HOST1 | Get-VMHostService'
+
+  - id: no_4.2
+    type: dvfilter_manual
+    name: Host must restrict use of the dvFilter network API (Manual)
+    CIS.NO: 5.3
+    cmd: 'Get-VMHost | Get-AdvancedSetting -Name Net.DVFilterBindIpAddress'
+
+  - id: no_4.3
+    type: bpdu_filter_manual
+    name: Host must filter Bridge Protocol Data Unit (BPDU) packets (Manual)
+    CIS.NO: 5.4
+    cmd: 'None'
+
+  - id: no_4.4
+    type: forged_transmits
+    name: Host should reject forged transmits on standard virtual switches and port groups (Automated)
+    CIS.NO: 5.6
+    cmd: 'Get-VirtualSwitch -Standard | Select ... ForgedTransmits'
+
+  - id: no_4.5
+    type: mac_changes
+    name: Host should reject MAC address changes on standard virtual switches and port groups (Automated)
+    CIS.NO: 5.7
+    cmd: 'Get-VirtualSwitch -Standard | Select ... MacChanges'
+
+
+
+
 

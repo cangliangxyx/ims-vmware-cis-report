@@ -32,6 +32,11 @@ from vmware_cis_checks import (
     syslog_info_level_manual as syslog_info_level,       # 新增 3.3
     log_filtering_manual as log_filtering,               # 新增 3.4
     tls_log_verify_manual as tls_log_verify,             # 新增 3.5
+    firewall_services_manual as firewall_services_manual,# 新增 4.1
+    dvfilter_manual as dvfilter_manual,                  # 新增 4.2
+    bpdu_filter_manual as bpdu_filter_manual,            # 新增 4.3
+    forged_transmits as forged_transmits,                # 新增 4.5
+    mac_changes as mac_changes,                          # 新增 4.5
 )
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -67,6 +72,11 @@ CHECK_TYPE_MAPPING: Dict[str, Tuple[Callable[[Any], List[Dict[str, Any]]], str]]
     "syslog_info_level_manual": (syslog_info_level.get_hosts_syslog_info_level, "syslog_info_level_manual"),
     "log_filtering_manual": (log_filtering.get_hosts_log_filtering, "log_filtering_manual"),
     "tls_log_verify_manual": (tls_log_verify.get_hosts_tls_log_verify, "tls_log_verify_manual"),
+"   firewall_services_manual": (firewall_services_manual.get_hosts_firewall_services, "firewall_services_manual"),
+    "dvfilter_manual": (dvfilter_manual.get_hosts_dvfilter, "dvfilter_manual"),
+    "bpdu_filter_manual": (bpdu_filter_manual.get_hosts_bpdu_filter, "bpdu_filter_manual"),
+    "forged_transmits": (forged_transmits.get_hosts_forged_transmits, "forged_transmits"),
+    "mac_changes": (mac_changes.get_hosts_mac_changes, "mac_changes"),
 }
 
 
