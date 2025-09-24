@@ -69,7 +69,7 @@ CHECK_TYPE_MAPPING: Dict[str, Tuple[Callable[[Any], List[Dict[str, Any]]], str]]
     "password_max_days_manual": (password_max_days_manual.get_hosts_password_max_days, "password_max_days_manual"),
     "session_timeout_api_manual": (session_timeout_api_manual.get_hosts_session_timeout_api, "session_timeout_api_manual"),
     "idle_host_client_manual": (idle_host_client_manual.get_hosts_idle_host_client_timeout, "idle_host_client_manual"),
-    "dcui_access_manual": (dcui_access_manual.get_hosts_dcui_access, "dcui_access_manual"),
+    "dcui_access_manual": (dcui_access.get_hosts_dcui_access, "dcui_access_manual"),
     "exception_users_manual": (exception_users_manual.get_hosts_exception_users, "exception_users_manual"),
     "tls_version_manual": (tls_version_manual.get_hosts_tls_version, "tls_version_manual"),
     "syslog_persistent_manual": (syslog_persistent_manual.get_hosts_syslog_persistent, "syslog_persistent_manual"),
