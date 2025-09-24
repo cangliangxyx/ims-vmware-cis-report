@@ -15,9 +15,11 @@ def get_hosts_tsm_service(content) -> List[Dict[str, Any]]:
     """获取每台主机的 TSM 服务状态"""
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     hosts = container.view
+    print(hosts)
 
     results = []
     for host in hosts:
+        print(host)
         try:
             service = next(
                 (s for s in host.configManager.serviceSystem.serviceInfo.service if s.key == "TSM"),
@@ -25,45 +27,49 @@ def get_hosts_tsm_service(content) -> List[Dict[str, Any]]:
             )
             if service:
                 results.append({
-                    "host": host.name,
-                    "NO": "2.2",
-                    "name": "Host must deactivate the ESXi shell (Automated)",
-                    "CIS.NO": "3.2",
-                    "cmd": r'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM" } | Select Key, Label, Policy, Running, Required',
-                    "key": service.key,
-                    "label": service.label,
-                    "policy": service.policy,
-                    "running": service.running,
-                    "required": service.required
+                    "AIIB.No": "2.2",
+                    "Name": "Host must deactivate the ESXi shell (Automated)",
+                    "CIS.No": "3.2",
+                    "CMD": r'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM" } | Select Key, Label, Policy, Running, Required',
+                    "Host": host.name,
+                    "Value": {
+                        "key": service.key,
+                        "label": service.label,
+                        "policy": service.policy,
+                        "running": service.running,
+                        "required": service.required
+                    },
+                    "Description": "TSM service status",
+                    "Error": None
                 })
                 logger.info("主机: %s, TSM 服务运行状态: %s, 策略: %s", host.name, service.running, service.policy)
             else:
                 results.append({
-                    "host": host.name,
-                    "NO": "2.2",
-                    "name": "Host must deactivate the ESXi shell (Automated)",
-                    "CIS.NO": "3.2",
-                    "cmd": r'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM" } | Select Key, Label, Policy, Running, Required',
-                    "key": "TSM",
-                    "error": "Service not found"
+                    "AIIB.No": "2.2",
+                    "Name": "Host must deactivate the ESXi shell (Automated)",
+                    "CIS.No": "3.2",
+                    "CMD": r'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM" } | Select Key, Label, Policy, Running, Required',
+                    "Host": host.name,
+                    "Value": None,
+                    "Description": "TSM service not found",
+                    "Error": None
                 })
                 logger.warning("主机 %s 没有找到 TSM 服务", host.name)
-
         except Exception as e:
             results.append({
-                "host": host.name,
-                "NO": "2.2",
-                "name": "Host must deactivate the ESXi shell (Automated)",
-                "CIS.NO": "3.2",
-                "cmd": r'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM" } | Select Key, Label, Policy, Running, Required',
-                "key": "TSM",
-                "error": str(e)
+                "AIIB.No": "2.2",
+                "Name": "Host must deactivate the ESXi shell (Automated)",
+                "CIS.No": "3.2",
+                "CMD": r'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM" } | Select Key, Label, Policy, Running, Required',
+                "Host": host.name,
+                "Value": None,
+                "Description": "TSM service (Error)",
+                "Error": str(e)
             })
             logger.error("主机 %s 获取 TSM 服务状态失败: %s", host.name, e)
 
     container.Destroy()
     return results
-
 
 def main():
     with VsphereConnection() as si:

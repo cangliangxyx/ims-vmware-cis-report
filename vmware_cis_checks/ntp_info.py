@@ -5,7 +5,10 @@ from config.vsphere_conn import VsphereConnection
 from config.export_to_json import export_to_json
 
 logger = logging.getLogger(__name__)
-
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s"
+)
 
 def get_hosts_ntp(content) -> List[Dict[str, Any]]:
     """获取所有主机的 NTP 配置"""
@@ -15,26 +18,29 @@ def get_hosts_ntp(content) -> List[Dict[str, Any]]:
     results = []
     for host in hosts:
         try:
-            ntp_config = host.config.dateTimeInfo.ntpConfig.server
+            ntp_config = host.config.dateTimeInfo.ntpConfig.server or []
             results.append({
-                "host": host.name,
-                "NO": "1.2",
-                "name": "Host must have reliable time synchronization sources",
+                "AIIB.No": "1.2",
+                "Name": "Host must have reliable time synchronization sources",
                 "CIS.NO": "2.6",
-                "cmd": r'Get-VMHost | Select-Object Name, @{Name="NTPSetting"; Expression={ ($_ | Get-VMHostNtpServer)}}',
-                "ntp_servers": ntp_config if ntp_config else [],
-                "description": "NTP server configuration"
+                "CMD": r'Get-VMHost | Select-Object Name, @{Name="NTPSetting"; Expression={ ($_ | Get-VMHostNtpServer)}}',
+                "Host": host.name,
+                "Value": ntp_config,  # 始终是 list
+                "Description": "NTP server configuration",
+                "Error": None
             })
-            logger.info("主机: %s, NTP: %s", host.name, ntp_config or "未配置")
+            logger.info("主机: %s, NTP: %s", host.name, ntp_config if ntp_config else "未配置")
+
         except Exception as e:
             results.append({
-                "host": host.name,
-                "NO": "1.2",
-                "name": "Host must have reliable time synchronization sources",
+                "AIIB.No": "1.2",
+                "Name": "Host must have reliable time synchronization sources",
                 "CIS.NO": "2.6",
-                "cmd": r'Get-VMHost | Select-Object Name, @{Name="NTPSetting"; Expression={ ($_ | Get-VMHostNtpServer)}}',
-                "ntp_servers": [],
-                "error": str(e)
+                "CMD": r'Get-VMHost | Select-Object Name, @{Name="NTPSetting"; Expression={ ($_ | Get-VMHostNtpServer)}}',
+                "Host": host.name,
+                "Value": [],
+                "Description": "NTP server configuration (Error)",
+                "Error": str(e)
             })
             logger.error("主机 %s 获取 NTP 配置失败: %s", host.name, e)
 

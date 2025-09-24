@@ -1,5 +1,3 @@
-# vmware_cis_checks/solo_enable_moob.py
-
 import logging
 from typing import List, Dict, Any
 from pyVmomi import vim
@@ -7,6 +5,10 @@ from config.vsphere_conn import VsphereConnection
 from config.export_to_json import export_to_json
 
 logger = logging.getLogger(__name__)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s"
+)
 
 def get_hosts_solo_enable_mob(content) -> List[Dict[str, Any]]:
     """获取每台主机的 Config.HostAgent.plugins.solo.enableMob 高级设置"""
@@ -20,27 +22,45 @@ def get_hosts_solo_enable_mob(content) -> List[Dict[str, Any]]:
             if adv_settings:
                 setting = adv_settings[0]
                 results.append({
-                    "host": host.name,
-                    "name": setting.key,
-                    "value": setting.value,
-                    "type": type(setting.value).__name__,
-                    "description": "Enable direct MOB access"  # 手动添加描述
+                    "AIIB.No": "2.3",
+                    "Name": "Host must restrict direct MOB access",
+                    "CIS.No": "3.3",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.plugins.solo.enableMob | Select Name, Value, Type, Description',
+                    "Host": host.name,
+                    "Value": {
+                        "key": setting.key,
+                        "value": setting.value,
+                        "type": type(setting.value).__name__
+                    },
+                    "Description": "Enable direct MOB access",
+                    "Error": None
                 })
+                logger.info("主机: %s, %s = %s", host.name, setting.key, setting.value)
             else:
                 results.append({
-                    "host": host.name,
-                    "name": "Config.HostAgent.plugins.solo.enableMob",
-                    "value": None,
-                    "type": None,
-                    "description": "Not configured"
+                    "AIIB.No": "2.3",
+                    "Name": "Host must restrict direct MOB access",
+                    "CIS.No": "3.3",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.plugins.solo.enableMob | Select Name, Value, Type, Description',
+                    "Host": host.name,
+                    "Value": {"key": "Config.HostAgent.plugins.solo.enableMob", "value": None, "type": None},
+                    "Description": "Not configured",
+                    "Error": None
                 })
+                logger.warning("主机 %s 没有 Config.HostAgent.plugins.solo.enableMob 设置", host.name)
         except Exception as e:
             results.append({
-                "host": host.name,
-                "name": "Config.HostAgent.plugins.solo.enableMob",
-                "value": None,
-                "error": str(e)
+                "AIIB.No": "2.3",
+                "Name": "Host must restrict direct MOB access",
+                "CIS.No": "3.3",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.plugins.solo.enableMob | Select Name, Value, Type, Description',
+                "Host": host.name,
+                "Value": {"key": "Config.HostAgent.plugins.solo.enableMob", "value": None, "type": None},
+                "Description": "Error retrieving setting",
+                "Error": str(e)
             })
+            logger.error("主机 %s 获取 Config.HostAgent.plugins.solo.enableMob 设置失败: %s", host.name, e)
+
     container.Destroy()
     return results
 
@@ -48,7 +68,7 @@ def main():
     with VsphereConnection() as si:
         content = si.RetrieveContent()
         solo_info = get_hosts_solo_enable_mob(content)
-    export_to_json(solo_info, "../log/2.3_solo_enable_mob.json")
+        export_to_json(solo_info, "../log/2.3_solo_enable_mob.json")
 
 if __name__ == "__main__":
     main()

@@ -10,24 +10,24 @@ from config.export_to_json import export_to_json
 # 导入检查模块
 # ------------------------------
 from vmware_cis_checks import (
-    ntp_info,
-    mem_share_salt,
-    tsm_ssh,
-    tsm,
-    solo_enable_moob,
-    snmp_manual,
-    dcui_timeout,
-    shell_warning_manual,
-    password_complexity_manual,
-    account_lock_failure,
-    account_unlock_time,
-    password_history_manual,
-    password_max_days_manual,
-    session_timeout_api_manual,
-    idle_host_client_manual,
-    dcui_access_manual,
-    exception_users_manual,
-    tls_version_manual,
+    ntp_info, # ok
+    mem_share_salt, # ok
+    tsm_ssh,    # ok
+    tsm,    # ok
+    solo_enable_moob,   # ok
+    snmp_manual,   # ok
+    dcui_timeout,   # ok
+    shell_warning_manual,   # ok
+    password_complexity_manual, # ok
+    account_lock_failure, # 修改完成，取值错误，需要再次排查
+    account_unlock_time,  # ok
+    password_history_manual,    # ok
+    password_max_days_manual,    # ok
+    session_timeout_api_manual, # ok
+    idle_host_client_manual,    #ok
+    dcui_access, # ok
+    exception_users_manual, # ok
+    tls_version_manual, # ok
     syslog_persistent_manual,
     syslog_remote_loghost,
     syslog_info_level_manual,

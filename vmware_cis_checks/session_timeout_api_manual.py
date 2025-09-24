@@ -20,24 +20,54 @@ def get_hosts_session_timeout_api(content) -> List[Dict[str, Any]]:
             if adv_settings:
                 setting = adv_settings[0]
                 results.append({
-                    "host": host.name,
-                    "value": setting.value,
-                    "type": type(setting.value).__name__,
-                    "description": "API session timeout (seconds)"
+                    "AIIB.No": "2.12",
+                    "Name": "Host must enforce API session timeout (Automated)",
+                    "CIS.No": "3.16",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.sessionTimeout',
+                    "Host": host.name,
+                    "Value": {
+                        "key": setting.key,
+                        "value": setting.value,
+                        "type": type(setting.value).__name__
+                    },
+                    "Description": "API session timeout (seconds)",
+                    "Error": None
                 })
                 logger.info("主机: %s, API sessionTimeout = %s", host.name, setting.value)
             else:
                 results.append({
-                    "host": host.name,
-                    "value": None,
-                    "description": "Not configured"
+                    "AIIB.No": "2.12",
+                    "Name": "Host must enforce API session timeout (Automated)",
+                    "CIS.No": "3.16",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.sessionTimeout',
+                    "Host": host.name,
+                    "Value": {"key": "Config.HostAgent.sessionTimeout", "value": None, "type": None},
+                    "Description": "Not configured or not supported on this host",
+                    "Error": None
                 })
-                logger.warning("主机 %s 没有配置 API sessionTimeout", host.name)
+                logger.warning("主机 %s 未配置 API sessionTimeout 或不支持该设置", host.name)
+        except vim.fault.InvalidName as e:
+            results.append({
+                "AIIB.No": "2.12",
+                "Name": "Host must enforce API session timeout (Automated)",
+                "CIS.No": "3.16",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.sessionTimeout',
+                "Host": host.name,
+                "Value": {"key": "Config.HostAgent.sessionTimeout", "value": None, "type": None},
+                "Description": "Setting not supported on this host",
+                "Error": str(e)
+            })
+            logger.info("主机 %s 不支持 Config.HostAgent.sessionTimeout 设置", host.name)
         except Exception as e:
             results.append({
-                "host": host.name,
-                "value": None,
-                "error": str(e)
+                "AIIB.No": "2.12",
+                "Name": "Host must enforce API session timeout (Automated)",
+                "CIS.No": "3.16",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.sessionTimeout',
+                "Host": host.name,
+                "Value": {"key": "Config.HostAgent.sessionTimeout", "value": None, "type": None},
+                "Description": "Error retrieving setting",
+                "Error": str(e)
             })
             logger.error("主机 %s 获取 API sessionTimeout 失败: %s", host.name, e)
 

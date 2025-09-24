@@ -1,5 +1,3 @@
-# vmware_cis_checks/password_history_manual.py
-
 import logging
 from typing import List, Dict, Any
 from pyVmomi import vim
@@ -22,24 +20,55 @@ def get_hosts_password_history(content) -> List[Dict[str, Any]]:
             if adv_settings:
                 setting = adv_settings[0]
                 results.append({
-                    "host": host.name,
-                    "value": setting.value,
-                    "type": type(setting.value).__name__,
-                    "description": "Password history count"
+                    "AIIB.No": "2.10",
+                    "Name": "Host must enforce password history (Automated)",
+                    "CIS.No": "3.14",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Security.PasswordHistory',
+                    "Host": host.name,
+                    "Value": {
+                        "key": setting.key,
+                        "value": setting.value,
+                        "type": type(setting.value).__name__
+                    },
+                    "Description": "Password history count",
+                    "Error": None
                 })
                 logger.info("主机: %s, Security.PasswordHistory = %s", host.name, setting.value)
             else:
                 results.append({
-                    "host": host.name,
-                    "value": None,
-                    "description": "Not configured"
+                    "AIIB.No": "2.10",
+                    "Name": "Host must enforce password history (Automated)",
+                    "CIS.No": "3.14",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Security.PasswordHistory',
+                    "Host": host.name,
+                    "Value": {"key": "Security.PasswordHistory", "value": None, "type": None},
+                    "Description": "Not configured or not supported on this host",
+                    "Error": None
                 })
-                logger.warning("主机 %s 没有配置 Security.PasswordHistory", host.name)
+                logger.warning("主机 %s 未配置 Security.PasswordHistory 或不支持此设置", host.name)
+        except vim.fault.InvalidName as e:
+            # 特殊处理 InvalidName，不当作报错
+            results.append({
+                "AIIB.No": "2.10",
+                "Name": "Host must enforce password history (Automated)",
+                "CIS.No": "3.14",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Security.PasswordHistory',
+                "Host": host.name,
+                "Value": {"key": "Security.PasswordHistory", "value": None, "type": None},
+                "Description": "Setting not supported on this host",
+                "Error": str(e)
+            })
+            logger.info("主机 %s 不支持 Security.PasswordHistory 设置", host.name)
         except Exception as e:
             results.append({
-                "host": host.name,
-                "value": None,
-                "error": str(e)
+                "AIIB.No": "2.10",
+                "Name": "Host must enforce password history (Automated)",
+                "CIS.No": "3.14",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Security.PasswordHistory',
+                "Host": host.name,
+                "Value": {"key": "Security.PasswordHistory", "value": None, "type": None},
+                "Description": "Error retrieving setting",
+                "Error": str(e)
             })
             logger.error("主机 %s 获取 Security.PasswordHistory 失败: %s", host.name, e)
 

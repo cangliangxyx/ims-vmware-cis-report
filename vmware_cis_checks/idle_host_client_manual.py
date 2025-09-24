@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 
 
 def get_hosts_idle_host_client_timeout(content) -> List[Dict[str, Any]]:
-    """获取每台主机的 host client idle 超时配置"""
+    """查看每台主机的 Host Client idle 超时配置（只读，不修改）"""
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     hosts = container.view
     results = []
@@ -20,24 +20,50 @@ def get_hosts_idle_host_client_timeout(content) -> List[Dict[str, Any]]:
             if adv_settings:
                 setting = adv_settings[0]
                 results.append({
-                    "host": host.name,
-                    "value": setting.value,
-                    "type": type(setting.value).__name__,
-                    "description": "Idle host client session timeout (seconds)"
+                    "AIIB.No": "2.13",
+                    "Name": "Host Client idle session timeout (Read Only)",
+                    "CIS.No": "3.17",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout',
+                    "Host": host.name,
+                    "Value": setting.value,
+                    "Description": "Idle host client session timeout (seconds)",
+                    "Error": None
                 })
                 logger.info("主机: %s, HostClientSessionTimeout = %s", host.name, setting.value)
             else:
                 results.append({
-                    "host": host.name,
-                    "value": None,
-                    "description": "Not configured"
+                    "AIIB.No": "2.13",
+                    "Name": "Host Client idle session timeout (Read Only)",
+                    "CIS.No": "3.17",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout',
+                    "Host": host.name,
+                    "Value": None,
+                    "Description": "Not configured",
+                    "Error": None
                 })
-                logger.warning("主机 %s 没有配置 HostClientSessionTimeout", host.name)
+                logger.warning("主机 %s 未配置 HostClientSessionTimeout", host.name)
+        except vim.fault.InvalidName as e:
+            results.append({
+                "AIIB.No": "2.13",
+                "Name": "Host Client idle session timeout (Read Only)",
+                "CIS.No": "3.17",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout',
+                "Host": host.name,
+                "Value": None,
+                "Description": "Setting not supported on this host",
+                "Error": str(e)
+            })
+            logger.info("主机 %s 不支持 UserVars.HostClientSessionTimeout 设置", host.name)
         except Exception as e:
             results.append({
-                "host": host.name,
-                "value": None,
-                "error": str(e)
+                "AIIB.No": "2.13",
+                "Name": "Host Client idle session timeout (Read Only)",
+                "CIS.No": "3.17",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout',
+                "Host": host.name,
+                "Value": None,
+                "Description": "Error retrieving setting",
+                "Error": str(e)
             })
             logger.error("主机 %s 获取 HostClientSessionTimeout 失败: %s", host.name, e)
 

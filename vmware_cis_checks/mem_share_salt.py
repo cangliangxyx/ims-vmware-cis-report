@@ -10,7 +10,6 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s"
 )
 
-
 def get_hosts_mem_share_salt(content) -> List[Dict[str, Any]]:
     """获取每台主机的 Mem.ShareForceSalting 高级设置"""
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
@@ -23,38 +22,42 @@ def get_hosts_mem_share_salt(content) -> List[Dict[str, Any]]:
             if adv_settings:
                 setting = adv_settings[0]
                 results.append({
-                    "host": host.name,
-                    "NO": "1.4",
-                    "name": "Host must restrict inter-VM transparent page sharing (Automated)",
-                    "CIS.NO": "2.10",
-                    "cmd": r'Get-VMHost | Get-AdvancedSetting -Name Mem.ShareForceSalting | Select-Object Name, Value, Type, Description',
-                    "value": setting.value,
+                    "AIIB.No": "1.4",
+                    "Name": "Host must restrict inter-VM transparent page sharing (Automated)",
+                    "CIS.No": "2.10",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Mem.ShareForceSalting | Select-Object Name, Value, Type, Description',
+                    "Host": host.name,
+                    "Value": setting.value,
+                    "Description": "Memory page sharing salt",
                     "type": type(setting.value).__name__,
-                    "description": "Memory page sharing salt",
+                    "Error": None
                 })
                 logger.info("主机: %s, %s = %s", host.name, setting.key, setting.value)
             else:
                 results.append({
-                    "host": host.name,
-                    "NO": "1.4",
-                    "name": "Host must restrict inter-VM transparent page sharing (Automated)",
-                    "CIS.NO": "2.10",
-                    "cmd": r'Get-VMHost | Get-AdvancedSetting -Name Mem.ShareForceSalting | Select-Object Name, Value, Type, Description',
-                    "value": None,
+                    "AIIB.No": "1.4",
+                    "Name": "Host must restrict inter-VM transparent page sharing (Automated)",
+                    "CIS.No": "2.10",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Mem.ShareForceSalting | Select-Object Name, Value, Type, Description',
+                    "Host": host.name,
+                    "Value": None,
+                    "Description": "Memory page sharing salt (Not configured)",
                     "type": None,
-                    "description": "Not configured"
+                    "Error": None
                 })
                 logger.warning("主机 %s 没有 Mem.ShareForceSalting 设置", host.name)
 
         except Exception as e:
             results.append({
-                "host": host.name,
-                "NO": "1.4",
-                "name": "Host must restrict inter-VM transparent page sharing (Automated)",
-                "CIS.NO": "2.10",
-                "cmd": r'Get-VMHost | Get-AdvancedSetting -Name Mem.ShareForceSalting | Select-Object Name, Value, Type, Description',
-                "value": None,
-                "error": str(e)
+                "AIIB.No": "1.4",
+                "Name": "Host must restrict inter-VM transparent page sharing (Automated)",
+                "CIS.No": "2.10",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Mem.ShareForceSalting | Select-Object Name, Value, Type, Description',
+                "Host": host.name,
+                "Value": None,
+                "Description": "Memory page sharing salt (Error)",
+                "type": None,
+                "Error": str(e)
             })
             logger.error("主机 %s 获取 Mem.ShareForceSalting 失败: %s", host.name, e)
 

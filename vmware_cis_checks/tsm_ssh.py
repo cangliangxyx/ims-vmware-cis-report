@@ -10,7 +10,6 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s"
 )
 
-
 def get_hosts_ssh_service(content) -> List[Dict[str, Any]]:
     """获取每台主机的 TSM-SSH 服务状态"""
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
@@ -25,39 +24,45 @@ def get_hosts_ssh_service(content) -> List[Dict[str, Any]]:
             )
             if service:
                 results.append({
-                    "host": host.name,
-                    "NO": "2.1",
-                    "name": "Host should deactivate SSH (Automated)",
-                    "CIS.NO": "3.1",
-                    "cmd": r'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM-SSH" } | Select Key, Label, Policy, Running, Required',
-                    "key": service.key,
-                    "label": service.label,
-                    "policy": service.policy,
-                    "running": service.running,
-                    "required": service.required
+                    "AIIB.No": "2.1",
+                    "Name": "Host should deactivate SSH (Automated)",
+                    "CIS.No": "3.1",
+                    "CMD": r'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM-SSH" } | Select Key, Label, Policy, Running, Required',
+                    "Host": host.name,
+                    "Value": {
+                        "key": service.key,
+                        "label": service.label,
+                        "policy": service.policy,
+                        "running": service.running,
+                        "required": service.required
+                    },
+                    "Description": "TSM-SSH service status",
+                    "Error": None
                 })
                 logger.info("主机: %s, SSH 服务运行状态: %s, 策略: %s", host.name, service.running, service.policy)
             else:
                 results.append({
-                    "host": host.name,
-                    "NO": "2.1",
-                    "name": "Host should deactivate SSH (Automated)",
-                    "CIS.NO": "3.1",
-                    "cmd": r'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM-SSH" } | Select Key, Label, Policy, Running, Required',
-                    "key": "TSM-SSH",
-                    "error": "Service not found"
+                    "AIIB.No": "2.1",
+                    "Name": "Host should deactivate SSH (Automated)",
+                    "CIS.No": "3.1",
+                    "CMD": r'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM-SSH" } | Select Key, Label, Policy, Running, Required',
+                    "Host": host.name,
+                    "Value": None,
+                    "Description": "TSM-SSH service not found",
+                    "Error": None
                 })
                 logger.warning("主机 %s 没有找到 TSM-SSH 服务", host.name)
 
         except Exception as e:
             results.append({
-                "host": host.name,
-                "NO": "2.1",
-                "name": "Host should deactivate SSH (Automated)",
-                "CIS.NO": "3.1",
-                "cmd": r'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM-SSH" } | Select Key, Label, Policy, Running, Required',
-                "key": "TSM-SSH",
-                "error": str(e)
+                "AIIB.No": "2.1",
+                "Name": "Host should deactivate SSH (Automated)",
+                "CIS.No": "3.1",
+                "CMD": r'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM-SSH" } | Select Key, Label, Policy, Running, Required',
+                "Host": host.name,
+                "Value": None,
+                "Description": "TSM-SSH service (Error)",
+                "Error": str(e)
             })
             logger.error("主机 %s 获取 SSH 服务状态失败: %s", host.name, e)
 

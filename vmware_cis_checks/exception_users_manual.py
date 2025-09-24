@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 
 
 def get_hosts_exception_users(content) -> List[Dict[str, Any]]:
-    """获取每台主机的 Exception Users 列表"""
+    """查看每台主机的 Exception Users 配置（只读，不修改）"""
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     hosts = container.view
     results = []
@@ -20,24 +20,50 @@ def get_hosts_exception_users(content) -> List[Dict[str, Any]]:
             if adv_settings:
                 setting = adv_settings[0]
                 results.append({
-                    "host": host.name,
-                    "value": setting.value,
-                    "type": type(setting.value).__name__,
-                    "description": "Exception Users group"
+                    "AIIB.No": "2.15",
+                    "Name": "Exception Users Group (Read Only)",
+                    "CIS.No": "3.20",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.plugins.hostsvc.esxAdminsGroup',
+                    "Host": host.name,
+                    "Value": setting.value,
+                    "Description": "Exception Users group",
+                    "Error": None
                 })
                 logger.info("主机: %s, ExceptionUsers = %s", host.name, setting.value)
             else:
                 results.append({
-                    "host": host.name,
-                    "value": None,
-                    "description": "Not configured"
+                    "AIIB.No": "2.15",
+                    "Name": "Exception Users Group (Read Only)",
+                    "CIS.No": "3.20",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.plugins.hostsvc.esxAdminsGroup',
+                    "Host": host.name,
+                    "Value": None,
+                    "Description": "Not configured",
+                    "Error": None
                 })
-                logger.warning("主机 %s 没有配置 ExceptionUsers", host.name)
+                logger.warning("主机 %s 未配置 ExceptionUsers", host.name)
+        except vim.fault.InvalidName as e:
+            results.append({
+                "AIIB.No": "2.15",
+                "Name": "Exception Users Group (Read Only)",
+                "CIS.No": "3.20",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.plugins.hostsvc.esxAdminsGroup',
+                "Host": host.name,
+                "Value": None,
+                "Description": "Setting not supported on this host",
+                "Error": str(e)
+            })
+            logger.info("主机 %s 不支持 ExceptionUsers 设置", host.name)
         except Exception as e:
             results.append({
-                "host": host.name,
-                "value": None,
-                "error": str(e)
+                "AIIB.No": "2.15",
+                "Name": "Exception Users Group (Read Only)",
+                "CIS.No": "3.20",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.plugins.hostsvc.esxAdminsGroup',
+                "Host": host.name,
+                "Value": None,
+                "Description": "Error retrieving setting",
+                "Error": str(e)
             })
             logger.error("主机 %s 获取 ExceptionUsers 失败: %s", host.name, e)
 

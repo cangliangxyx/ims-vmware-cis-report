@@ -9,36 +9,62 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 
 
 def get_hosts_tls_version(content) -> List[Dict[str, Any]]:
-    """获取每台主机的 TLS 配置"""
+    """查看每台主机的 TLS 协议配置（只读）"""
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     hosts = container.view
     results = []
 
     for host in hosts:
         try:
-            # VMware ESXi 高级设置: UserVars.ESXiVPsTLSConfig 或类似
+            # VMware ESXi TLS 设置通常通过 UserVars.ESXiVPsTLSConfig 控制
             adv_settings = host.configManager.advancedOption.QueryOptions("UserVars.ESXiVPsTLSConfig")
             if adv_settings:
                 setting = adv_settings[0]
                 results.append({
-                    "host": host.name,
-                    "value": setting.value,
-                    "type": type(setting.value).__name__,
-                    "description": "TLS protocol configuration"
+                    "AIIB.No": "2.16",
+                    "Name": "TLS Version Configuration (Read Only)",
+                    "CIS.No": "3.21",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name UserVars.ESXiVPsTLSConfig',
+                    "Host": host.name,
+                    "Value": setting.value,
+                    "Description": "TLS protocol configuration",
+                    "Error": None
                 })
                 logger.info("主机: %s, TLS Config = %s", host.name, setting.value)
             else:
                 results.append({
-                    "host": host.name,
-                    "value": None,
-                    "description": "Not configured"
+                    "AIIB.No": "2.16",
+                    "Name": "TLS Version Configuration (Read Only)",
+                    "CIS.No": "3.21",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name UserVars.ESXiVPsTLSConfig',
+                    "Host": host.name,
+                    "Value": None,
+                    "Description": "Not configured",
+                    "Error": None
                 })
-                logger.warning("主机 %s 没有配置 TLS 设置", host.name)
+                logger.warning("主机 %s 未配置 TLS 设置", host.name)
+        except vim.fault.InvalidName as e:
+            results.append({
+                "AIIB.No": "2.16",
+                "Name": "TLS Version Configuration (Read Only)",
+                "CIS.No": "3.21",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name UserVars.ESXiVPsTLSConfig',
+                "Host": host.name,
+                "Value": None,
+                "Description": "Setting not supported on this host",
+                "Error": str(e)
+            })
+            logger.info("主机 %s 不支持 TLS 设置", host.name)
         except Exception as e:
             results.append({
-                "host": host.name,
-                "value": None,
-                "error": str(e)
+                "AIIB.No": "2.16",
+                "Name": "TLS Version Configuration (Read Only)",
+                "CIS.No": "3.21",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name UserVars.ESXiVPsTLSConfig',
+                "Host": host.name,
+                "Value": None,
+                "Description": "Error retrieving TLS configuration",
+                "Error": str(e)
             })
             logger.error("主机 %s 获取 TLS 设置失败: %s", host.name, e)
 
