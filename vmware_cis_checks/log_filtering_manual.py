@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 
 
 def get_hosts_log_filtering(content) -> List[Dict[str, Any]]:
-    """检查是否启用了日志过滤 (Syslog.global.logFilters)"""
+    """检查是否启用了日志过滤 (Syslog.global.logFilters, 只读)"""
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     hosts = container.view
     results = []
@@ -20,24 +20,50 @@ def get_hosts_log_filtering(content) -> List[Dict[str, Any]]:
             if adv_settings:
                 setting = adv_settings[0]
                 results.append({
-                    "host": host.name,
-                    "value": setting.value,
-                    "type": type(setting.value).__name__,
-                    "description": "Syslog log filtering configuration"
+                    "AIIB.No": "3.4",
+                    "Name": "Syslog log filtering configuration (Read Only)",
+                    "CIS.No": "4.5",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logFilters',
+                    "Host": host.name,
+                    "Value": setting.value,
+                    "Description": "Syslog log filtering configuration",
+                    "Error": None
                 })
                 logger.info("主机: %s, Syslog.global.logFilters = %s", host.name, setting.value)
             else:
                 results.append({
-                    "host": host.name,
-                    "value": None,
-                    "description": "Not configured"
+                    "AIIB.No": "3.4",
+                    "Name": "Syslog log filtering configuration (Read Only)",
+                    "CIS.No": "4.5",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logFilters',
+                    "Host": host.name,
+                    "Value": None,
+                    "Description": "Not configured",
+                    "Error": None
                 })
-                logger.warning("主机 %s 没有配置 Syslog.global.logFilters", host.name)
+                logger.warning("主机 %s 未配置 Syslog.global.logFilters", host.name)
+        except vim.fault.InvalidName as e:
+            results.append({
+                "AIIB.No": "3.4",
+                "Name": "Syslog log filtering configuration (Read Only)",
+                "CIS.No": "4.5",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logFilters',
+                "Host": host.name,
+                "Value": None,
+                "Description": "Setting not supported on this host",
+                "Error": str(e)
+            })
+            logger.info("主机 %s 不支持 Syslog.global.logFilters 设置", host.name)
         except Exception as e:
             results.append({
-                "host": host.name,
-                "value": None,
-                "error": str(e)
+                "AIIB.No": "3.4",
+                "Name": "Syslog log filtering configuration (Read Only)",
+                "CIS.No": "4.5",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logFilters',
+                "Host": host.name,
+                "Value": None,
+                "Description": "Error retrieving log filtering setting",
+                "Error": str(e)
             })
             logger.error("主机 %s 获取 Syslog.global.logFilters 失败: %s", host.name, e)
 

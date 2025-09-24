@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 
 
 def get_hosts_syslog_remote_loghost(content) -> List[Dict[str, Any]]:
-    """获取每台主机的 Syslog.global.logHost 配置 (远程日志服务器)"""
+    """获取每台主机的 Syslog.global.logHost 配置（远程日志服务器，只读）"""
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     hosts = container.view
     results = []
@@ -20,24 +20,50 @@ def get_hosts_syslog_remote_loghost(content) -> List[Dict[str, Any]]:
             if adv_settings:
                 setting = adv_settings[0]
                 results.append({
-                    "host": host.name,
-                    "value": setting.value,
-                    "type": type(setting.value).__name__,
-                    "description": "Remote syslog host(s)"
+                    "AIIB.No": "3.2",
+                    "Name": "Remote Syslog Host Configuration (Read Only)",
+                    "CIS.No": "4.2",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logHost',
+                    "Host": host.name,
+                    "Value": setting.value,
+                    "Description": "Remote syslog host(s)",
+                    "Error": None
                 })
                 logger.info("主机: %s, Syslog.global.logHost = %s", host.name, setting.value)
             else:
                 results.append({
-                    "host": host.name,
-                    "value": None,
-                    "description": "Not configured"
+                    "AIIB.No": "3.2",
+                    "Name": "Remote Syslog Host Configuration (Read Only)",
+                    "CIS.No": "4.2",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logHost',
+                    "Host": host.name,
+                    "Value": None,
+                    "Description": "Not configured",
+                    "Error": None
                 })
-                logger.warning("主机 %s 没有配置 Syslog.global.logHost", host.name)
+                logger.warning("主机 %s 未配置 Syslog.global.logHost", host.name)
+        except vim.fault.InvalidName as e:
+            results.append({
+                "AIIB.No": "3.2",
+                "Name": "Remote Syslog Host Configuration (Read Only)",
+                "CIS.No": "4.2",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logHost',
+                "Host": host.name,
+                "Value": None,
+                "Description": "Setting not supported on this host",
+                "Error": str(e)
+            })
+            logger.info("主机 %s 不支持 Syslog.global.logHost 设置", host.name)
         except Exception as e:
             results.append({
-                "host": host.name,
-                "value": None,
-                "error": str(e)
+                "AIIB.No": "3.2",
+                "Name": "Remote Syslog Host Configuration (Read Only)",
+                "CIS.No": "4.2",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logHost',
+                "Host": host.name,
+                "Value": None,
+                "Description": "Error retrieving remote syslog configuration",
+                "Error": str(e)
             })
             logger.error("主机 %s 获取 Syslog.global.logHost 失败: %s", host.name, e)
 

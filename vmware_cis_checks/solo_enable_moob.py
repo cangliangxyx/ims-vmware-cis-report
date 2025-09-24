@@ -68,7 +68,7 @@ def main():
     with VsphereConnection() as si:
         content = si.RetrieveContent()
         solo_info = get_hosts_solo_enable_mob(content)
-        export_to_json(solo_info, "../log/2.3_solo_enable_mob.json")
+        export_to_json(solo_info, "../log/no_2.3_solo_enable_mob.json")
 
 if __name__ == "__main__":
     main()

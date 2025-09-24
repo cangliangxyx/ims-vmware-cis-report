@@ -28,11 +28,11 @@ from vmware_cis_checks import (
     dcui_access, # ok
     exception_users_manual, # ok
     tls_version_manual, # ok
-    syslog_persistent_manual,
-    syslog_remote_loghost,
-    syslog_info_level_manual,
-    log_filtering_manual,
-    tls_log_verify_manual,
+    syslog_persistent,  # ok
+    syslog_remote_loghost, # ok
+    syslog_info_level_manual, # ok
+    log_filtering_manual,   # ok
+    tls_log_verify_manual,  # ok
     firewall_services_manual,
     dvfilter_manual,
     bpdu_filter_manual,
@@ -72,7 +72,7 @@ CHECK_TYPE_MAPPING: Dict[str, Tuple[Callable[[Any], List[Dict[str, Any]]], str]]
     "dcui_access_manual": (dcui_access.get_hosts_dcui_access, "dcui_access_manual"),
     "exception_users_manual": (exception_users_manual.get_hosts_exception_users, "exception_users_manual"),
     "tls_version_manual": (tls_version_manual.get_hosts_tls_version, "tls_version_manual"),
-    "syslog_persistent_manual": (syslog_persistent_manual.get_hosts_syslog_persistent, "syslog_persistent_manual"),
+    "syslog_persistent_manual": (syslog_persistent.get_hosts_syslog_persistent, "syslog_persistent_manual"),
     "syslog_remote_loghost": (syslog_remote_loghost.get_hosts_syslog_remote_loghost, "syslog_remote_loghost"),
     "syslog_info_level_manual": (syslog_info_level_manual.get_hosts_syslog_info_level, "syslog_info_level_manual"),
     "log_filtering_manual": (log_filtering_manual.get_hosts_log_filtering, "log_filtering_manual"),

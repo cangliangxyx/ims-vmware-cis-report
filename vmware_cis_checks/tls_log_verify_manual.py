@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 
 
 def get_hosts_tls_log_verify(content) -> List[Dict[str, Any]]:
-    """检查是否启用了远程日志 TLS 证书验证"""
+    """检查是否启用了远程日志 TLS 证书验证（只读）"""
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     hosts = container.view
     results = []
@@ -20,24 +20,50 @@ def get_hosts_tls_log_verify(content) -> List[Dict[str, Any]]:
             if adv_settings:
                 setting = adv_settings[0]
                 results.append({
-                    "host": host.name,
-                    "value": setting.value,
-                    "type": type(setting.value).__name__,
-                    "description": "TLS certificate verification for remote logging"
+                    "AIIB.No": "3.5",
+                    "Name": "Remote Syslog TLS certificate verification (Read Only)",
+                    "CIS.No": "4.10",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logCheckCerts',
+                    "Host": host.name,
+                    "Value": setting.value,
+                    "Description": "TLS certificate verification for remote logging",
+                    "Error": None
                 })
                 logger.info("主机: %s, Syslog.global.logCheckCerts = %s", host.name, setting.value)
             else:
                 results.append({
-                    "host": host.name,
-                    "value": None,
-                    "description": "Not configured"
+                    "AIIB.No": "3.5",
+                    "Name": "Remote Syslog TLS certificate verification (Read Only)",
+                    "CIS.No": "4.10",
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logCheckCerts',
+                    "Host": host.name,
+                    "Value": None,
+                    "Description": "Not configured",
+                    "Error": None
                 })
-                logger.warning("主机 %s 没有配置 Syslog.global.logCheckCerts", host.name)
+                logger.warning("主机 %s 未配置 Syslog.global.logCheckCerts", host.name)
+        except vim.fault.InvalidName as e:
+            results.append({
+                "AIIB.No": "3.5",
+                "Name": "Remote Syslog TLS certificate verification (Read Only)",
+                "CIS.No": "4.10",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logCheckCerts',
+                "Host": host.name,
+                "Value": None,
+                "Description": "Setting not supported on this host",
+                "Error": str(e)
+            })
+            logger.info("主机 %s 不支持 Syslog.global.logCheckCerts 设置", host.name)
         except Exception as e:
             results.append({
-                "host": host.name,
-                "value": None,
-                "error": str(e)
+                "AIIB.No": "3.5",
+                "Name": "Remote Syslog TLS certificate verification (Read Only)",
+                "CIS.No": "4.5",
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logCheckCerts',
+                "Host": host.name,
+                "Value": None,
+                "Description": "Error retrieving TLS log verification setting",
+                "Error": str(e)
             })
             logger.error("主机 %s 获取 Syslog.global.logCheckCerts 失败: %s", host.name, e)
 
