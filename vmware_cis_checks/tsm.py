@@ -15,11 +15,9 @@ def get_hosts_tsm_service(content) -> List[Dict[str, Any]]:
     """获取每台主机的 TSM 服务状态"""
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     hosts = container.view
-    print(hosts)
 
     results = []
     for host in hosts:
-        print(host)
         try:
             service = next(
                 (s for s in host.configManager.serviceSystem.serviceInfo.service if s.key == "TSM"),
