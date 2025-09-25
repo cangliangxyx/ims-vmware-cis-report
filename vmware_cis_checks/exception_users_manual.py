@@ -71,11 +71,24 @@ def get_hosts_exception_users(content) -> List[Dict[str, Any]]:
     return results
 
 
-def main():
+def main(output_dir: str = None):
+    """
+    检查主机例外用户配置并导出 JSON。
+    :param output_dir: 输出目录路径（默认 ../log）
+    """
+    # 设置默认输出目录
+    if output_dir is None:
+        output_dir = "../log"
+
+    # 拼接输出文件路径
+    output_path = f"{output_dir}/no_2.15_exception_users_manual.json"
+
+    # 获取数据并导出
     with VsphereConnection() as si:
         content = si.RetrieveContent()
         exc_users_info = get_hosts_exception_users(content)
-        export_to_json(exc_users_info, "../log/no_2.15_exception_users_manual.json")
+        export_to_json(exc_users_info, output_path)
+
 
 
 if __name__ == "__main__":

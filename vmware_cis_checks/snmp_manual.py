@@ -29,10 +29,20 @@ def get_hosts_snmp_manual(content=None) -> List[Dict[str, Any]]:
     logger.info("检查 2.4: SNMP 手工检查，无法自动化，已输出提示")
     return results
 
-def main():
-    # 不依赖 VsphereConnection，因为这是手工检查
-    snmp_info = get_hosts_snmp_manual()
-    export_to_json(snmp_info, "../log/no_2.4_snmp_manual.json")
+def main(output_dir: str = None):
+    """
+    手工检查 SNMP 配置并导出 JSON。
+    :param output_dir: 输出目录路径（默认 ../log）
+    """
+    # 如果没有传 output_dir，就用默认目录 ../log
+    if output_dir is None:
+        output_dir = "../log"
 
+    # 拼接输出文件路径
+    output_path = f"{output_dir}/no_2.4_snmp_manual.json"
+
+    # 获取数据并导出
+    snmp_info = get_hosts_snmp_manual()
+    export_to_json(snmp_info, output_path)
 if __name__ == "__main__":
     main()

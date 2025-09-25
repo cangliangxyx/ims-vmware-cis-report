@@ -75,11 +75,23 @@ def get_hosts_session_timeout_api(content) -> List[Dict[str, Any]]:
     return results
 
 
-def main():
+def main(output_dir: str = None):
+    """
+    检查主机 API 会话超时配置并导出 JSON。
+    :param output_dir: 输出目录路径（默认 ../log）
+    """
+    # 如果没有传 output_dir，就用默认目录 ../log
+    if output_dir is None:
+        output_dir = "../log"
+
+    # 拼接输出文件路径
+    output_path = f"{output_dir}/no_2.12_session_timeout_api_manual.json"
+
     with VsphereConnection() as si:
         content = si.RetrieveContent()
         timeout_info = get_hosts_session_timeout_api(content)
-        export_to_json(timeout_info, "../log/no_2.12_session_timeout_api_manual.json")
+        export_to_json(timeout_info, output_path)
+
 
 
 if __name__ == "__main__":

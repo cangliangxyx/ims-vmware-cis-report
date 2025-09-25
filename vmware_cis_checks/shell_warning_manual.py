@@ -28,9 +28,22 @@ def get_hosts_shell_warning_manual(content=None) -> List[Dict[str, Any]]:
     logger.info("检查 2.6: shell warning 手工检查，无法自动化，已生成提示")
     return results
 
-def main():
+def main(output_dir: str = None):
+    """
+    手工检查 Shell Warning 并导出 JSON。
+    :param output_dir: 输出目录路径（默认 ../log）
+    """
+    # 如果没有传 output_dir，就用默认目录 ../log
+    if output_dir is None:
+        output_dir = "../log"
+
+    # 拼接输出文件路径
+    output_path = f"{output_dir}/no_2.6_shell_warning_manual.json"
+
+    # 获取数据并导出
     shell_warning_info = get_hosts_shell_warning_manual()
-    export_to_json(shell_warning_info, "../log/no_2.6_shell_warning_manual.json")
+    export_to_json(shell_warning_info, output_path)
+
 
 if __name__ == "__main__":
     main()

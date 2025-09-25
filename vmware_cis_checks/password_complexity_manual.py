@@ -28,9 +28,21 @@ def get_hosts_password_complexity(content=None) -> List[Dict[str, Any]]:
     logger.info("检查 2.7: 密码复杂性检查，生成提示")
     return results
 
-def main():
+def main(output_dir: str = None):
+    """
+    手工检查密码复杂度配置并导出 JSON。
+    :param output_dir: 输出目录路径（默认 ../log）
+    """
+    # 如果没有传 output_dir，就用默认目录 ../log
+    if output_dir is None:
+        output_dir = "../log"
+
+    # 拼接输出文件路径
+    output_path = f"{output_dir}/no_2.7_password_complexity_manual.json"
+
+    # 获取数据并导出
     password_info = get_hosts_password_complexity()
-    export_to_json(password_info, "../log/no_2.7_password_complexity_manual.json")
+    export_to_json(password_info, output_path)
 
 if __name__ == "__main__":
     main()

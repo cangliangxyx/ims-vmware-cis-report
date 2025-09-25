@@ -70,11 +70,19 @@ def get_hosts_ssh_service(content) -> List[Dict[str, Any]]:
     return results
 
 
-def main():
+def main(output_dir: str = None):
+    # 如果没有传 output_dir，就用默认目录 ../log
+    if output_dir is None:
+        output_dir = "../log"
+
+    # 拼接输出文件路径
+    output_path = f"{output_dir}/no_2.1_tsm_ssh.json"
+
     with VsphereConnection() as si:
         content = si.RetrieveContent()
         ssh_info = get_hosts_ssh_service(content)
-        export_to_json(ssh_info, "../log/no_2.1_tsm_ssh.json")
+        export_to_json(ssh_info, output_path)
+
 
 
 if __name__ == "__main__":

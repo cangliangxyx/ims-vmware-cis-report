@@ -76,11 +76,23 @@ def get_hosts_password_max_days(content) -> List[Dict[str, Any]]:
     return results
 
 
-def main():
+def main(output_dir: str = None):
+    """
+    检查主机密码最大使用天数策略并导出 JSON。
+    :param output_dir: 输出目录路径（默认 ../log）
+    """
+    # 如果没有传 output_dir，就用默认目录 ../log
+    if output_dir is None:
+        output_dir = "../log"
+
+    # 拼接输出文件路径
+    output_path = f"{output_dir}/no_2.11_password_max_days_manual.json"
+
     with VsphereConnection() as si:
         content = si.RetrieveContent()
         max_days_info = get_hosts_password_max_days(content)
-        export_to_json(max_days_info, "../log/no_2.11_password_max_days_manual.json")
+        export_to_json(max_days_info, output_path)
+
 
 
 if __name__ == "__main__":

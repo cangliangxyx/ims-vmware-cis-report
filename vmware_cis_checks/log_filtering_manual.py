@@ -71,11 +71,23 @@ def get_hosts_log_filtering(content) -> List[Dict[str, Any]]:
     return results
 
 
-def main():
+def main(output_dir: str = None):
+    """
+    检查主机日志过滤配置并导出 JSON。
+    :param output_dir: 输出目录路径（默认 ../log）
+    """
+    # 设置默认输出目录
+    if output_dir is None:
+        output_dir = "../log"
+
+    # 拼接输出文件路径
+    output_path = f"{output_dir}/no_3.4_log_filtering_manual.json"
+
+    # 获取数据并导出
     with VsphereConnection() as si:
         content = si.RetrieveContent()
         logfilter_info = get_hosts_log_filtering(content)
-        export_to_json(logfilter_info, "../log/no_3.4_log_filtering_manual.json")
+        export_to_json(logfilter_info, output_path)
 
 
 if __name__ == "__main__":

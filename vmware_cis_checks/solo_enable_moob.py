@@ -64,11 +64,18 @@ def get_hosts_solo_enable_mob(content) -> List[Dict[str, Any]]:
     container.Destroy()
     return results
 
-def main():
+def main(output_dir: str = None):
+    # 如果没有传 output_dir，就用默认目录 ../log
+    if output_dir is None:
+        output_dir = "../log"
+
+    # 拼接输出文件路径
+    output_path = f"{output_dir}/no_2.3_solo_enable_mob.json"
+
     with VsphereConnection() as si:
         content = si.RetrieveContent()
         solo_info = get_hosts_solo_enable_mob(content)
-        export_to_json(solo_info, "../log/no_2.3_solo_enable_mob.json")
+        export_to_json(solo_info, output_path)
 
 if __name__ == "__main__":
     main()

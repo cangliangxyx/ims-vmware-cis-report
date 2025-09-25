@@ -70,12 +70,23 @@ def get_hosts_dcui_access(content) -> List[Dict[str, Any]]:
     container.Destroy()
     return results
 
+def main(output_dir: str = None):
+    """
+    检查主机 DCUI 访问配置并导出 JSON。
+    :param output_dir: 输出目录路径（默认 ../log）
+    """
+    # 设置默认输出目录
+    if output_dir is None:
+        output_dir = "../log"
 
-def main():
+    # 拼接输出文件路径
+    output_path = f"{output_dir}/no_2.14_dcui_access.json"
+
+    # 获取数据并导出
     with VsphereConnection() as si:
         content = si.RetrieveContent()
         dcui_info = get_hosts_dcui_access(content)
-        export_to_json(dcui_info, "../log/no_2.14_dcui_access.json")
+        export_to_json(dcui_info, output_path)
 
 
 if __name__ == "__main__":
