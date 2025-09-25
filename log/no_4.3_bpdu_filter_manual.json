@@ -1,0 +1,42 @@
+[
+    {
+        "AIIB.No": "4.3",
+        "Name": "Host BPDU filtering must be manually verified",
+        "CIS.No": "5.4",
+        "CMD": "Manual check required; not exposed via API",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": null,
+        "Description": "BPDU filtering must be checked manually",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.3",
+        "Name": "Host BPDU filtering must be manually verified",
+        "CIS.No": "5.4",
+        "CMD": "Manual check required; not exposed via API",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": null,
+        "Description": "BPDU filtering must be checked manually",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.3",
+        "Name": "Host BPDU filtering must be manually verified",
+        "CIS.No": "5.4",
+        "CMD": "Manual check required; not exposed via API",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": null,
+        "Description": "BPDU filtering must be checked manually",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.3",
+        "Name": "Host BPDU filtering must be manually verified",
+        "CIS.No": "5.4",
+        "CMD": "Manual check required; not exposed via API",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": null,
+        "Description": "BPDU filtering must be checked manually",
+        "Error": null
+    }
+]

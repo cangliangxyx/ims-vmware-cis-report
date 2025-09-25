@@ -1,0 +1,42 @@
+[
+    {
+        "AIIB.No": "4.2",
+        "Name": "Host dvFilter API must be restricted (Manual)",
+        "CIS.No": "5.3",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Net.DVFilterBindIpAddress | Select-Object Name, Value, Type, Description",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": "",
+        "Description": "dvFilter network API bind IP",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.2",
+        "Name": "Host dvFilter API must be restricted (Manual)",
+        "CIS.No": "5.3",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Net.DVFilterBindIpAddress | Select-Object Name, Value, Type, Description",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": "",
+        "Description": "dvFilter network API bind IP",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.2",
+        "Name": "Host dvFilter API must be restricted (Manual)",
+        "CIS.No": "5.3",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Net.DVFilterBindIpAddress | Select-Object Name, Value, Type, Description",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": "",
+        "Description": "dvFilter network API bind IP",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.2",
+        "Name": "Host dvFilter API must be restricted (Manual)",
+        "CIS.No": "5.3",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Net.DVFilterBindIpAddress | Select-Object Name, Value, Type, Description",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": "",
+        "Description": "dvFilter network API bind IP",
+        "Error": null
+    }
+]

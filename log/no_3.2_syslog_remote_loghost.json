@@ -1,0 +1,42 @@
+[
+    {
+        "AIIB.No": "3.2",
+        "Name": "Remote Syslog Host Configuration (Read Only)",
+        "CIS.No": "4.2",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logHost",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": "udp://10.100.8.102:514",
+        "Description": "Remote syslog host(s)",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.2",
+        "Name": "Remote Syslog Host Configuration (Read Only)",
+        "CIS.No": "4.2",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logHost",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": "udp://10.100.8.102:514",
+        "Description": "Remote syslog host(s)",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.2",
+        "Name": "Remote Syslog Host Configuration (Read Only)",
+        "CIS.No": "4.2",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logHost",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": "udp://10.100.8.102:514",
+        "Description": "Remote syslog host(s)",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.2",
+        "Name": "Remote Syslog Host Configuration (Read Only)",
+        "CIS.No": "4.2",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logHost",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": "udp://10.100.8.102:514",
+        "Description": "Remote syslog host(s)",
+        "Error": null
+    }
+]

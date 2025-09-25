@@ -1,0 +1,42 @@
+[
+    {
+        "AIIB.No": "2.15",
+        "Name": "Exception Users Group (Read Only)",
+        "CIS.No": "3.20",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.plugins.hostsvc.esxAdminsGroup",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": "ESX Admins",
+        "Description": "Exception Users group",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.15",
+        "Name": "Exception Users Group (Read Only)",
+        "CIS.No": "3.20",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.plugins.hostsvc.esxAdminsGroup",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": "ESX Admins",
+        "Description": "Exception Users group",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.15",
+        "Name": "Exception Users Group (Read Only)",
+        "CIS.No": "3.20",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.plugins.hostsvc.esxAdminsGroup",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": "ESX Admins",
+        "Description": "Exception Users group",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.15",
+        "Name": "Exception Users Group (Read Only)",
+        "CIS.No": "3.20",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.plugins.hostsvc.esxAdminsGroup",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": "ESX Admins",
+        "Description": "Exception Users group",
+        "Error": null
+    }
+]

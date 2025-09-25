@@ -1,0 +1,42 @@
+[
+    {
+        "AIIB.No": "3.3",
+        "Name": "Syslog logging level (Read Only)",
+        "CIS.No": "4.4",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logLevel",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": "error",
+        "Description": "Syslog logging level",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.3",
+        "Name": "Syslog logging level (Read Only)",
+        "CIS.No": "4.4",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logLevel",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": "error",
+        "Description": "Syslog logging level",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.3",
+        "Name": "Syslog logging level (Read Only)",
+        "CIS.No": "4.4",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logLevel",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": "error",
+        "Description": "Syslog logging level",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.3",
+        "Name": "Syslog logging level (Read Only)",
+        "CIS.No": "4.4",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logLevel",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": "error",
+        "Description": "Syslog logging level",
+        "Error": null
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "AIIB.No": "4.9",
+        "Name": "Host management network interfaces must be isolated",
+        "CIS.No": "5.11",
+        "CMD": "Get-VMHostNetworkAdapter | Where-Object {$_.ManagementTraffic -eq $true} | Select Name, IP, SubnetMask, PortGroup",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": [],
+        "Description": "Management network interfaces (verify isolation manually)",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.9",
+        "Name": "Host management network interfaces must be isolated",
+        "CIS.No": "5.11",
+        "CMD": "Get-VMHostNetworkAdapter | Where-Object {$_.ManagementTraffic -eq $true} | Select Name, IP, SubnetMask, PortGroup",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": [],
+        "Description": "Management network interfaces (verify isolation manually)",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.9",
+        "Name": "Host management network interfaces must be isolated",
+        "CIS.No": "5.11",
+        "CMD": "Get-VMHostNetworkAdapter | Where-Object {$_.ManagementTraffic -eq $true} | Select Name, IP, SubnetMask, PortGroup",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": [],
+        "Description": "Management network interfaces (verify isolation manually)",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.9",
+        "Name": "Host management network interfaces must be isolated",
+        "CIS.No": "5.11",
+        "CMD": "Get-VMHostNetworkAdapter | Where-Object {$_.ManagementTraffic -eq $true} | Select Name, IP, SubnetMask, PortGroup",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": [],
+        "Description": "Management network interfaces (verify isolation manually)",
+        "Error": null
+    }
+]

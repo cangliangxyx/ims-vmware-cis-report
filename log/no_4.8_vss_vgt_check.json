@@ -1,0 +1,42 @@
+[
+    {
+        "AIIB.No": "4.8",
+        "Name": "Host standard vSwitch PortGroups must not use VGT (VLAN ID > 4095)",
+        "CIS.No": "5.10",
+        "CMD": "Get-VirtualPortGroup | Select Name, VLanId, VirtualSwitch",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": [],
+        "Description": "PortGroups using Virtual Guest Tagging (VGT)",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.8",
+        "Name": "Host standard vSwitch PortGroups must not use VGT (VLAN ID > 4095)",
+        "CIS.No": "5.10",
+        "CMD": "Get-VirtualPortGroup | Select Name, VLanId, VirtualSwitch",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": [],
+        "Description": "PortGroups using Virtual Guest Tagging (VGT)",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.8",
+        "Name": "Host standard vSwitch PortGroups must not use VGT (VLAN ID > 4095)",
+        "CIS.No": "5.10",
+        "CMD": "Get-VirtualPortGroup | Select Name, VLanId, VirtualSwitch",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": [],
+        "Description": "PortGroups using Virtual Guest Tagging (VGT)",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.8",
+        "Name": "Host standard vSwitch PortGroups must not use VGT (VLAN ID > 4095)",
+        "CIS.No": "5.10",
+        "CMD": "Get-VirtualPortGroup | Select Name, VLanId, VirtualSwitch",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": [],
+        "Description": "PortGroups using Virtual Guest Tagging (VGT)",
+        "Error": null
+    }
+]

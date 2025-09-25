@@ -1,0 +1,66 @@
+[
+    {
+        "AIIB.No": "2.2",
+        "Name": "Host must deactivate the ESXi shell (Automated)",
+        "CIS.No": "3.2",
+        "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM\" } | Select Key, Label, Policy, Running, Required",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": {
+            "key": "TSM",
+            "label": "ESXi Shell",
+            "policy": "off",
+            "running": false,
+            "required": false
+        },
+        "Description": "TSM service status",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.2",
+        "Name": "Host must deactivate the ESXi shell (Automated)",
+        "CIS.No": "3.2",
+        "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM\" } | Select Key, Label, Policy, Running, Required",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": {
+            "key": "TSM",
+            "label": "ESXi Shell",
+            "policy": "off",
+            "running": false,
+            "required": false
+        },
+        "Description": "TSM service status",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.2",
+        "Name": "Host must deactivate the ESXi shell (Automated)",
+        "CIS.No": "3.2",
+        "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM\" } | Select Key, Label, Policy, Running, Required",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": {
+            "key": "TSM",
+            "label": "ESXi Shell",
+            "policy": "off",
+            "running": false,
+            "required": false
+        },
+        "Description": "TSM service status",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.2",
+        "Name": "Host must deactivate the ESXi shell (Automated)",
+        "CIS.No": "3.2",
+        "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM\" } | Select Key, Label, Policy, Running, Required",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": {
+            "key": "TSM",
+            "label": "ESXi Shell",
+            "policy": "off",
+            "running": false,
+            "required": false
+        },
+        "Description": "TSM service status",
+        "Error": null
+    }
+]

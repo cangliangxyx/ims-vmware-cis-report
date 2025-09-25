@@ -1,0 +1,12 @@
+[
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP (Manual)",
+        "CIS.No": "3.6",
+        "CMD": null,
+        "Host": null,
+        "Value": null,
+        "Description": "需要人工检查主机是否已停用 SNMP 服务",
+        "Error": null
+    }
+]

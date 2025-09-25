@@ -1,0 +1,62 @@
+[
+    {
+        "AIIB.No": "4.5",
+        "Name": "Host standard vSwitch must reject MAC Address Changes",
+        "CIS.No": "5.7",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"MacChanges\";Expression={$_.Policy.Security.MacChanges}}",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": {
+            "vswitch": "vSwitchBMC",
+            "mac_changes": "Reject",
+            "promiscuous_mode": "Reject",
+            "forged_transmits": "Reject"
+        },
+        "Description": "vSwitch security policies for MAC changes, Promiscuous mode, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.5",
+        "Name": "Host standard vSwitch must reject MAC Address Changes",
+        "CIS.No": "5.7",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"MacChanges\";Expression={$_.Policy.Security.MacChanges}}",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": {
+            "vswitch": "vSwitchBMC",
+            "mac_changes": "Reject",
+            "promiscuous_mode": "Reject",
+            "forged_transmits": "Reject"
+        },
+        "Description": "vSwitch security policies for MAC changes, Promiscuous mode, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.5",
+        "Name": "Host standard vSwitch must reject MAC Address Changes",
+        "CIS.No": "5.7",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"MacChanges\";Expression={$_.Policy.Security.MacChanges}}",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": {
+            "vswitch": "vSwitchBMC",
+            "mac_changes": "Reject",
+            "promiscuous_mode": "Reject",
+            "forged_transmits": "Reject"
+        },
+        "Description": "vSwitch security policies for MAC changes, Promiscuous mode, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.5",
+        "Name": "Host standard vSwitch must reject MAC Address Changes",
+        "CIS.No": "5.7",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"MacChanges\";Expression={$_.Policy.Security.MacChanges}}",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": {
+            "vswitch": "vSwitchBMC",
+            "mac_changes": "Reject",
+            "promiscuous_mode": "Reject",
+            "forged_transmits": "Reject"
+        },
+        "Description": "vSwitch security policies for MAC changes, Promiscuous mode, and Forged Transmits",
+        "Error": null
+    }
+]

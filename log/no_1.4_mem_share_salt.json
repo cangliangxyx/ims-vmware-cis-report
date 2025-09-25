@@ -1,0 +1,46 @@
+[
+    {
+        "AIIB.No": "1.4",
+        "Name": "Host must restrict inter-VM transparent page sharing (Automated)",
+        "CIS.No": "2.10",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Mem.ShareForceSalting | Select-Object Name, Value, Type, Description",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": 2,
+        "Description": "Memory page sharing salt",
+        "type": "long",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.4",
+        "Name": "Host must restrict inter-VM transparent page sharing (Automated)",
+        "CIS.No": "2.10",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Mem.ShareForceSalting | Select-Object Name, Value, Type, Description",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": 2,
+        "Description": "Memory page sharing salt",
+        "type": "long",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.4",
+        "Name": "Host must restrict inter-VM transparent page sharing (Automated)",
+        "CIS.No": "2.10",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Mem.ShareForceSalting | Select-Object Name, Value, Type, Description",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": 2,
+        "Description": "Memory page sharing salt",
+        "type": "long",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.4",
+        "Name": "Host must restrict inter-VM transparent page sharing (Automated)",
+        "CIS.No": "2.10",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Mem.ShareForceSalting | Select-Object Name, Value, Type, Description",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": 2,
+        "Description": "Memory page sharing salt",
+        "type": "long",
+        "Error": null
+    }
+]

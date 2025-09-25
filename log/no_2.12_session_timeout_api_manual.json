@@ -1,0 +1,58 @@
+[
+    {
+        "AIIB.No": "2.12",
+        "Name": "Host must enforce API session timeout (Automated)",
+        "CIS.No": "3.16",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.sessionTimeout",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": {
+            "key": "Config.HostAgent.sessionTimeout",
+            "value": null,
+            "type": null
+        },
+        "Description": "Setting not supported on this host",
+        "Error": "(vim.fault.InvalidName) {\n   dynamicType = <unset>,\n   dynamicProperty = (vmodl.DynamicProperty) [],\n   msg = \"'Config.HostAgent.sessionTimeout' is invalid or exceeds the maximum number of characters permitted.\",\n   faultCause = <unset>,\n   faultMessage = (vmodl.LocalizableMessage) [],\n   name = 'Config.HostAgent.sessionTimeout',\n   entity = <unset>\n}"
+    },
+    {
+        "AIIB.No": "2.12",
+        "Name": "Host must enforce API session timeout (Automated)",
+        "CIS.No": "3.16",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.sessionTimeout",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": {
+            "key": "Config.HostAgent.sessionTimeout",
+            "value": null,
+            "type": null
+        },
+        "Description": "Setting not supported on this host",
+        "Error": "(vim.fault.InvalidName) {\n   dynamicType = <unset>,\n   dynamicProperty = (vmodl.DynamicProperty) [],\n   msg = \"'Config.HostAgent.sessionTimeout' is invalid or exceeds the maximum number of characters permitted.\",\n   faultCause = <unset>,\n   faultMessage = (vmodl.LocalizableMessage) [],\n   name = 'Config.HostAgent.sessionTimeout',\n   entity = <unset>\n}"
+    },
+    {
+        "AIIB.No": "2.12",
+        "Name": "Host must enforce API session timeout (Automated)",
+        "CIS.No": "3.16",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.sessionTimeout",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": {
+            "key": "Config.HostAgent.sessionTimeout",
+            "value": null,
+            "type": null
+        },
+        "Description": "Setting not supported on this host",
+        "Error": "(vim.fault.InvalidName) {\n   dynamicType = <unset>,\n   dynamicProperty = (vmodl.DynamicProperty) [],\n   msg = \"'Config.HostAgent.sessionTimeout' is invalid or exceeds the maximum number of characters permitted.\",\n   faultCause = <unset>,\n   faultMessage = (vmodl.LocalizableMessage) [],\n   name = 'Config.HostAgent.sessionTimeout',\n   entity = <unset>\n}"
+    },
+    {
+        "AIIB.No": "2.12",
+        "Name": "Host must enforce API session timeout (Automated)",
+        "CIS.No": "3.16",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.sessionTimeout",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": {
+            "key": "Config.HostAgent.sessionTimeout",
+            "value": null,
+            "type": null
+        },
+        "Description": "Setting not supported on this host",
+        "Error": "(vim.fault.InvalidName) {\n   dynamicType = <unset>,\n   dynamicProperty = (vmodl.DynamicProperty) [],\n   msg = \"'Config.HostAgent.sessionTimeout' is invalid or exceeds the maximum number of characters permitted.\",\n   faultCause = <unset>,\n   faultMessage = (vmodl.LocalizableMessage) [],\n   name = 'Config.HostAgent.sessionTimeout',\n   entity = <unset>\n}"
+    }
+]

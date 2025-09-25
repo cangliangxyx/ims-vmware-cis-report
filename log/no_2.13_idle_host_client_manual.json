@@ -1,0 +1,42 @@
+[
+    {
+        "AIIB.No": "2.13",
+        "Name": "Host Client idle session timeout (Read Only)",
+        "CIS.No": "3.17",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": 900,
+        "Description": "Idle host client session timeout (seconds)",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.13",
+        "Name": "Host Client idle session timeout (Read Only)",
+        "CIS.No": "3.17",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": 900,
+        "Description": "Idle host client session timeout (seconds)",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.13",
+        "Name": "Host Client idle session timeout (Read Only)",
+        "CIS.No": "3.17",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": 900,
+        "Description": "Idle host client session timeout (seconds)",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.13",
+        "Name": "Host Client idle session timeout (Read Only)",
+        "CIS.No": "3.17",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": 900,
+        "Description": "Idle host client session timeout (seconds)",
+        "Error": null
+    }
+]
