@@ -30,7 +30,7 @@ def get_hosts_password_complexity(content=None) -> List[Dict[str, Any]]:
 
 def main():
     password_info = get_hosts_password_complexity()
-    export_to_json(password_info, "../log/no_2.7_password_complexity.json")
+    export_to_json(password_info, "../log/no_2.7_password_complexity_manual.json")
 
 if __name__ == "__main__":
     main()

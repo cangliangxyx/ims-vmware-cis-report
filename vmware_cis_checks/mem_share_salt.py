@@ -64,13 +64,18 @@ def get_hosts_mem_share_salt(content) -> List[Dict[str, Any]]:
     container.Destroy()
     return results
 
+def main(output_dir: str = None):
+    # 如果没有传 output_dir，就用默认目录 ../log
+    if output_dir is None:
+        output_dir = "../log"
 
-def main():
+    # 直接拼字符串
+    output_path = f"{output_dir}/no_1.4_mem_share_salt.json"
+
     with VsphereConnection() as si:
         content = si.RetrieveContent()
         mem_salt_info = get_hosts_mem_share_salt(content)
-        export_to_json(mem_salt_info, "../log/no_1.4_mem_share_salt.json")
-
+        export_to_json(mem_salt_info, output_path)
 
 if __name__ == "__main__":
     main()
