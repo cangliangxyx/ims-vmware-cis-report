@@ -12,7 +12,7 @@ def get_vss_vgt_usage(content) -> List[Dict[str, Any]]:
     """检查标准 vSwitch 上是否有 PortGroup 使用 VGT (VLAN ID > 4095)"""
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     hosts = container.view
-    results = []
+    results: List[Dict[str, Any]] = []
 
     for host in hosts:
         try:
@@ -26,16 +26,27 @@ def get_vss_vgt_usage(content) -> List[Dict[str, Any]]:
                     })
 
             results.append({
-                "host": host.name,
-                "vgt_portgroups": vgt_pg,
-                "description": "PortGroups using Virtual Guest Tagging (VGT)"
+                "AIIB.No": "4.8",
+                "Name": "Host standard vSwitch PortGroups must not use VGT (VLAN ID > 4095)",
+                "CIS.No": "5.10",
+                "CMD": r'Get-VirtualPortGroup | Select Name, VLanId, VirtualSwitch',
+                "Host": host.name,
+                "Value": vgt_pg,
+                "Description": "PortGroups using Virtual Guest Tagging (VGT)",
+                "Error": None
             })
             logger.info("主机 %s VGT 端口组数: %s", host.name, len(vgt_pg))
 
         except Exception as e:
             results.append({
-                "host": host.name,
-                "error": str(e)
+                "AIIB.No": "4.8",
+                "Name": "Host standard vSwitch PortGroups must not use VGT (VLAN ID > 4095)",
+                "CIS.No": "5.10",
+                "CMD": r'Get-VirtualPortGroup | Select Name, VLanId, VirtualSwitch',
+                "Host": host.name,
+                "Value": None,
+                "Description": "VGT PortGroup configuration retrieval error",
+                "Error": str(e)
             })
             logger.error("主机 %s 获取 VGT 配置失败: %s", host.name, e)
 
@@ -43,11 +54,20 @@ def get_vss_vgt_usage(content) -> List[Dict[str, Any]]:
     return results
 
 
-def main():
+def main(output_dir: str = None):
+    """
+    检查所有主机标准 vSwitch VGT 使用情况并导出 JSON。
+    :param output_dir: 输出目录路径（默认 ../log）
+    """
+    if output_dir is None:
+        output_dir = "../log"
+
+    output_path = f"{output_dir}/no_4.8_vss_vgt_check.json"
+
     with VsphereConnection() as si:
         content = si.RetrieveContent()
         vgt_info = get_vss_vgt_usage(content)
-        export_to_json(vgt_info, "../log/no_4.8_vss_vgt_check.json")
+        export_to_json(vgt_info, output_path)
 
 
 if __name__ == "__main__":

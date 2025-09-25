@@ -3,8 +3,8 @@ import importlib
 import os
 
 from vmware_cis_checks import (
-    ntp_info, # ok
-    mem_share_salt, # ok
+    ntp_info,  # ok
+    mem_share_salt,  # ok
     tsm_ssh,    # ok
     tsm,    # ok
     solo_enable_moob,   # ok
@@ -17,7 +17,7 @@ from vmware_cis_checks import (
     password_history_manual,    # ok
     password_max_days_manual,    # ok
     session_timeout_api_manual, # ok
-    idle_host_client_manual,    #ok
+    idle_host_client_manual,    # ok
     dcui_access, # ok
     exception_users_manual, # ok
     tls_version_manual, # ok
@@ -26,15 +26,15 @@ from vmware_cis_checks import (
     syslog_info_level_manual, # ok
     log_filtering_manual,   # ok
     tls_log_verify_manual,  # ok
-    firewall_services_manual,
-    dvfilter_manual,
-    bpdu_filter_manual,
-    forged_transmits,
-    mac_changes,
-    vss_promiscuous_mode,
-    vss_vlan_restrict,
-    vss_vgt_check,
-    management_network_manual,
+    firewall_services_manual,  # ok
+    dvfilter_manual,  # ok
+    bpdu_filter_manual,  # ok
+    forged_transmits,  # ok
+    mac_changes,  # ok
+    vss_promiscuous_mode,  # ok
+    vss_vlan_restrict,  # ok
+    vss_vgt_check,  # ok
+    management_network_manual,  # ok
 )
 
 # ------------------------------
@@ -54,7 +54,7 @@ LOG_DIR = os.path.join(PROJECT_ROOT, "log")
 os.makedirs(LOG_DIR, exist_ok=True)  # 确保 log/ 存在
 
 # ------------------------------
-# 要执行的检查模块
+# 要执行的检查模块 (顺序与 import 顺序一致)
 # ------------------------------
 CHECK_MODULES = [
     "vmware_cis_checks.ntp_info",
@@ -88,7 +88,7 @@ CHECK_MODULES = [
     "vmware_cis_checks.vss_promiscuous_mode",
     "vmware_cis_checks.vss_vlan_restrict",
     "vmware_cis_checks.vss_vgt_check",
-    "vmware_cis_checks.management_network_manual"
+    "vmware_cis_checks.management_network_manual",
 ]
 
 def main():
