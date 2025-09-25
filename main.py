@@ -35,6 +35,7 @@ from vmware_cis_checks import (
     vss_vlan_restrict,  # ok
     vss_vgt_check,  # ok
     management_network_manual,  # ok
+    datastore_unique_names,  # ok
 )
 
 # ------------------------------
@@ -89,6 +90,7 @@ CHECK_MODULES = [
     "vmware_cis_checks.vss_vlan_restrict",
     "vmware_cis_checks.vss_vgt_check",
     "vmware_cis_checks.management_network_manual",
+    "vmware_cis_checks.datastore_unique_names",
 ]
 
 def main():
