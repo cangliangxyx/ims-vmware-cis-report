@@ -72,9 +72,9 @@
         ];
 
         const tablesDiv = document.getElementById('tables');
+        const targetHost = "vx-r-esxi-csz01.vsphere.aiib.org";
 
         function friendlyFileName(filePath) {
-            // 只显示文件名，不显示路径
             return filePath.split('/').pop().replace('.json', '');
         }
 
@@ -85,6 +85,10 @@
                     const data = await response.json();
 
                     if (!data || data.length === 0) continue;
+
+                    // 过滤目标主机或 Host 为 null 的记录
+                    const filteredData = data.filter(item => item.Host === targetHost || item.Host === null);
+                    if (filteredData.length === 0) continue;
 
                     // 创建表格标题
                     const h2 = document.createElement('h2');
@@ -98,7 +102,7 @@
 
                     // 表头
                     const headerRow = document.createElement('tr');
-                    Object.keys(data[0]).forEach(key => {
+                    Object.keys(filteredData[0]).forEach(key => {
                         const th = document.createElement('th');
                         th.textContent = key;
                         headerRow.appendChild(th);
@@ -107,7 +111,7 @@
                     table.appendChild(thead);
 
                     // 表体
-                    data.forEach(item => {
+                    filteredData.forEach(item => {
                         const tr = document.createElement('tr');
                         Object.values(item).forEach(val => {
                             const td = document.createElement('td');
