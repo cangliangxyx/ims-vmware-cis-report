@@ -19,54 +19,76 @@
     <script>
         // JSON 文件列表
         const jsonFiles = [
-    "/log/no_1.2_ntp.json",
-    "/log/no_1.4_mem_share_salt.json",
-    "/log/no_2.1_tsm_ssh.json",
-    "/log/no_2.2_tsm.json",
-    "/log/no_2.3_solo_enable_mob.json",
-    "/log/no_2.4_snmp_manual.json",
-    "/log/no_2.5_dcui_timeout.json",
-    "/log/no_2.6_shell_warning_manual.json",
-    "/log/no_2.7_password_complexity_manual.json",
-    "/log/no_2.8_account_lock_failure.json",
-    "/log/no_2.9_account_unlock_time.json",
-    "/log/no_2.10_password_history_manual.json",
-    "/log/no_2.11_password_max_days_manual.json",
-    "/log/no_2.12_session_timeout_api_manual.json",
-    "/log/no_2.13_idle_host_client_manual.json",
-    "/log/no_2.14_dcui_access.json",
-    "/log/no_2.15_exception_users_manual.json",
-    "/log/no_2.16_tls_version_manual.json",
-    "/log/no_3.1_syslog_persistent.json",
-    "/log/no_3.2_syslog_remote_loghost.json",
-    "/log/no_3.3_syslog_info_level_manual.json",
-    "/log/no_3.4_log_filtering_manual.json",
-    "/log/no_3.5_tls_log_verify_manual.json",
-    "/log/no_4.1_firewall_services_manual.json",
-    "/log/no_4.2_dvfilter_manual.json",
-    "/log/no_4.3_bpdu_filter_manual.json",
-    "/log/no_4.4_forged_transmits.json",
-    "/log/no_4.5_mac_changes.json",
-    "/log/no_4.6_vss_promiscuous_mode.json",
-    "/log/no_4.7_vss_vlan_restrict.json",
-    "/log/no_4.8_vss_vgt_check.json",
-    "/log/no_4.9_management_network_manual.json",
-    "/log/no_5.1_datastore_unique_names.json"
-];
+            "/log/no_1.2_ntp.json",
+            "/log/no_1.4_mem_share_salt.json",
+            "/log/no_2.1_tsm_ssh.json",
+            "/log/no_2.2_tsm.json",
+            "/log/no_2.3_solo_enable_mob.json",
+            "/log/no_2.4_snmp_manual.json",
+            "/log/no_2.5_dcui_timeout.json",
+            "/log/no_2.6_shell_warning_manual.json",
+            "/log/no_2.7_password_complexity_manual.json",
+            "/log/no_2.8_account_lock_failure.json",
+            "/log/no_2.9_account_unlock_time.json",
+            "/log/no_2.10_password_history_manual.json",
+            "/log/no_2.11_password_max_days_manual.json",
+            "/log/no_2.12_session_timeout_api_manual.json",
+            "/log/no_2.13_idle_host_client_manual.json",
+            "/log/no_2.14_dcui_access.json",
+            "/log/no_2.15_exception_users_manual.json",
+            "/log/no_2.16_tls_version_manual.json",
+            "/log/no_3.1_syslog_persistent.json",
+            "/log/no_3.2_syslog_remote_loghost.json",
+            "/log/no_3.3_syslog_info_level_manual.json",
+            "/log/no_3.4_log_filtering_manual.json",
+            "/log/no_3.5_tls_log_verify_manual.json",
+            "/log/no_4.1_firewall_services_manual.json",
+            "/log/no_4.2_dvfilter_manual.json",
+            "/log/no_4.3_bpdu_filter_manual.json",
+            "/log/no_4.4_forged_transmits.json",
+            "/log/no_4.5_mac_changes.json",
+            "/log/no_4.6_vss_promiscuous_mode.json",
+            "/log/no_4.7_vss_vlan_restrict.json",
+            "/log/no_4.8_vss_vgt_check.json",
+            "/log/no_4.9_management_network_manual.json",
+            "/log/no_5.1_datastore_unique_names.json",
 
+            // 6.x 系列
+            "/log/no_6.1_vm_3d_settings.json",
+            "/log/no_6.2_vm_pci_passthru.json",
+            "/log/no_6.3_vm_audio_device_manual.json",
+            "/log/no_6.4_vm_ahci_device_manual.json",
+            "/log/no_6.5_vm_usb_xhci_devices.json",
+            "/log/no_6.6_vm_serial_port.json",
+            "/log/no_6.7_vm_parallel_port.json",
+            "/log/no_6.8_vm_cd_drive.json",
+            "/log/no_6.9_vm_floppy_drive.json",
+            "/log/no_6.10_vm_hardware_version_manual.json",
+
+            // 7.x 系列
+            "/log/no_7.1_vmware_tools_update_manual.json",
+            "/log/no_7.2_vmware_tools_auto_upgrade_manual.json",
+            "/log/no_7.3_vmware_tools_prevent_recustomization_manual.json"
+        ];
 
         const tablesDiv = document.getElementById('tables');
 
-        // 遍历每个 JSON 文件
-        jsonFiles.forEach(file => {
-            fetch(file)
-                .then(response => response.json())
-                .then(data => {
-                    if (!data || data.length === 0) return;
+        function friendlyFileName(filePath) {
+            // 只显示文件名，不显示路径
+            return filePath.split('/').pop().replace('.json', '');
+        }
+
+        async function loadJsonFilesInOrder(files) {
+            for (const file of files) {
+                try {
+                    const response = await fetch(file);
+                    const data = await response.json();
+
+                    if (!data || data.length === 0) continue;
 
                     // 创建表格标题
                     const h2 = document.createElement('h2');
-                    h2.textContent = file;
+                    h2.textContent = friendlyFileName(file);
                     tablesDiv.appendChild(h2);
 
                     // 创建表格
@@ -90,7 +112,7 @@
                         Object.values(item).forEach(val => {
                             const td = document.createElement('td');
                             if (Array.isArray(val) || typeof val === 'object') {
-                                td.textContent = JSON.stringify(val);
+                                td.textContent = JSON.stringify(val, null, 2);
                             } else {
                                 td.textContent = val !== null ? val : '';
                             }
@@ -101,11 +123,14 @@
 
                     table.appendChild(tbody);
                     tablesDiv.appendChild(table);
-                })
-                .catch(err => {
+
+                } catch (err) {
                     console.error("加载 JSON 文件失败:", file, err);
-                });
-        });
+                }
+            }
+        }
+
+        loadJsonFilesInOrder(jsonFiles);
     </script>
 </body>
 </html>
