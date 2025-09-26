@@ -1,0 +1,12 @@
+[
+    {
+        "AIIB.No": "6.3",
+        "Name": "Virtual machines must remove unnecessary audio devices (Manual)",
+        "CIS.No": "7.10",
+        "CMD": null,
+        "Host": null,
+        "Value": null,
+        "Description": "需要人工检查 VM 是否移除不必要的音频设备",
+        "Error": null
+    }
+]

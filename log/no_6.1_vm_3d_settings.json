@@ -1,0 +1,410 @@
+[
+    {
+        "AIIB.No": "6.1",
+        "Name": "Virtual machines should deactivate 3D graphics features when not required (Automated)",
+        "CIS.NO": "7.4",
+        "CMD": "Get-VM -Name $VM | Get-AdvancedSetting mks.enable3d",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-R-VM-PVWA",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "Infra-R-VM-Bstn",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "Net-R-VM-DHCP01",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "opvp-r-vm-srm",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "SAMP-R-VM-SATJ",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "AD-R-VM-DC01",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "vrm-tj-01",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "CSP-R-VM-GW1",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "AD-R-VM-DC02",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "ELP-R-VM-ES01",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "Stge-R-VM-AIQM",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "ELP-R-VM-ES02",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "Windows10-VDI-Template-VBS",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "Windows 11 template",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "UFTP-P-VM-DB",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "MCMP-P-VM-VtsDB",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "RPA-P-VM-UR2",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "OPVP-R-VM-VC",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "RPA-P-VM-Orc",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "PAM-R-VM-DV",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "MCMP-R-VM-Mast3",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "ELP-R-VM-CSDR",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIOAVTJTMP02",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "ELP-R-VM-LFS02",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "_RH94_template-VM",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "_RH94-template-MCMP-Mast",
+                "mks.enable3d": "Not Configured"
+            }
+        ],
+        "Description": "Check VM mks.enable3d setting",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.1",
+        "Name": "Virtual machines should deactivate 3D graphics features when not required (Automated)",
+        "CIS.NO": "7.4",
+        "CMD": "Get-VM -Name $VM | Get-AdvancedSetting mks.enable3d",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDISWTVTJ002",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIVOAVTJ001",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "UDBP-P-VM-MTJ1",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "DT-R-VM-Py1TJ",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "opvp-r-vm-rp02",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "ELP-R-VM-KA",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDI-R-VM-LMIS01",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDISWTX1VTJTMP",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDI-R-VM-EAPP1",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "Net-R-VM-DHCP02",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "ELP-R-VM-ES03",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "Net-P-VM-TJBstn-10.100.120.97",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "OPVP-R-VM-SCG",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "CSP-R-VM-APP2",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "CSP-R-VM-APP1",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "SOC-P-VM-WCTJ",
+                "mks.enable3d": "Not Configured"
+            }
+        ],
+        "Description": "Check VM mks.enable3d setting",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.1",
+        "Name": "Virtual machines should deactivate 3D graphics features when not required (Automated)",
+        "CIS.NO": "7.4",
+        "CMD": "Get-VM -Name $VM | Get-AdvancedSetting mks.enable3d",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "SOC-P-VM-EFPTJ",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "RH94-SAMP-Audit",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "PAM-R-VM-PSMP",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDI-R-VM-LMIS02",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "CSP-R-VM-APPDB",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIVOAVTJ002",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "NET-R-VM-ISE04",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "PAM-R-VM-CPM",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "CSP-R-VM-PGDB1",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "OPVP-R_VM-Log",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "opvp-r-vm-rp01",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "MCMP-R-VM-Wk01",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "ELP-R-VM-LFS01",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "MCMP-R-VM-Wk03",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "MCMP-R-VM-Wk05",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "OPVP-R-VM-VC (legacy-7.0.3)",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "RPA-P-VM-DB",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "MCMP-P-VM-PGDB1",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDI-R-VM-PAMP1",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "MCMP-P-VM-PGDB2",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDISWTVTJTMP",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "MCMP-R-VM-Mast2",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "RPA-P-VM-UR1",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "UFTP-P-VM-APP02",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "RHEL9.4_template_20250623",
+                "mks.enable3d": "Not Configured"
+            }
+        ],
+        "Description": "Check VM mks.enable3d setting",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.1",
+        "Name": "Virtual machines should deactivate 3D graphics features when not required (Automated)",
+        "CIS.NO": "7.4",
+        "CMD": "Get-VM -Name $VM | Get-AdvancedSetting mks.enable3d",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "Windows Server 2022 Template 202503",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "Net-R-VM-WAC01",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDI-R-VM-PAMP2",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "MPS-P-VM-PrtS03",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "Ness-R-VM-Scan",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "CSP-R-VM-GWDB",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "UFTP-R-VM-GW01",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIOAX1VTJTMP",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "CSP-R-VM-MON",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIAOAVTJ002",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "PAM-R-VM-PSM",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "UCS-R-VM-SBCP3",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "MCMP-R-VM-Wk02",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDI-R-VM-EAPP2",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "MCMP-R-VM-Mast1",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "MCMP-R-VM-OORAS",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIAOAVTJ001",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "MCMP-R-VM-Wk04",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "MCMP-R-VM-Wk06",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "UFTP-P-VM-APP01",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "_RH94-template-MCMP-Wk",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "MCMP-R-VM-UD",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "RPA-P-VM-Stu",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "Infra-T-VM-SRM",
+                "mks.enable3d": "Not Configured"
+            }
+        ],
+        "Description": "Check VM mks.enable3d setting",
+        "Error": null
+    }
+]

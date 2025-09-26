@@ -1,0 +1,865 @@
+[
+    {
+        "AIIB.No": "6.7",
+        "Name": "Virtual machines must remove unnecessary parallel port devices (Automated)",
+        "CIS.NO": "7.14",
+        "CMD": "Get-VM | Get-ParallelPort",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-R-VM-PVWA",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-R-VM-Bstn",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-R-VM-DHCP01",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "opvp-r-vm-srm",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SAMP-R-VM-SATJ",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-R-VM-DC01",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-tj-01",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-R-VM-GW1",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-R-VM-DC02",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-R-VM-ES01",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Stge-R-VM-AIQM",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-R-VM-ES02",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows10-VDI-Template-VBS",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows 11 template",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-P-VM-DB",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-VtsDB",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-UR2",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "OPVP-R-VM-VC",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-Orc",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-R-VM-DV",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-R-VM-Mast3",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-R-VM-CSDR",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAVTJTMP02",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-R-VM-LFS02",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "_RH94_template-VM",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "_RH94-template-MCMP-Mast",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Parallel Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.7",
+        "Name": "Virtual machines must remove unnecessary parallel port devices (Automated)",
+        "CIS.NO": "7.14",
+        "CMD": "Get-VM | Get-ParallelPort",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDISWTVTJ002",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVTJ001",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-MTJ1",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DT-R-VM-Py1TJ",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "opvp-r-vm-rp02",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-R-VM-KA",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-R-VM-LMIS01",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VTJTMP",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-R-VM-EAPP1",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-R-VM-DHCP02",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-R-VM-ES03",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-TJBstn-10.100.120.97",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "OPVP-R-VM-SCG",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-R-VM-APP2",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-R-VM-APP1",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-WCTJ",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Parallel Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.7",
+        "Name": "Virtual machines must remove unnecessary parallel port devices (Automated)",
+        "CIS.NO": "7.14",
+        "CMD": "Get-VM | Get-ParallelPort",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "SOC-P-VM-EFPTJ",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RH94-SAMP-Audit",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-R-VM-PSMP",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-R-VM-LMIS02",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-R-VM-APPDB",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVTJ002",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NET-R-VM-ISE04",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-R-VM-CPM",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-R-VM-PGDB1",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "OPVP-R_VM-Log",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "opvp-r-vm-rp01",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-R-VM-Wk01",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-R-VM-LFS01",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-R-VM-Wk03",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-R-VM-Wk05",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "OPVP-R-VM-VC (legacy-7.0.3)",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-DB",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-PGDB1",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-R-VM-PAMP1",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-PGDB2",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVTJTMP",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-R-VM-Mast2",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-UR1",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-P-VM-APP02",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RHEL9.4_template_20250623",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Parallel Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.7",
+        "Name": "Virtual machines must remove unnecessary parallel port devices (Automated)",
+        "CIS.NO": "7.14",
+        "CMD": "Get-VM | Get-ParallelPort",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "Windows Server 2022 Template 202503",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-R-VM-WAC01",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-R-VM-PAMP2",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MPS-P-VM-PrtS03",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Ness-R-VM-Scan",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-R-VM-GWDB",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-R-VM-GW01",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAX1VTJTMP",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-R-VM-MON",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVTJ002",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-R-VM-PSM",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UCS-R-VM-SBCP3",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-R-VM-Wk02",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-R-VM-EAPP2",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-R-VM-Mast1",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-R-VM-OORAS",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVTJ001",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-R-VM-Wk04",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-R-VM-Wk06",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-P-VM-APP01",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "_RH94-template-MCMP-Wk",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-R-VM-UD",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-Stu",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-SRM",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Parallel Port devices",
+        "Error": null
+    }
+]

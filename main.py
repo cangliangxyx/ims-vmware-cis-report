@@ -36,6 +36,19 @@ from vmware_cis_checks import (
     vss_vgt_check,  # ok
     management_network_manual,  # ok
     datastore_unique_names,  # ok
+    vm_3d_graphics_status,    # 6.1
+    vm_pci_passthru,    # 6.2
+    vm_audio_device_manual, # 6.3
+    vm_ahci_device_manual,  # 6.4
+    vm_usb_settings,    # 6.5
+    vm_serial_port,     # 6.6
+    vm_parallel_port,   # 6.7
+    vm_cd_drive,    # 6.8
+    vm_floppy_drive,    # 6.9
+    vm_hardware_version_manual,     # 6.10
+    vmware_tools_update_manual,     # 7.1
+    vmware_tools_auto_upgrade_manual, # 7.2
+    vmware_tools_prevent_recustomization_manual # 7.3
 )
 
 # ------------------------------
@@ -91,6 +104,19 @@ CHECK_MODULES = [
     "vmware_cis_checks.vss_vgt_check",
     "vmware_cis_checks.management_network_manual",
     "vmware_cis_checks.datastore_unique_names",
+    "vmware_cis_checks.vm_3d_graphics_status",  # 6.1
+    "vmware_cis_checks.vm_pci_passthru",  # 6.2
+    "vmware_cis_checks.vm_audio_device_manual",  # 6.3
+    "vmware_cis_checks.vm_ahci_device_manual",  # 6.4
+    "vmware_cis_checks.vm_usb_settings",  # 6.5
+    "vmware_cis_checks.vm_serial_port",  # 6.6
+    "vmware_cis_checks.vm_parallel_port",  # 6.7
+    "vmware_cis_checks.vm_cd_drive",  # 6.8
+    "vmware_cis_checks.vm_floppy_drive",  # 6.9
+    "vmware_cis_checks.vm_hardware_version_manual",  # 6.10
+    "vmware_cis_checks.vmware_tools_update_manual", # 7.1
+    "vmware_cis_checks.vmware_tools_auto_upgrade_manual", # 7.2
+    "vmware_cis_checks.vmware_tools_prevent_recustomization_manual" # 7.3
 ]
 
 def main():
