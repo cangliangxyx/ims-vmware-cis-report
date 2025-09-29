@@ -7,11 +7,11 @@
         "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PAM-R-VM-PVWA",
+                "VM": "UFTP-R-VM-GW01",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "Infra-R-VM-Bstn",
+                "VM": "PAM-R-VM-PVWA",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -35,11 +35,11 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "CSP-R-VM-GW1",
+                "VM": "AD-R-VM-DC02",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "AD-R-VM-DC02",
+                "VM": "VDIAOAVTJ001",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -308,6 +308,10 @@
         "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "CSP-R-VM-GW1",
+                "mks.enable3d": "Not Configured"
+            },
+            {
                 "VM": "Windows Server 2022 Template 202503",
                 "mks.enable3d": "Not Configured"
             },
@@ -329,10 +333,6 @@
             },
             {
                 "VM": "CSP-R-VM-GWDB",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "UFTP-R-VM-GW01",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -372,10 +372,6 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDIAOAVTJ001",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "MCMP-R-VM-Wk04",
                 "mks.enable3d": "Not Configured"
             },
@@ -389,6 +385,10 @@
             },
             {
                 "VM": "_RH94-template-MCMP-Wk",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "Infra-R-VM-Bstn",
                 "mks.enable3d": "Not Configured"
             },
             {

@@ -7,7 +7,7 @@
         "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PAM-R-VM-PVWA",
+                "VM": "UFTP-R-VM-GW01",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -16,7 +16,7 @@
                 ]
             },
             {
-                "VM": "Infra-R-VM-Bstn",
+                "VM": "PAM-R-VM-PVWA",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -70,7 +70,7 @@
                 ]
             },
             {
-                "VM": "CSP-R-VM-GW1",
+                "VM": "AD-R-VM-DC02",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -79,7 +79,7 @@
                 ]
             },
             {
-                "VM": "AD-R-VM-DC02",
+                "VM": "VDIAOAVTJ001",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -643,6 +643,15 @@
         "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "CSP-R-VM-GW1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "Windows Server 2022 Template 202503",
                 "USB/XHCI Devices": [
                     {
@@ -689,15 +698,6 @@
             },
             {
                 "VM": "CSP-R-VM-GWDB",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "UFTP-R-VM-GW01",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -787,15 +787,6 @@
                 ]
             },
             {
-                "VM": "VDIAOAVTJ001",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "MCMP-R-VM-Wk04",
                 "USB/XHCI Devices": [
                     {
@@ -824,6 +815,15 @@
             },
             {
                 "VM": "_RH94-template-MCMP-Wk",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-R-VM-Bstn",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",

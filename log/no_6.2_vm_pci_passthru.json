@@ -7,7 +7,7 @@
         "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PAM-R-VM-PVWA",
+                "VM": "UFTP-R-VM-GW01",
                 "pciPassthru.present": [
                     {
                         "Name": "pciPassthru*.present",
@@ -16,7 +16,7 @@
                 ]
             },
             {
-                "VM": "Infra-R-VM-Bstn",
+                "VM": "PAM-R-VM-PVWA",
                 "pciPassthru.present": [
                     {
                         "Name": "pciPassthru*.present",
@@ -70,7 +70,7 @@
                 ]
             },
             {
-                "VM": "CSP-R-VM-GW1",
+                "VM": "AD-R-VM-DC02",
                 "pciPassthru.present": [
                     {
                         "Name": "pciPassthru*.present",
@@ -79,7 +79,7 @@
                 ]
             },
             {
-                "VM": "AD-R-VM-DC02",
+                "VM": "VDIAOAVTJ001",
                 "pciPassthru.present": [
                     {
                         "Name": "pciPassthru*.present",
@@ -643,6 +643,15 @@
         "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "CSP-R-VM-GW1",
+                "pciPassthru.present": [
+                    {
+                        "Name": "pciPassthru*.present",
+                        "Value": "Not Configured"
+                    }
+                ]
+            },
+            {
                 "VM": "Windows Server 2022 Template 202503",
                 "pciPassthru.present": [
                     {
@@ -689,15 +698,6 @@
             },
             {
                 "VM": "CSP-R-VM-GWDB",
-                "pciPassthru.present": [
-                    {
-                        "Name": "pciPassthru*.present",
-                        "Value": "Not Configured"
-                    }
-                ]
-            },
-            {
-                "VM": "UFTP-R-VM-GW01",
                 "pciPassthru.present": [
                     {
                         "Name": "pciPassthru*.present",
@@ -787,15 +787,6 @@
                 ]
             },
             {
-                "VM": "VDIAOAVTJ001",
-                "pciPassthru.present": [
-                    {
-                        "Name": "pciPassthru*.present",
-                        "Value": "Not Configured"
-                    }
-                ]
-            },
-            {
                 "VM": "MCMP-R-VM-Wk04",
                 "pciPassthru.present": [
                     {
@@ -824,6 +815,15 @@
             },
             {
                 "VM": "_RH94-template-MCMP-Wk",
+                "pciPassthru.present": [
+                    {
+                        "Name": "pciPassthru*.present",
+                        "Value": "Not Configured"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-R-VM-Bstn",
                 "pciPassthru.present": [
                     {
                         "Name": "pciPassthru*.present",

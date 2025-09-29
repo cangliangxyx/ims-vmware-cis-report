@@ -7,7 +7,7 @@
         "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PAM-R-VM-PVWA",
+                "VM": "UFTP-R-VM-GW01",
                 "Floppy Drives": [
                     {
                         "Label": "Floppy",
@@ -17,7 +17,7 @@
                 ]
             },
             {
-                "VM": "Infra-R-VM-Bstn",
+                "VM": "PAM-R-VM-PVWA",
                 "Floppy Drives": [
                     {
                         "Label": "Floppy",
@@ -77,7 +77,7 @@
                 ]
             },
             {
-                "VM": "CSP-R-VM-GW1",
+                "VM": "AD-R-VM-DC02",
                 "Floppy Drives": [
                     {
                         "Label": "Floppy",
@@ -87,7 +87,7 @@
                 ]
             },
             {
-                "VM": "AD-R-VM-DC02",
+                "VM": "VDIAOAVTJ001",
                 "Floppy Drives": [
                     {
                         "Label": "Floppy",
@@ -710,6 +710,16 @@
         "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "CSP-R-VM-GW1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
                 "VM": "Windows Server 2022 Template 202503",
                 "Floppy Drives": [
                     {
@@ -761,16 +771,6 @@
             },
             {
                 "VM": "CSP-R-VM-GWDB",
-                "Floppy Drives": [
-                    {
-                        "Label": "Floppy",
-                        "Summary": "Not Present",
-                        "Connected": false
-                    }
-                ]
-            },
-            {
-                "VM": "UFTP-R-VM-GW01",
                 "Floppy Drives": [
                     {
                         "Label": "Floppy",
@@ -870,16 +870,6 @@
                 ]
             },
             {
-                "VM": "VDIAOAVTJ001",
-                "Floppy Drives": [
-                    {
-                        "Label": "Floppy",
-                        "Summary": "Not Present",
-                        "Connected": false
-                    }
-                ]
-            },
-            {
                 "VM": "MCMP-R-VM-Wk04",
                 "Floppy Drives": [
                     {
@@ -911,6 +901,16 @@
             },
             {
                 "VM": "_RH94-template-MCMP-Wk",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-R-VM-Bstn",
                 "Floppy Drives": [
                     {
                         "Label": "Floppy",

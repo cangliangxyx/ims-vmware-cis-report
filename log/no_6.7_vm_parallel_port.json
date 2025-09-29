@@ -7,7 +7,7 @@
         "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PAM-R-VM-PVWA",
+                "VM": "UFTP-R-VM-GW01",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -16,7 +16,7 @@
                 ]
             },
             {
-                "VM": "Infra-R-VM-Bstn",
+                "VM": "PAM-R-VM-PVWA",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -70,7 +70,7 @@
                 ]
             },
             {
-                "VM": "CSP-R-VM-GW1",
+                "VM": "AD-R-VM-DC02",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -79,7 +79,7 @@
                 ]
             },
             {
-                "VM": "AD-R-VM-DC02",
+                "VM": "VDIAOAVTJ001",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -643,6 +643,15 @@
         "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "CSP-R-VM-GW1",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "Windows Server 2022 Template 202503",
                 "Parallel Ports": [
                     {
@@ -689,15 +698,6 @@
             },
             {
                 "VM": "CSP-R-VM-GWDB",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "UFTP-R-VM-GW01",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -787,15 +787,6 @@
                 ]
             },
             {
-                "VM": "VDIAOAVTJ001",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "MCMP-R-VM-Wk04",
                 "Parallel Ports": [
                     {
@@ -824,6 +815,15 @@
             },
             {
                 "VM": "_RH94-template-MCMP-Wk",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-R-VM-Bstn",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",

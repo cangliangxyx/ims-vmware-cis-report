@@ -7,7 +7,7 @@
         "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PAM-R-VM-PVWA",
+                "VM": "UFTP-R-VM-GW01",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -16,7 +16,7 @@
                 ]
             },
             {
-                "VM": "Infra-R-VM-Bstn",
+                "VM": "PAM-R-VM-PVWA",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -70,16 +70,16 @@
                 ]
             },
             {
-                "VM": "CSP-R-VM-GW1",
+                "VM": "AD-R-VM-DC02",
                 "CD/DVD Drives": [
                     {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "Remote ATAPI"
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
                     }
                 ]
             },
             {
-                "VM": "AD-R-VM-DC02",
+                "VM": "VDIAOAVTJ001",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -643,6 +643,15 @@
         "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "CSP-R-VM-GW1",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "Remote ATAPI"
+                    }
+                ]
+            },
+            {
                 "VM": "Windows Server 2022 Template 202503",
                 "CD/DVD Drives": [
                     {
@@ -693,15 +702,6 @@
                     {
                         "Label": "CD/DVD drive 1",
                         "Summary": "Remote ATAPI"
-                    }
-                ]
-            },
-            {
-                "VM": "UFTP-R-VM-GW01",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
                     }
                 ]
             },
@@ -787,15 +787,6 @@
                 ]
             },
             {
-                "VM": "VDIAOAVTJ001",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "MCMP-R-VM-Wk04",
                 "CD/DVD Drives": [
                     {
@@ -828,6 +819,15 @@
                     {
                         "Label": "CD/DVD drive 1",
                         "Summary": "ISO [NAS-TJ-DataStore] ISO/rhel-9.4-x86_64-dvd.iso"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-R-VM-Bstn",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
                     }
                 ]
             },
