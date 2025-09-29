@@ -59,7 +59,7 @@ def get_hosts_tls_version(content) -> List[Dict[str, Any]]:
             results.append({
                 "AIIB.No": "2.16",
                 "Name": "TLS Version Configuration (Read Only)",
-                "CIS.No": "3.21",
+                "CIS.No": "3.26",
                 "CMD": r'Get-VMHost | Get-AdvancedSetting -Name UserVars.ESXiVPsTLSConfig',
                 "Host": host.name,
                 "Value": None,

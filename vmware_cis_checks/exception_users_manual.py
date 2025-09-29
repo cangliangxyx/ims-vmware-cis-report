@@ -58,7 +58,7 @@ def get_hosts_exception_users(content) -> List[Dict[str, Any]]:
             results.append({
                 "AIIB.No": "2.15",
                 "Name": "Exception Users Group (Read Only)",
-                "CIS.No": "3.20",
+                "CIS.No": "3.19",
                 "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.plugins.hostsvc.esxAdminsGroup',
                 "Host": host.name,
                 "Value": None,
