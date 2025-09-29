@@ -80,7 +80,7 @@ def main(output_dir: str = None):
     使用 VsphereConnection 获取 SNMP 服务原始值并导出 JSON
     """
     output_dir = output_dir or "../log"
-    output_path = f"{output_dir}/no_2.4_snmp_raw.json"
+    output_path = f"{output_dir}/no_2.4_snmp_status.json"
 
     with VsphereConnection() as si:
         content = si.RetrieveContent()
