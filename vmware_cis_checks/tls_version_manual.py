@@ -8,65 +8,74 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
 
-def get_hosts_tls_version(content) -> List[Dict[str, Any]]:
-    """查看每台主机的 TLS 协议配置（只读）"""
+def get_hosts_disabled_protocols(content) -> List[Dict[str, Any]]:
+    """
+    获取每台主机的禁用协议配置 (UserVars.ESXiVPsDisabledProtocols)
+    """
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     hosts = container.view
     results = []
 
     for host in hosts:
         try:
-            # VMware ESXi TLS 设置通常通过 UserVars.ESXiVPsTLSConfig 控制
-            adv_settings = host.configManager.advancedOption.QueryOptions("UserVars.ESXiVPsTLSConfig")
+            adv_settings = host.configManager.advancedOption.QueryOptions("UserVars.ESXiVPsDisabledProtocols")
             if adv_settings:
                 setting = adv_settings[0]
+                raw_value = {
+                    "key": setting.key,
+                    "value": setting.value,
+                    "type": type(setting.value).__name__
+                }
                 results.append({
                     "AIIB.No": "2.16",
-                    "Name": "TLS Version Configuration (Read Only)",
-                    "CIS.No": "3.21",
-                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name UserVars.ESXiVPsTLSConfig',
+                    "Name": "Disabled Protocols (Read Only)",
+                    "CIS.No": "3.26",
+                    "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.ESXiVPsDisabledProtocols",
                     "Host": host.name,
-                    "Value": setting.value,
-                    "Description": "TLS protocol configuration",
+                    "Value": raw_value,
+                    "Description": """指定禁用的协议列表，例如 'SSLv3,TLSv1.0,TLSv1.1'。
+建议禁用过时和不安全的协议，仅保留 TLSv1.2 或更高版本。""",
                     "Error": None
                 })
-                logger.info("主机: %s, TLS Config = %s", host.name, setting.value)
+                logger.info("主机 %s 禁用协议值: %s", host.name, raw_value)
             else:
                 results.append({
                     "AIIB.No": "2.16",
-                    "Name": "TLS Version Configuration (Read Only)",
-                    "CIS.No": "3.21",
-                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name UserVars.ESXiVPsTLSConfig',
+                    "Name": "Disabled Protocols (Read Only)",
+                    "CIS.No": "3.26",
+                    "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.ESXiVPsDisabledProtocols",
                     "Host": host.name,
-                    "Value": None,
-                    "Description": "Not configured",
+                    "Value": {"key": "UserVars.ESXiVPsDisabledProtocols", "value": None, "type": None},
+                    "Description": "未配置禁用协议，可能允许使用弱协议",
                     "Error": None
                 })
-                logger.warning("主机 %s 未配置 TLS 设置", host.name)
+                logger.warning("主机 %s 未配置禁用协议", host.name)
+
         except vim.fault.InvalidName as e:
             results.append({
                 "AIIB.No": "2.16",
-                "Name": "TLS Version Configuration (Read Only)",
-                "CIS.No": "3.21",
-                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name UserVars.ESXiVPsTLSConfig',
+                "Name": "Disabled Protocols (Read Only)",
+                "CIS.No": "3.26",
+                "CMD": "Get-AdvancedSetting -Name UserVars.ESXiVPsDisabledProtocols",
                 "Host": host.name,
                 "Value": None,
-                "Description": "Setting not supported on this host",
+                "Description": "此主机不支持 UserVars.ESXiVPsDisabledProtocols 设置",
                 "Error": str(e)
             })
-            logger.info("主机 %s 不支持 TLS 设置", host.name)
+            logger.info("主机 %s 不支持禁用协议设置", host.name)
+
         except Exception as e:
             results.append({
                 "AIIB.No": "2.16",
-                "Name": "TLS Version Configuration (Read Only)",
+                "Name": "Disabled Protocols (Read Only)",
                 "CIS.No": "3.26",
-                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name UserVars.ESXiVPsTLSConfig',
+                "CMD": "Get-AdvancedSetting -Name UserVars.ESXiVPsDisabledProtocols",
                 "Host": host.name,
                 "Value": None,
-                "Description": "Error retrieving TLS configuration",
+                "Description": "查询禁用协议配置失败",
                 "Error": str(e)
             })
-            logger.error("主机 %s 获取 TLS 设置失败: %s", host.name, e)
+            logger.error("主机 %s 获取禁用协议配置失败: %s", host.name, e)
 
     container.Destroy()
     return results
@@ -74,22 +83,17 @@ def get_hosts_tls_version(content) -> List[Dict[str, Any]]:
 
 def main(output_dir: str = None):
     """
-    检查主机 TLS 版本配置并导出 JSON。
+    检查主机禁用协议配置并导出 JSON。
     :param output_dir: 输出目录路径（默认 ../log）
     """
-    # 设置默认输出目录
-    if output_dir is None:
-        output_dir = "../log"
+    output_dir = output_dir or "../log"
+    output_path = f"{output_dir}/no_2.16_disabled_protocols.json"
 
-    # 拼接输出文件路径
-    output_path = f"{output_dir}/no_2.16_tls_version_manual.json"
-
-    # 获取数据并导出
     with VsphereConnection() as si:
         content = si.RetrieveContent()
-        tls_info = get_hosts_tls_version(content)
-        export_to_json(tls_info, output_path)
-
+        disabled_protocols_info = get_hosts_disabled_protocols(content)
+        export_to_json(disabled_protocols_info, output_path)
+        logger.info("禁用协议配置检查结果已导出到 %s", output_path)
 
 
 if __name__ == "__main__":
