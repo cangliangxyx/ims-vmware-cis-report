@@ -33,13 +33,12 @@ def get_hosts_snmp_status(content) -> List[Dict[str, Any]]:
                     "AIIB.No": "2.4",
                     "Name": "Host should deactivate SNMP",
                     "CIS.No": "3.6",
-                    "CMD": "Get-VMHostService | Where {$_.Key -eq 'snmpd'}",
+                    "CMD": "host->configure->services->snmp server 的值",
                     "Host": host.name,
                     "Value": raw_value,
-                    "Description": """检测值: host-->configure->services --> snmp server 的值;
-                    snmp_service.running = True → "status": "running";
-                    snmp_service.running = False → "status": "stopped";
-                    检测方法：Value -> running = False
+                    "Description": """snmp_service.running = True → "running";
+                    snmp_service.running = False → "stopped";
+                    检测方法："running": false
                     """,
                     "Error": None
                 })
