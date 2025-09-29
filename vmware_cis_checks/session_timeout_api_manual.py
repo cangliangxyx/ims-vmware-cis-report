@@ -33,10 +33,7 @@ def get_hosts_session_timeout_api(content) -> List[Dict[str, Any]]:
                     "CMD": "host->configure->advanced system setting->Config.HostAgent.vmacore.soap.sessionTimeout",
                     "Host": host.name,
                     "Value": raw_value,
-                    "Description": """控制 vSphere API SOAP 会话的超时时间（秒）。
-建议值: 900 (即 15 分钟)。
-当 value = 0 表示不超时，存在安全风险。
-""",
+                    "Description": """检测值: vSphere API SOAP 会话的超时时间（秒）。检测方法："value": "30"。""",
                     "Error": None
                 })
                 logger.info("主机 %s Config.HostAgent.vmacore.soap.sessionTimeout 原始值: %s", host.name, raw_value)
