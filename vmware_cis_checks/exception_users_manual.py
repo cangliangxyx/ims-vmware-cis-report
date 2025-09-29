@@ -33,9 +33,7 @@ def get_hosts_exception_users(content) -> List[Dict[str, Any]]:
                     "CMD": "host->configure->security profile->lockdown mode->exception users",
                     "Host": host.name,
                     "Value": raw_value,
-                    "Description": """Lockdown Mode 的例外用户组，通常为 'ESX Admins'。
-如果为空字符串表示未配置例外用户。
-建议：仅配置必要的例外用户组，降低风险。""",
+                    "Description": """检测值: Lockdown Mode 的例外用户组，检测方法："value": "????"。""",
                     "Error": None
                 })
                 logger.info("主机 %s Exception Users 原始值: %s", host.name, raw_value)
