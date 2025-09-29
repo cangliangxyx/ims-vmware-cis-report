@@ -28,7 +28,6 @@ def get_hosts_snmp_status(content) -> List[Dict[str, Any]]:
                     "label": snmp_service.label,
                     "running": snmp_service.running,
                     "required": snmp_service.required,
-                    "startPolicy": snmp_service.startPolicy
                 }
                 results.append({
                     "AIIB.No": "2.4",
