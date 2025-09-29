@@ -36,10 +36,9 @@ def get_hosts_snmp_status(content) -> List[Dict[str, Any]]:
                     "CMD": "Get-VMHostService | Where {$_.Key -eq 'snmpd'}",
                     "Host": host.name,
                     "Value": raw_value,
-                    "Description": """
-                    检测值: host-->configure->services --> snmp server 的值，
-                    snmp_service.running = True → "status": "running"，
-                    snmp_service.running = False → "status": "stopped"，
+                    "Description": """检测值: host-->configure->services --> snmp server 的值;
+                    snmp_service.running = True → "status": "running";
+                    snmp_service.running = False → "status": "stopped";
                     检测方法：Value -> running = False
                     """,
                     "Error": None
