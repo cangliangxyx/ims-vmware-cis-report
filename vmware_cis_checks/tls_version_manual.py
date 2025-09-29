@@ -30,11 +30,10 @@ def get_hosts_disabled_protocols(content) -> List[Dict[str, Any]]:
                     "AIIB.No": "2.16",
                     "Name": "Disabled Protocols (Read Only)",
                     "CIS.No": "3.26",
-                    "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.ESXiVPsDisabledProtocols",
+                    "CMD": "host-->configure->advanced system setting --> UserVars.ESXiVPsDisabledProtocols",
                     "Host": host.name,
                     "Value": raw_value,
-                    "Description": """指定禁用的协议列表，例如 'SSLv3,TLSv1.0,TLSv1.1'。
-建议禁用过时和不安全的协议，仅保留 TLSv1.2 或更高版本。""",
+                    "Description": """检测值: 指定禁用的协议列表，检测方法："value": 'SSLv3,TLSv1.0,TLSv1.1'。""",
                     "Error": None
                 })
                 logger.info("主机 %s 禁用协议值: %s", host.name, raw_value)
