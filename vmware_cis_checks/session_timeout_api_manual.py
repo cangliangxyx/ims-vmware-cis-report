@@ -9,67 +9,74 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 
 
 def get_hosts_session_timeout_api(content) -> List[Dict[str, Any]]:
-    """获取每台主机的 API 会话超时设置"""
+    """
+    获取每台主机的 API 会话超时设置 (config.hostagent.vmacore.soap.sessiontimeout)
+    """
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     hosts = container.view
     results = []
 
     for host in hosts:
         try:
-            adv_settings = host.configManager.advancedOption.QueryOptions("Config.HostAgent.sessionTimeout")
+            adv_settings = host.configManager.advancedOption.QueryOptions("Config.HostAgent.vmacore.soap.sessionTimeout")
             if adv_settings:
                 setting = adv_settings[0]
+                raw_value = {
+                    "key": setting.key,
+                    "value": setting.value,
+                    "type": type(setting.value).__name__
+                }
                 results.append({
                     "AIIB.No": "2.12",
-                    "Name": "Host must enforce API session timeout (Automated)",
+                    "Name": "Host must enforce API session timeout",
                     "CIS.No": "3.16",
-                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.sessionTimeout',
+                    "CMD": "host->configure->advanced system setting->Config.HostAgent.vmacore.soap.sessionTimeout",
                     "Host": host.name,
-                    "Value": {
-                        "key": setting.key,
-                        "value": setting.value,
-                        "type": type(setting.value).__name__
-                    },
-                    "Description": "API session timeout (seconds)",
+                    "Value": raw_value,
+                    "Description": """控制 vSphere API SOAP 会话的超时时间（秒）。
+建议值: 900 (即 15 分钟)。
+当 value = 0 表示不超时，存在安全风险。
+""",
                     "Error": None
                 })
-                logger.info("主机: %s, API sessionTimeout = %s", host.name, setting.value)
+                logger.info("主机 %s Config.HostAgent.vmacore.soap.sessionTimeout 原始值: %s", host.name, raw_value)
             else:
                 results.append({
                     "AIIB.No": "2.12",
-                    "Name": "Host must enforce API session timeout (Automated)",
+                    "Name": "Host must enforce API session timeout",
                     "CIS.No": "3.16",
-                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.sessionTimeout',
+                    "CMD": "Get-AdvancedSetting -Name Config.HostAgent.vmacore.soap.sessionTimeout",
                     "Host": host.name,
-                    "Value": {"key": "Config.HostAgent.sessionTimeout", "value": None, "type": None},
-                    "Description": "Not configured or not supported on this host",
+                    "Value": None,
+                    "Description": "未找到该设置，表示使用默认值（可能无限制）",
                     "Error": None
                 })
-                logger.warning("主机 %s 未配置 API sessionTimeout 或不支持该设置", host.name)
+                logger.warning("主机 %s 未配置 Config.HostAgent.vmacore.soap.sessionTimeout", host.name)
+
         except vim.fault.InvalidName as e:
             results.append({
                 "AIIB.No": "2.12",
-                "Name": "Host must enforce API session timeout (Automated)",
+                "Name": "Host must enforce API session timeout",
                 "CIS.No": "3.16",
-                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.sessionTimeout',
+                "CMD": "Get-AdvancedSetting -Name Config.HostAgent.vmacore.soap.sessionTimeout",
                 "Host": host.name,
-                "Value": {"key": "Config.HostAgent.sessionTimeout", "value": None, "type": None},
-                "Description": "Setting not supported on this host",
+                "Value": None,
+                "Description": "此主机不支持 Config.HostAgent.vmacore.soap.sessionTimeout",
                 "Error": str(e)
             })
-            logger.info("主机 %s 不支持 Config.HostAgent.sessionTimeout 设置", host.name)
+            logger.info("主机 %s 不支持 Config.HostAgent.vmacore.soap.sessionTimeout 设置", host.name)
         except Exception as e:
             results.append({
                 "AIIB.No": "2.12",
-                "Name": "Host must enforce API session timeout (Automated)",
+                "Name": "Host must enforce API session timeout",
                 "CIS.No": "3.16",
-                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.sessionTimeout',
+                "CMD": "Get-AdvancedSetting -Name Config.HostAgent.vmacore.soap.sessionTimeout",
                 "Host": host.name,
-                "Value": {"key": "Config.HostAgent.sessionTimeout", "value": None, "type": None},
-                "Description": "Error retrieving setting",
+                "Value": None,
+                "Description": "查询 API 会话超时设置失败",
                 "Error": str(e)
             })
-            logger.error("主机 %s 获取 API sessionTimeout 失败: %s", host.name, e)
+            logger.error("主机 %s 获取 Config.HostAgent.vmacore.soap.sessionTimeout 失败: %s", host.name, e)
 
     container.Destroy()
     return results
@@ -77,21 +84,16 @@ def get_hosts_session_timeout_api(content) -> List[Dict[str, Any]]:
 
 def main(output_dir: str = None):
     """
-    检查主机 API 会话超时配置并导出 JSON。
-    :param output_dir: 输出目录路径（默认 ../log）
+    使用 VsphereConnection 获取 API session timeout 原始值并导出 JSON
     """
-    # 如果没有传 output_dir，就用默认目录 ../log
-    if output_dir is None:
-        output_dir = "../log"
-
-    # 拼接输出文件路径
-    output_path = f"{output_dir}/no_2.12_session_timeout_api_manual.json"
+    output_dir = output_dir or "../log"
+    output_path = f"{output_dir}/no_2.12_session_timeout_api.json"
 
     with VsphereConnection() as si:
         content = si.RetrieveContent()
-        timeout_info = get_hosts_session_timeout_api(content)
-        export_to_json(timeout_info, output_path)
-
+        session_timeout_info = get_hosts_session_timeout_api(content)
+        export_to_json(session_timeout_info, output_path)
+        logger.info("Config.HostAgent.vmacore.soap.sessionTimeout 检查结果已导出到 %s", output_path)
 
 
 if __name__ == "__main__":
