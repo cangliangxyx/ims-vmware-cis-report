@@ -86,7 +86,7 @@ def main(output_dir: str = None):
     :param output_dir: 输出目录路径（默认 ../log）
     """
     output_dir = output_dir or "../log"
-    output_path = f"{output_dir}/no_2.16_tls_version.json.json"
+    output_path = f"{output_dir}/no_2.16_tls_version.json"
 
     with VsphereConnection() as si:
         content = si.RetrieveContent()
