@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 
 def get_hosts_snmp_status(content) -> List[Dict[str, Any]]:
     """
-    通过 vSphere SDK 获取每台主机的 SNMP 服务状态
+    获取每台主机的 SNMP 服务原始状态信息
     """
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     hosts = container.view
@@ -22,18 +22,25 @@ def get_hosts_snmp_status(content) -> List[Dict[str, Any]]:
             snmp_service = next((s for s in services if s.key.lower() == "snmpd"), None)
 
             if snmp_service:
-                value = "enabled" if snmp_service.running else "disabled"
+                # 直接输出原始属性
+                raw_value = {
+                    "key": snmp_service.key,
+                    "label": snmp_service.label,
+                    "running": snmp_service.running,
+                    "required": snmp_service.required,
+                    "startPolicy": snmp_service.startPolicy
+                }
                 results.append({
                     "AIIB.No": "2.4",
                     "Name": "Host should deactivate SNMP",
                     "CIS.No": "3.6",
                     "CMD": "Get-VMHostService | Where {$_.Key -eq 'snmpd'}",
                     "Host": host.name,
-                    "Value": value,
-                    "Description": "SNMP 服务当前状态",
+                    "Value": raw_value,
+                    "Description": "SNMP 服务原始对象信息",
                     "Error": None
                 })
-                logger.info("主机: %s, SNMP 状态: %s", host.name, value)
+                logger.info("主机 %s SNMP 原始值: %s", host.name, raw_value)
             else:
                 results.append({
                     "AIIB.No": "2.4",
@@ -41,7 +48,7 @@ def get_hosts_snmp_status(content) -> List[Dict[str, Any]]:
                     "CIS.No": "3.6",
                     "CMD": "Get-VMHostService | Where {$_.Key -eq 'snmpd'}",
                     "Host": host.name,
-                    "Value": "not_found",
+                    "Value": None,
                     "Description": "此主机未找到 SNMP 服务条目",
                     "Error": None
                 })
@@ -66,16 +73,16 @@ def get_hosts_snmp_status(content) -> List[Dict[str, Any]]:
 
 def main(output_dir: str = None):
     """
-    连接 vCenter 并导出每台主机 SNMP 服务状态
+    使用 VsphereConnection 获取 SNMP 服务原始值并导出 JSON
     """
     output_dir = output_dir or "../log"
-    output_path = f"{output_dir}/no_2.4_snmp_status.json"
+    output_path = f"{output_dir}/no_2.4_snmp_raw.json"
 
     with VsphereConnection() as si:
         content = si.RetrieveContent()
         snmp_info = get_hosts_snmp_status(content)
         export_to_json(snmp_info, output_path)
-        logger.info("SNMP 检查结果已导出到 %s", output_path)
+        logger.info("SNMP 原始值检查结果已导出到 %s", output_path)
 
 
 if __name__ == "__main__":
