@@ -1,58 +1,58 @@
 [
     {
         "AIIB.No": "2.8",
-        "Name": "Host must lock an account after a specified number of failed login attempts (Automated)",
+        "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Security.AccountLockFailure",
+        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
         "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
         "Value": {
-            "key": "Security.AccountLockFailure",
-            "value": null,
-            "type": null
+            "key": "Security.AccountLockFailures",
+            "value": 5,
+            "type": "int"
         },
-        "Description": "Error retrieving setting",
-        "Error": "(vim.fault.InvalidName) {\n   dynamicType = <unset>,\n   dynamicProperty = (vmodl.DynamicProperty) [],\n   msg = \"'Security.AccountLockFailure' is invalid or exceeds the maximum number of characters permitted.\",\n   faultCause = <unset>,\n   faultMessage = (vmodl.LocalizableMessage) [],\n   name = 'Security.AccountLockFailure',\n   entity = <unset>\n}"
+        "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
+        "Error": null
     },
     {
         "AIIB.No": "2.8",
-        "Name": "Host must lock an account after a specified number of failed login attempts (Automated)",
+        "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Security.AccountLockFailure",
+        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
         "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
         "Value": {
-            "key": "Security.AccountLockFailure",
-            "value": null,
-            "type": null
+            "key": "Security.AccountLockFailures",
+            "value": 5,
+            "type": "int"
         },
-        "Description": "Error retrieving setting",
-        "Error": "(vim.fault.InvalidName) {\n   dynamicType = <unset>,\n   dynamicProperty = (vmodl.DynamicProperty) [],\n   msg = \"'Security.AccountLockFailure' is invalid or exceeds the maximum number of characters permitted.\",\n   faultCause = <unset>,\n   faultMessage = (vmodl.LocalizableMessage) [],\n   name = 'Security.AccountLockFailure',\n   entity = <unset>\n}"
+        "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
+        "Error": null
     },
     {
         "AIIB.No": "2.8",
-        "Name": "Host must lock an account after a specified number of failed login attempts (Automated)",
+        "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Security.AccountLockFailure",
+        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
         "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
         "Value": {
-            "key": "Security.AccountLockFailure",
-            "value": null,
-            "type": null
+            "key": "Security.AccountLockFailures",
+            "value": 5,
+            "type": "int"
         },
-        "Description": "Error retrieving setting",
-        "Error": "(vim.fault.InvalidName) {\n   dynamicType = <unset>,\n   dynamicProperty = (vmodl.DynamicProperty) [],\n   msg = \"'Security.AccountLockFailure' is invalid or exceeds the maximum number of characters permitted.\",\n   faultCause = <unset>,\n   faultMessage = (vmodl.LocalizableMessage) [],\n   name = 'Security.AccountLockFailure',\n   entity = <unset>\n}"
+        "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
+        "Error": null
     },
     {
         "AIIB.No": "2.8",
-        "Name": "Host must lock an account after a specified number of failed login attempts (Automated)",
+        "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Security.AccountLockFailure",
+        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
         "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
         "Value": {
-            "key": "Security.AccountLockFailure",
-            "value": null,
-            "type": null
+            "key": "Security.AccountLockFailures",
+            "value": 5,
+            "type": "int"
         },
-        "Description": "Error retrieving setting",
-        "Error": "(vim.fault.InvalidName) {\n   dynamicType = <unset>,\n   dynamicProperty = (vmodl.DynamicProperty) [],\n   msg = \"'Security.AccountLockFailure' is invalid or exceeds the maximum number of characters permitted.\",\n   faultCause = <unset>,\n   faultMessage = (vmodl.LocalizableMessage) [],\n   name = 'Security.AccountLockFailure',\n   entity = <unset>\n}"
+        "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
+        "Error": null
     }
 ]
