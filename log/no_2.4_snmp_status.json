@@ -1,0 +1,62 @@
+[
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "Get-VMHostService | Where {$_.Key -eq 'snmpd'}",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "检测值: host-->configure->services --> snmp server 的值;\n                    snmp_service.running = True → \"status\": \"running\";\n                    snmp_service.running = False → \"status\": \"stopped\";\n                    检测方法：Value -> running = False\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "Get-VMHostService | Where {$_.Key -eq 'snmpd'}",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "检测值: host-->configure->services --> snmp server 的值;\n                    snmp_service.running = True → \"status\": \"running\";\n                    snmp_service.running = False → \"status\": \"stopped\";\n                    检测方法：Value -> running = False\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "Get-VMHostService | Where {$_.Key -eq 'snmpd'}",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "检测值: host-->configure->services --> snmp server 的值;\n                    snmp_service.running = True → \"status\": \"running\";\n                    snmp_service.running = False → \"status\": \"stopped\";\n                    检测方法：Value -> running = False\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "Get-VMHostService | Where {$_.Key -eq 'snmpd'}",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "检测值: host-->configure->services --> snmp server 的值;\n                    snmp_service.running = True → \"status\": \"running\";\n                    snmp_service.running = False → \"status\": \"stopped\";\n                    检测方法：Value -> running = False\n                    ",
+        "Error": null
+    }
+]
