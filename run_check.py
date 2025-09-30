@@ -62,10 +62,10 @@ check_modules = [
     ("2.3", solo_enable_moob),  # ok
     ("2.4", snmp_manual),  # ok
     ("2.5", dcui_timeout),  # ok
-    ("2.6", shell_warning_manual),
-    ("2.7", password_complexity_manual),
-    ("2.8", account_lock_failure),
-    ("2.9", account_unlock_time),
+    ("2.6", shell_warning_manual),  # ok
+    ("2.7", password_complexity_manual),  # ok
+    ("2.8", account_lock_failure),  # ok
+    ("2.9", account_unlock_time),  # ok
     ("2.10", password_history_manual),
     ("2.11", password_max_days_manual),
     ("2.12", session_timeout_api_manual),
