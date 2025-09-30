@@ -53,13 +53,13 @@ from vmware_cis_checks import (
 
 # === 模块编号和模块映射 ===
 check_modules = [
-    ("1.1", software_general),
-    ("1.2", ntp_info),
-    ("1.3", time_sync),
-    ("1.4", mem_share_salt),
-    ("2.1", tsm_ssh),
-    ("2.2", tsm),
-    ("2.3", solo_enable_moob),
+    ("1.1", software_general),  # ok
+    ("1.2", ntp_info),  # ok
+    ("1.3", time_sync),  # ok
+    ("1.4", mem_share_salt),  # ok
+    ("2.1", tsm_ssh),  # ok
+    ("2.2", tsm),  # ok
+    ("2.3", solo_enable_moob),  # ok
     ("2.4", snmp_manual),
     ("2.5", dcui_timeout),
     ("2.6", shell_warning_manual),
