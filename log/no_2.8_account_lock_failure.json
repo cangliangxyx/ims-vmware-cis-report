@@ -3,13 +3,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-t-esxi-uat08.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -17,13 +18,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-t-esxi-uat09.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -31,13 +33,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-t-esxi-uat07.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -45,13 +48,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-csz08.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -59,13 +63,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-csz02.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -73,13 +78,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-csz04.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -87,13 +93,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-csz01.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -101,13 +108,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-csz05.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -115,13 +123,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-csz06.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -129,13 +138,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-csz03.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -143,13 +153,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-csz07.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -157,13 +168,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-t-esxi-uat03.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -171,13 +183,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-t-esxi-uat02.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -185,13 +198,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-t-esxi-uat04.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -199,13 +213,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-t-esxi-uat05.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -213,13 +228,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-t-esxi-uat01.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -227,13 +243,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-t-esxi-uat06.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -241,13 +258,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-csz10.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -255,13 +273,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-csz09.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -269,13 +288,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-csz11.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -283,13 +303,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-csz12.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -297,13 +318,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-csz13.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -311,13 +333,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-csz14.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -325,13 +348,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-dmz02.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -339,13 +363,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-dmz01.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -353,13 +378,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-dmz03.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -367,13 +393,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-vdi03.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -381,13 +408,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-vdi02.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -395,13 +423,14 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-vdi01.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     },
@@ -409,13 +438,74 @@
         "AIIB.No": "2.8",
         "Name": "Host must lock an account after a specified number of failed login attempts",
         "CIS.No": "3.12",
-        "CMD": "host->configure->advanced system setting->Security.AccountLockFailures",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
         "Host": "vx-p-esxi-vdi04.vsphere.aiib.org",
         "Value": {
             "key": "Security.AccountLockFailures",
             "value": 5,
             "type": "int"
         },
+        "Status": "Pass",
+        "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.8",
+        "Name": "Host must lock an account after a specified number of failed login attempts",
+        "CIS.No": "3.12",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": {
+            "key": "Security.AccountLockFailures",
+            "value": 5,
+            "type": "int"
+        },
+        "Status": "Pass",
+        "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.8",
+        "Name": "Host must lock an account after a specified number of failed login attempts",
+        "CIS.No": "3.12",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": {
+            "key": "Security.AccountLockFailures",
+            "value": 5,
+            "type": "int"
+        },
+        "Status": "Pass",
+        "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.8",
+        "Name": "Host must lock an account after a specified number of failed login attempts",
+        "CIS.No": "3.12",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": {
+            "key": "Security.AccountLockFailures",
+            "value": 5,
+            "type": "int"
+        },
+        "Status": "Pass",
+        "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.8",
+        "Name": "Host must lock an account after a specified number of failed login attempts",
+        "CIS.No": "3.12",
+        "CMD": "Get-AdvancedSetting -Name Security.AccountLockFailures",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": {
+            "key": "Security.AccountLockFailures",
+            "value": 5,
+            "type": "int"
+        },
+        "Status": "Pass",
         "Description": "检测值:控制登录失败后锁定账户的次数。检测方法：\"value\": 5",
         "Error": null
     }
