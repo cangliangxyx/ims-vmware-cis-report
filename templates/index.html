@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>VMware Baseline Report</title>
+    <!-- 引入外部 CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h1>VMware Baseline Report</h1>
+    <div class="header">
+        <h1>VMware Baseline Report</h1>
+        <div class="host-select">
+            <label for="hostSelect">选择主机:</label>
+            <select id="hostSelect">
+                <option value="">--请选择主机--</option>
+            </select>
+        </div>
+    </div>
+
     <div id="tables"></div>
 
+    <!-- 引入外部 JS -->
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
