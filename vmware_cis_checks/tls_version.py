@@ -18,7 +18,7 @@ def collect_disabled_protocols(content) -> List[Dict[str, Any]]:
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     results: List[Dict[str, Any]] = []
 
-    expected_protocols = {"sslv3", "v", "tlsv1.1"}
+    expected_protocols = {"sslv3", "tlsv1", "tlsv1.1"}
 
     for host in container.view:
         record = {
