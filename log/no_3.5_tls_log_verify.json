@@ -1,0 +1,58 @@
+[
+    {
+        "AIIB.No": "3.5",
+        "Name": "Syslog.global.certificate.checkSSLCerts (Read Only)",
+        "CIS.No": "4.10",
+        "CMD": "host-->configure->advanced system setting --> Syslog.global.certificate.checkSSLCerts",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": {
+            "key": "Syslog.global.certificate.checkSSLCerts",
+            "value": true,
+            "type": "bool"
+        },
+        "Description": "检测值:启用 TLS 证书验证，检测方法：'value': 'True'",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.5",
+        "Name": "Syslog.global.certificate.checkSSLCerts (Read Only)",
+        "CIS.No": "4.10",
+        "CMD": "host-->configure->advanced system setting --> Syslog.global.certificate.checkSSLCerts",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": {
+            "key": "Syslog.global.certificate.checkSSLCerts",
+            "value": true,
+            "type": "bool"
+        },
+        "Description": "检测值:启用 TLS 证书验证，检测方法：'value': 'True'",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.5",
+        "Name": "Syslog.global.certificate.checkSSLCerts (Read Only)",
+        "CIS.No": "4.10",
+        "CMD": "host-->configure->advanced system setting --> Syslog.global.certificate.checkSSLCerts",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": {
+            "key": "Syslog.global.certificate.checkSSLCerts",
+            "value": true,
+            "type": "bool"
+        },
+        "Description": "检测值:启用 TLS 证书验证，检测方法：'value': 'True'",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.5",
+        "Name": "Syslog.global.certificate.checkSSLCerts (Read Only)",
+        "CIS.No": "4.10",
+        "CMD": "host-->configure->advanced system setting --> Syslog.global.certificate.checkSSLCerts",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": {
+            "key": "Syslog.global.certificate.checkSSLCerts",
+            "value": true,
+            "type": "bool"
+        },
+        "Description": "检测值:启用 TLS 证书验证，检测方法：'value': 'True'",
+        "Error": null
+    }
+]
