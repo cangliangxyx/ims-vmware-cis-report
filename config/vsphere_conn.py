@@ -47,17 +47,26 @@ class VsphereConnection:
             Disconnect(self.service_instance)
             logger.info("已断开 vSphere 连接")
 
-    def get_all_host_names(self):
+    def get_all_hosts_name(env: str = "prod") -> list[str]:
         """
-        返回当前 vCenter 下所有 ESXi 主机名称列表
+        循环多个 vCenter，返回所有 ESXi 主机名的列表
         """
-        if not self.service_instance:
-            raise RuntimeError("vSphere 服务实例未连接")
-        content = self.service_instance.RetrieveContent()
-        container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
-        hosts = [host.name for host in container.view]
-        container.Destroy()
-        return hosts
+        vsphere_data = settings.get_vsphere_config(os.getenv('project_env', env))
+        host_list = vsphere_data.get("HOST")
+        if not isinstance(host_list, list):
+            host_list = [host_list]
+
+        all_hosts = []
+
+        for vc_host in host_list:
+            try:
+                with VsphereConnection(host=vc_host) as si:
+                    hosts = si.get_all_host_names()  # 调用你之前写的 VsphereConnection 方法
+                    all_hosts.extend(hosts)
+            except Exception as e:
+                logger.error("连接 vCenter %s 失败: %s", vc_host, e)
+
+        return all_hosts
 
 # === 测试 main 方法 ===
 if __name__ == "__main__":
