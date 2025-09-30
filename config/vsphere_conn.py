@@ -3,6 +3,8 @@
 import ssl
 import os
 import logging
+from typing import List
+
 from pyVim.connect import SmartConnect, Disconnect
 from config import settings
 from pyVmomi import vim
@@ -47,40 +49,49 @@ class VsphereConnection:
             Disconnect(self.service_instance)
             logger.info("已断开 vSphere 连接")
 
-    def get_all_hosts_name(env: str = "prod") -> list[str]:
-        """
-        循环多个 vCenter，返回所有 ESXi 主机名的列表
-        """
-        vsphere_data = settings.get_vsphere_config(os.getenv('project_env', env))
-        host_list = vsphere_data.get("HOST")
-        if not isinstance(host_list, list):
-            host_list = [host_list]
+def get_all_hosts_name(env: str = "prod") -> List[str]:
+    vsphere_data = settings.get_vsphere_config(os.getenv('project_env', env))
+    host_list = vsphere_data["HOST"]
+    if not isinstance(host_list, list):
+        host_list = [host_list]
 
-        all_hosts = []
+    all_hosts: List[str] = []
 
-        for vc_host in host_list:
-            try:
-                with VsphereConnection(host=vc_host) as si:
-                    hosts = si.get_all_host_names()  # 调用你之前写的 VsphereConnection 方法
-                    all_hosts.extend(hosts)
-            except Exception as e:
-                logger.error("连接 vCenter %s 失败: %s", vc_host, e)
+    for vc_host in host_list:
+        try:
+            with VsphereConnection(host=vc_host) as si:
+                content = si.RetrieveContent()
+                # 指定 HostSystem
+                container = content.viewManager.CreateContainerView(
+                    content.rootFolder, [vim.HostSystem], True
+                )
+                hosts = [h.name for h in container.view]
+                container.Destroy()
+                all_hosts.extend(hosts)
+        except Exception as e:
+            logger.error("连接 vCenter %s 失败: %s", vc_host, e)
 
-        return all_hosts
+    return all_hosts
+
+
+
 
 # === 测试 main 方法 ===
 if __name__ == "__main__":
     # 从 settings 获取 host 列表
-    vsphere_data = settings.get_vsphere_config("prod")
-    hosts = vsphere_data.get("HOST")
-    if not isinstance(hosts, list):
-        hosts = [hosts]
+    # vsphere_data = settings.get_vsphere_config("prod")
+    # hosts = vsphere_data.get("HOST")
+    # if not isinstance(hosts, list):
+    #     hosts = [hosts]
+    #
+    # for host in hosts:
+    #     logger.info("开始连接 vCenter: %s", host)
+    #     try:
+    #         with VsphereConnection(host=host) as si:
+    #             content = si.RetrieveContent()
+    #             logger.info("成功获取 %s 的 content", host)
+    #     except Exception as e:
+    #         logger.error("连接 vCenter %s 失败: %s", host, e)
 
-    for host in hosts:
-        logger.info("开始连接 vCenter: %s", host)
-        try:
-            with VsphereConnection(host=host) as si:
-                content = si.RetrieveContent()
-                logger.info("成功获取 %s 的 content", host)
-        except Exception as e:
-            logger.error("连接 vCenter %s 失败: %s", host, e)
+    data = get_all_hosts_name()
+    print(data)
