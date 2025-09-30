@@ -5,6 +5,7 @@ import os
 import logging
 from pyVim.connect import SmartConnect, Disconnect
 from config import settings
+from pyVmomi import vim
 
 # === 配置日志 ===
 logging.basicConfig(
@@ -18,10 +19,6 @@ class VsphereConnection:
     """vSphere 连接的上下文管理器，可接受 host 参数"""
 
     def __init__(self, host: str = None, env: str = "prod"):
-        """
-        :param host: 可指定单个 vCenter 主机。如果为 None，则取 settings 中的默认 HOST。
-        :param env: 环境标识，用于 settings 获取 host/username/password
-        """
         self.env = env
         self.host = host
         self.service_instance = None
@@ -31,7 +28,6 @@ class VsphereConnection:
         username = vsphere_data["USERNAME"]
         password = vsphere_data["PASSWORD"]
 
-        # 如果 host 未传，则从 settings 取第一个 host
         if not self.host:
             host_config = vsphere_data["HOST"]
             if isinstance(host_config, list):
@@ -51,6 +47,17 @@ class VsphereConnection:
             Disconnect(self.service_instance)
             logger.info("已断开 vSphere 连接")
 
+    def get_all_host_names(self):
+        """
+        返回当前 vCenter 下所有 ESXi 主机名称列表
+        """
+        if not self.service_instance:
+            raise RuntimeError("vSphere 服务实例未连接")
+        content = self.service_instance.RetrieveContent()
+        container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
+        hosts = [host.name for host in container.view]
+        container.Destroy()
+        return hosts
 
 # === 测试 main 方法 ===
 if __name__ == "__main__":
