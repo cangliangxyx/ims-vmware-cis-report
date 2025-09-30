@@ -24,7 +24,7 @@ from vmware_cis_checks import (
     syslog_persistent,  # no_3.1
     syslog_remote_loghost,  # no_3.2
     hostagent_log_level,  # no_3.3
-    log_filtering_manual,  # no_3.4
+    log_filtering,  # no_3.4
     tls_log_verify_manual,  # no_3.5
     firewall_services_manual,  # no_4.1
     dvfilter_manual,  # no_4.2

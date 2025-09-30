@@ -9,63 +9,63 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 
 
 def get_hosts_log_filtering(content) -> List[Dict[str, Any]]:
-    """检查是否启用了日志过滤 (Syslog.global.logFilters, 只读)"""
+    """检查是否启用了日志过滤 (Syslog.global.logFiltersEnable, 只读)"""
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     hosts = container.view
     results = []
 
     for host in hosts:
         try:
-            adv_settings = host.configManager.advancedOption.QueryOptions("Syslog.global.logFilters")
+            adv_settings = host.configManager.advancedOption.QueryOptions("Syslog.global.logFiltersEnable")
             if adv_settings:
                 setting = adv_settings[0]
                 results.append({
                     "AIIB.No": "3.4",
                     "Name": "Syslog log filtering configuration (Read Only)",
                     "CIS.No": "4.5",
-                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logFilters',
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logFiltersEnable',
                     "Host": host.name,
                     "Value": setting.value,
-                    "Description": "Syslog log filtering configuration",
+                    "Description": "检测值: Syslog.global.logFiltersEnable。检测方法：'value': 'false'",
                     "Error": None
                 })
-                logger.info("主机: %s, Syslog.global.logFilters = %s", host.name, setting.value)
+                logger.info("主机: %s, Syslog.global.logFiltersEnable = %s", host.name, setting.value)
             else:
                 results.append({
                     "AIIB.No": "3.4",
                     "Name": "Syslog log filtering configuration (Read Only)",
                     "CIS.No": "4.5",
-                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logFilters',
+                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logFiltersEnable',
                     "Host": host.name,
                     "Value": None,
                     "Description": "Not configured",
                     "Error": None
                 })
-                logger.warning("主机 %s 未配置 Syslog.global.logFilters", host.name)
+                logger.warning("主机 %s 未配置 Syslog.global.logFiltersEnable", host.name)
         except vim.fault.InvalidName as e:
             results.append({
                 "AIIB.No": "3.4",
                 "Name": "Syslog log filtering configuration (Read Only)",
                 "CIS.No": "4.5",
-                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logFilters',
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logFiltersEnable',
                 "Host": host.name,
                 "Value": None,
                 "Description": "Setting not supported on this host",
                 "Error": str(e)
             })
-            logger.info("主机 %s 不支持 Syslog.global.logFilters 设置", host.name)
+            logger.info("主机 %s 不支持 Syslog.global.logFiltersEnable 设置", host.name)
         except Exception as e:
             results.append({
                 "AIIB.No": "3.4",
                 "Name": "Syslog log filtering configuration (Read Only)",
                 "CIS.No": "4.5",
-                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logFilters',
+                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logFiltersEnable',
                 "Host": host.name,
                 "Value": None,
                 "Description": "Error retrieving log filtering setting",
                 "Error": str(e)
             })
-            logger.error("主机 %s 获取 Syslog.global.logFilters 失败: %s", host.name, e)
+            logger.error("主机 %s 获取 Syslog.global.logFiltersEnable 失败: %s", host.name, e)
 
     container.Destroy()
     return results
@@ -81,7 +81,7 @@ def main(output_dir: str = None):
         output_dir = "../log"
 
     # 拼接输出文件路径
-    output_path = f"{output_dir}/no_3.4_log_filtering_manual.json"
+    output_path = f"{output_dir}/no_3.4_log_filtering.json"
 
     # 获取数据并导出
     with VsphereConnection() as si:
