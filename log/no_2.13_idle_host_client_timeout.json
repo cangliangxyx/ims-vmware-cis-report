@@ -5,8 +5,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-t-esxi-uat08.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -15,8 +20,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-t-esxi-uat09.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -25,8 +35,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-t-esxi-uat07.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -35,8 +50,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-csz08.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -45,8 +65,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-csz02.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -55,8 +80,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-csz04.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -65,8 +95,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-csz01.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -75,8 +110,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-csz05.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -85,8 +125,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-csz06.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -95,8 +140,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-csz03.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -105,8 +155,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-csz07.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -115,8 +170,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-t-esxi-uat03.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -125,8 +185,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-t-esxi-uat02.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -135,8 +200,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-t-esxi-uat04.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -145,8 +215,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-t-esxi-uat05.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -155,8 +230,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-t-esxi-uat01.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -165,8 +245,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-t-esxi-uat06.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -175,8 +260,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-csz10.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -185,8 +275,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-csz09.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -195,8 +290,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-csz11.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -205,8 +305,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-csz12.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -215,8 +320,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-csz13.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -225,8 +335,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-csz14.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -235,8 +350,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-dmz02.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -245,8 +365,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-dmz01.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -255,8 +380,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-dmz03.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -265,8 +395,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-vdi03.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -275,8 +410,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-vdi02.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -285,8 +425,13 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-vdi01.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     },
     {
@@ -295,8 +440,73 @@
         "CIS.No": "3.17",
         "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
         "Host": "vx-p-esxi-vdi04.vsphere.aiib.org",
-        "Value": 900,
-        "Description": "Idle host client session timeout (seconds)",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.13",
+        "Name": "Host Client idle session timeout (Read Only)",
+        "CIS.No": "3.17",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.13",
+        "Name": "Host Client idle session timeout (Read Only)",
+        "CIS.No": "3.17",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.13",
+        "Name": "Host Client idle session timeout (Read Only)",
+        "CIS.No": "3.17",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.13",
+        "Name": "Host Client idle session timeout (Read Only)",
+        "CIS.No": "3.17",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.HostClientSessionTimeout",
+            "value": 900,
+            "type": "long"
+        },
+        "Status": "Pass",
+        "Description": "检测值: \"value\" == 900",
         "Error": null
     }
 ]
