@@ -25,7 +25,7 @@ from vmware_cis_checks import (
     syslog_remote_loghost,  # no_3.2
     hostagent_log_level,  # no_3.3
     log_filtering,  # no_3.4
-    tls_log_verify_manual,  # no_3.5
+    tls_log_verify,  # no_3.5
     firewall_services_manual,  # no_4.1
     dvfilter_manual,  # no_4.2
     bpdu_filter_manual,  # no_4.3
@@ -94,7 +94,7 @@ CHECK_MODULES = [
     "vmware_cis_checks.syslog_remote_loghost",
     "vmware_cis_checks.hostagent_log_level",
     "vmware_cis_checks.log_filtering",
-    "vmware_cis_checks.tls_log_verify_manual",
+    "vmware_cis_checks.tls_log_verify",
     "vmware_cis_checks.firewall_services_manual",
     "vmware_cis_checks.dvfilter_manual",
     "vmware_cis_checks.bpdu_filter_manual",
