@@ -60,8 +60,8 @@ check_modules = [
     ("2.1", tsm_ssh),  # ok
     ("2.2", tsm),  # ok
     ("2.3", solo_enable_moob),  # ok
-    ("2.4", snmp_manual),
-    ("2.5", dcui_timeout),
+    ("2.4", snmp_manual),  # ok
+    ("2.5", dcui_timeout),  # ok
     ("2.6", shell_warning_manual),
     ("2.7", password_complexity_manual),
     ("2.8", account_lock_failure),
