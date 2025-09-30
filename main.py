@@ -3,7 +3,9 @@ import importlib
 import os
 
 from vmware_cis_checks import (
+    software_general, # no_1.1
     ntp_info,  # no_1.2
+    time_sync, # no_1.3
     mem_share_salt,  # no_1.4
     tsm_ssh,  # no_2.1
     tsm,  # no_2.2
@@ -72,7 +74,9 @@ os.makedirs(LOG_DIR, exist_ok=True)  # 确保 log/ 存在
 # 要执行的检查模块 (顺序与 import 顺序一致)
 # ------------------------------
 CHECK_MODULES = [
+    "vmware_cis_checks.software_general",
     "vmware_cis_checks.ntp_info",
+    "vmware_cis_checks.ime_sync",
     "vmware_cis_checks.mem_share_salt",
     "vmware_cis_checks.tsm_ssh",
     "vmware_cis_checks.tsm",
