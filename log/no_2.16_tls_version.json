@@ -10,7 +10,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -25,7 +25,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -40,7 +40,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -55,7 +55,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -70,7 +70,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -85,7 +85,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -100,7 +100,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -115,7 +115,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -130,7 +130,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -145,7 +145,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -160,7 +160,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -175,7 +175,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -190,7 +190,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -205,7 +205,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -220,7 +220,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -235,7 +235,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -250,7 +250,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -265,7 +265,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -280,7 +280,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -295,7 +295,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -310,7 +310,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -325,7 +325,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -340,7 +340,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -355,7 +355,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -370,7 +370,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -385,7 +385,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -400,7 +400,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -415,7 +415,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -430,7 +430,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -445,7 +445,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -460,7 +460,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -475,7 +475,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -490,7 +490,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     },
@@ -505,7 +505,7 @@
             "value": "sslv3,tlsv1,tlsv1.1",
             "type": "str"
         },
-        "Status": "Fail",
+        "Status": "Pass",
         "Description": "检测值: \"value\" 包含 SSLv3,TLSv1.0,TLSv1.1",
         "Error": null
     }
