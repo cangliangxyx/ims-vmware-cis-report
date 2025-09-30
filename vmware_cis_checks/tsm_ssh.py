@@ -6,6 +6,7 @@ from config.vsphere_conn import VsphereConnection
 from config.export_to_json import export_to_json
 from config import settings
 
+
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
@@ -22,53 +23,47 @@ def collect_ssh_service_info(content) -> List[Dict[str, Any]]:
     results: List[Dict[str, Any]] = []
 
     for host in hosts:
-        base_record = {
-            "AIIB.No": "2.1",
-            "Name": "Host should deactivate SSH (Automated)",
-            "CIS.No": "3.1",
-            "CMD": r'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM-SSH" } | '
-                   r'Select Key, Label, Policy, Running, Required',
-            "Host": host.name,
-            "Error": None
-        }
-
         try:
             service = next(
                 (s for s in host.configManager.serviceSystem.serviceInfo.service if s.key == "TSM-SSH"),
                 None
             )
-            if service:
-                base_record.update({
-                    "Value": {
-                        "key": service.key,
-                        "label": service.label,
-                        "policy": service.policy,
-                        "running": service.running,
-                        "required": service.required
-                    },
-                    "Status": "Pass" if service.policy.lower() == "off" else "Fail",
-                    "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
-                })
-                logger.info("[SSH] 主机: %s, SSH运行状态: %s, 策略: %s",
+            results.append({
+                "AIIB.No": "2.1",
+                "Name": "Host should deactivate SSH (Automated)",
+                "CIS.No": "3.1",
+                "CMD": r'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM-SSH" } | '
+                       r'Select Key, Label, Policy, Running, Required',
+                "Host": host.name,
+                "Value": {
+                    "key": service.key,
+                    "label": service.label,
+                    "policy": service.policy,
+                    "running": service.running,
+                    "required": service.required
+                },
+                "Status": "Pass" if service.policy.lower() == "off" else "Fail",
+                "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+                "Error": None
+            })
+
+            logger.info("[SSH] 主机: %s, SSH运行状态: %s, 策略: %s",
                             host.name, service.running, service.policy)
-            else:
-                base_record.update({
-                    "Value": None,
-                    "Status": "Fail",
-                    "Description": "TSM-SSH service not found"
-                })
-                logger.warning("[SSH] 主机 %s 没有找到 TSM-SSH 服务", host.name)
 
         except Exception as e:
-            base_record.update({
+            results.append({
+                "AIIB.No": "2.1",
+                "Name": "Host should deactivate SSH (Automated)",
+                "CIS.No": "3.1",
+                "CMD": r'Get-VMHost | Get-VMHostService | Where { $_.key -eq "TSM-SSH" } | '
+                       r'Select Key, Label, Policy, Running, Required',
+                "Host": host.name,
                 "Value": None,
                 "Status": "Fail",
                 "Description": "TSM-SSH service (Error)",
                 "Error": str(e)
             })
             logger.error("[SSH] 主机 %s 获取 SSH 服务状态失败: %s", host.name, e)
-
-        results.append(base_record)
 
     container.Destroy()
     return results
