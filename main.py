@@ -23,7 +23,7 @@ from vmware_cis_checks import (
     tls_version_manual,  # no_2.16
     syslog_persistent,  # no_3.1
     syslog_remote_loghost,  # no_3.2
-    syslog_info_level_manual,  # no_3.3
+    hostagent_log_level,  # no_3.3
     log_filtering_manual,  # no_3.4
     tls_log_verify_manual,  # no_3.5
     firewall_services_manual,  # no_4.1
@@ -92,7 +92,7 @@ CHECK_MODULES = [
     "vmware_cis_checks.tls_version_manual",
     "vmware_cis_checks.syslog_persistent",
     "vmware_cis_checks.syslog_remote_loghost",
-    "vmware_cis_checks.syslog_info_level_manual",
+    "vmware_cis_checks.hostagent_log_level",
     "vmware_cis_checks.log_filtering_manual",
     "vmware_cis_checks.tls_log_verify_manual",
     "vmware_cis_checks.firewall_services_manual",
