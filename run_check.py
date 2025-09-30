@@ -111,7 +111,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
 
-output_dir = "../log"
+output_dir = "log"
 os.makedirs(output_dir, exist_ok=True)
 
 def run_check():
