@@ -1,0 +1,4562 @@
+[
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-t-esxi-uat08.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-T-VM-PVWA1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-FAS01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-D-VM-Lnx",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-uat-02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-Agt",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ITSP-T-VM-APP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-WS22",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-CPM1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-T-VM-DB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CodeS-T-VM-SCAL",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-T-VM-Ngx",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-AAM",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-t-esxi-uat09.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "CSP-T-VM-RPA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PSMP2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SAMP-T-VM-RHEL8",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-T-VM-FAX",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PSMP1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PVWA2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-t-esxi-uat07.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "CSP-T-VM-LLM",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-T-VM-Web",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SAMP-T-VM-RHEL7",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-GraDB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESG-T-VM-Proxy",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-T-VM-FRE",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-RDS",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "IOKYC-T-VM-APP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-SC",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-GraApp",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ITSP-T-VM-DB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-csz08.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "SWIFT-P-VM-AC02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-GW3",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AWH",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-SQLPAT",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "OPVP-P-VM-SCG",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-CPM2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DB-P-VM-ESG",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PKI-P-VM-Root",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-SQLLA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-Bstn",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-APP1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-csz02.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDI-P-VM-CCC1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-Conn",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "opvp-p-vm-rp01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-SIL2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-Stu",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AAD-P-VM-CPA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UC-P-VM-ALEOV",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-P-VM-OraDB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-GWDB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-WAC02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-EFP2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-DC02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PKI-P-VM-Interm",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RHEL9.4_v1.0_2024-09-24",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PV",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-MAS01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "OPVP-P-VM-VC",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MPS-P-VM-PrtS02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-MBJ2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-csz04.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PKI-P-VM-Issue",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-DNS01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-SF02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "IOKYC-P-VM-APP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-P-VM-EPDP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RFID-P-VM-Mgmt",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-WAC03",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DT-P-VM-PY01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Ness-P-VM-SCSW",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PTA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-A-VM-Conn",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-VF",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MPS-P-VM-PrtS01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-DC01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SMFF-P-VM-Srv",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-P-VM-APP01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-P-VM-RDS",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-AutoMS",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-P-VM-CM01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MPS-P-VM-DB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-CCC2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-LAPS",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-csz01.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PKI-P-VM-CDP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "OPVP-P-VM-Log",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-APP2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AC01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-UD",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-RPA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows Server 2022 Template 202503",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-DB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-Asmt",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows Server 2012r2 Template 2020-5",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-DHCP02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-DDC02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-App",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-P-VM-MSSQL",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RHEL9.4_v1.0_2024-12-13",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-DBBk",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-DBP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-P-VM-EPDA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-P-VM-Efc",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "WSUS-P-VM-BJ",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-csz05.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "CSP-P-VM-GW1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ADP-P-VM-PBIGW",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-SR01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-WEF",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-AAM",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AWHB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-SOLAPP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-DBA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-Web",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MDT-P-VM-Srv",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-csz06.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-P-VM-DB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-P-VM-IC01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-GW2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MPS-P-VM-CNSL01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-MON",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "FS-P-VM-Srv",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MDM-P-VM-AWConn",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-WebBk",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows Server 2019 Template 2022-04",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-FAS01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows Server 2016 Template 2021-02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-CS2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Stge-P-VM-AIQUM",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-UR1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "opvp-p-vm-srm",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-WCSW",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AWP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-P-VM-KMS",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-APPDB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DRP-P-VM-ZFLog",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-WAC01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "OPVP-P-VM-BJVC",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-csz03.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-P-VM-BV",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "opvp-p-vm-rp02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "IOKYC-P-VM-DB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-SF01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-Web",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-PWD1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-Orc",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-Survey",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-PBIGW",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-UR2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-SIL1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-MBJ1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-PWD2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AWPB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-P-VM-Bstn",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ADP-P-VM-IR",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-Con02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-csz07.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "IRBD-P-VM-MSSQL",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-DHCP01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-DDC01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-CS1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-Idx",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AAD-P-VM-Asmt",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-FShare",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-PGDB1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-P-VM-APP02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-P-VM-DB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-SQLNTA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-CPM1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-P-VM-CM02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-WCBJ",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-SOLHA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-P-VM-Proxy",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-t-esxi-uat03.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-D-VM-PVWA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-ADC01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "IOKYC-T-VM-DB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ005",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ001",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-RHEL94",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAX1VBJTMP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MFT-T-VM-MIAS1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CodeS-T-VM-SCAW",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-APPW",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-LMIS02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-DDC01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ007",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "EDH-T-VM-DB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-T-VM-DB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-ES03",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-DBL(2023-11-29)",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-PAMT01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-WK05",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-APPW(2023-11-29)",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-PGDB2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ006",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-T-VM-MSSQL",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-T-VM-DB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-t-esxi-uat02.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "Infra-T-VM-RH92",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "IAR-T-VM-APP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PKI-T-VM-Interm",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "FG-T-VM-FGT01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-T-VM-PGDB1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "EDIS-T-VM-DQ",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-T-VM-APP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-UD",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-T-VM-Server",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SF02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-WebL",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "FG-T-VM-FGT02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-T-VM-CS2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-T-VM-UR1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-T-VM-MBJ4",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-DBW",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SQL01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-DDC02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-WK04",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DB-T-VM-CQ",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-RH9",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-DBL",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows 11 24H2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-t-esxi-uat04.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "ELP-T-VM-ES02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-T-VM-Web",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-T-VM-Orc",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-T-VM-SIL",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-OAI",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-T-VM-DB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-T-VM-APP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-Mast1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-WebL(2023-11-29)",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-LFS",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ002",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AAD-T-VM-CPA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RHEL 8.4 - 2024-03",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-PAMT02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ADP-T-VM-IR",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-WebW",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RHEL9.4_V1.0_2025-06-23",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-APPL",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-T-VM-DC01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-WK02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-t-esxi-uat05.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "AD-T-VM-Conn",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "EDH-T-VM-Mast",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ003",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-T-VM-APP1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-T-VM-Win19",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SQL02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-T-VM-CS1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-T-VM-EFP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PSM1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-T-VM-DC02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-Proxy",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-OORAS",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SQL03",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-T-VM-HA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "INFRA-T-VM-AMDB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-Mast2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-VDA01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ADP-T-VM-PBIGW",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MFT-T-VM-MITS1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SR01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PV",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RD-T-VM-yucao",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-T-VM-APP2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "IAR-T-VM-DB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-t-esxi-uat01.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "SWIFT-T-VM-AC",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "EDH-T-VM-HMS",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-T-VM-DB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DB-T-VM-Win01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DB-T-VM-Lnx01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-AD",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-D-VM-PV",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CodeS-T-VM-SSC",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-TST01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-PGDB1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-T-VM-AWP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-Test",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-APPL(2023-11-29)",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-Cent79",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-DBW(2023-11-29)",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PSM2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-T-VM-MBJ3",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-ADC02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-WK01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-WebW(2023-11-29)",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-T-VM-AWH",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-DsT01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-ADM",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-rhel9az",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-T-VM-RGMON",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-t-esxi-uat06.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-D-VM-Win",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-KA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-Mast3",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PKI-T-VM-Issue",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-ES01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ004",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-LIC",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SF01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "STR-T-VM-AT01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-T-VM-Con",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "samp-t-vm-web",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-T-VM-DC03",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-T-VM-EPD",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-T-VM-Win16",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ADP-U-VM-IR",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PTA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "KRS-T-VM-RW",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SMFF-U-VM-Srv",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "EDH-T-VM-Wk01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-uat-01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-LMIS01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-WK03",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AVS-T-VM-DSMain",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SAMP-T-VM-Core1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NET-T-VM-FMG",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-csz10.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "MCMP-P-VM-Wk04",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-EFP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Mast1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NET-P-VM-FMC",
+                "Serial Ports": [
+                    {
+                        "Label": "Serial port 1",
+                        "Summary": ""
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Wk02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-PGDB1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-VtsDB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-csz09.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "AVS-P-VM-DSM02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-OORAS",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Ness-P-VM-SCSG",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-LFS02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-FRE",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-PGDB2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-GraApp",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-P-VM-AOM",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-ES01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NET-P-VM-NFS",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Mast3",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Wk01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-csz11.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "Infra-P-VM-Proxy_old",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NET-P-VM-DNAC",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-csz12.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "ELP-P-VM-LFS01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AVS-P-VM-PGSQL",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Ness-P-VM-Scan",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-LA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Ness-P-VM-Scan2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Mast2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-CSDR",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-ES03",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NET-P-VM-SPCN",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-csz13.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "ADOT-P-VM-agt01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RHEL9.4_V1.0_2025-06-23-02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Wk05",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-KA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-LFS03",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "samp-p-vm-web",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SAMP-P-VM-CORE1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ADOT-P-VM-agt02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DT-P-VM-Py1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SAMP-P-VM-DB1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Wk03",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Wk06",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DT-P-VM-MGT",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-csz14.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "ELP-P-VM-GraDB",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AVS-P-VM-DSM01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-csz02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-ES02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-Con01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-dmz02.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "NET-P-VM-ISE03",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PSMP2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-P-VM-GW01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AV-P-VM-Mgmt",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "STR-P-VM-AT01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-NgxBk",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PSM1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-dmz01.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDI-P-VM-ADC02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PVWA2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-dmz-01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-COL01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MRMS-P-VM-Ngx2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PSMP1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-Ngx",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UCS-P-VM-SBCP1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "IDS-P-VM-APP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MRMS-P-VM-Ngx1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "test",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-dmz03.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-P-VM-PSM2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PVWA1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-ADC01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-vdi03.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDISWTVBJ005",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ020",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ004",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ022",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ011",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ021",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ002",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMISA2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ001",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ012",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ007",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VBJ004",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ005",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows 11 24H2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ007",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ014",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-PAMP2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIWin11",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAXITMP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ001",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ031",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-vdi02.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDISWTVBJ008",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ003",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ008",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ017",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ004",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ027",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ008",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ004",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ016",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ021",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ032",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS3",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ023",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMISA1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ014",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ018",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS03",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VBJ003",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAVBJTMP02",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-PAMP1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows 10 Enterprise 21H2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-PAMP3",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-vdi01.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDISWTVBJ019",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ026",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ001",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ005",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ017",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ009",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ010",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ003",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ016",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ022",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ011",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows 11 22H2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAXICTMP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-PAMP4",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows10-VDI-TEMP-VBS",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ009",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-EAPP1",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ028",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ015",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ005",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS04",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAX1VBJTMP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ010",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-EAPP2",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Automated)",
+        "CIS.NO": "7.13",
+        "CMD": "Get-VM | Get-SerialPort",
+        "Host": "vx-p-esxi-vdi04.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDISWTVBJ030",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ029",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ024",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VBJ001",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ013",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-vdi-01",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ019",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ006",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ015",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VBJ002",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ020",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS4",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ007",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1C003",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJTMP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VBJTMP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ002",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJX1TMP",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ001",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1C002",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-CCSR",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1C001",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Serial Port devices",
+        "Error": null
+    }
+]

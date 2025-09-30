@@ -1,0 +1,12 @@
+[
+    {
+        "AIIB.No": "6.4",
+        "Name": "Virtual machines must remove unnecessary AHCI devices (Manual)",
+        "CIS.No": "7.11",
+        "CMD": null,
+        "Host": null,
+        "Value": null,
+        "Description": "需要人工检查 VM 是否移除不必要的 AHCI 设备",
+        "Error": null
+    }
+]

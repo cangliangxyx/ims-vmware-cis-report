@@ -1,0 +1,302 @@
+[
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-t-esxi-uat08.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-t-esxi-uat09.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-t-esxi-uat07.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-csz08.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-csz02.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-csz04.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-csz01.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-csz05.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-csz06.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-csz03.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-csz07.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-t-esxi-uat03.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-t-esxi-uat02.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-t-esxi-uat04.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-t-esxi-uat05.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-t-esxi-uat01.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-t-esxi-uat06.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-csz10.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-csz09.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-csz11.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-csz12.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-csz13.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-csz14.vsphere.aiib.org",
+        "Value": "[] /scratch/log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-dmz02.vsphere.aiib.org",
+        "Value": "[VxRail-Virtual-SAN-Datastore-DMZ E660] vx-p-esxi-dmz02log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-dmz01.vsphere.aiib.org",
+        "Value": "[VxRail-Virtual-SAN-Datastore-DMZ E660] vx-p-esxi-dmz01log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-dmz03.vsphere.aiib.org",
+        "Value": "[VxRail-Virtual-SAN-Datastore-DMZ E660] vx-p-esxi-dmz03log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-vdi03.vsphere.aiib.org",
+        "Value": "[VxRail-Virtual-SAN-Datastore-VDI E660F] vx-p-esxi-vdi03log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-vdi02.vsphere.aiib.org",
+        "Value": "[VxRail-Virtual-SAN-Datastore-VDI E660F] vx-p-esxi-vdi02log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-vdi01.vsphere.aiib.org",
+        "Value": "[VxRail-Virtual-SAN-Datastore-VDI E660F] vx-p-esxi-vdi01log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.1",
+        "Name": "Persistent Syslog Configuration (Read Only)",
+        "CIS.No": "4.1",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logDir",
+        "Host": "vx-p-esxi-vdi04.vsphere.aiib.org",
+        "Value": "[VxRail-Virtual-SAN-Datastore-VDI E660F] vx-p-esxi-vdi04log",
+        "Description": "Persistent syslog directory",
+        "Error": null
+    }
+]

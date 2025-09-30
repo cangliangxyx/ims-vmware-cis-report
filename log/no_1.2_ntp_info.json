@@ -1,0 +1,580 @@
+[
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-t-esxi-uat08.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-t-esxi-uat09.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-t-esxi-uat07.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-csz08.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-csz02.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-csz04.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-csz01.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-csz05.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-csz06.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-csz03.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-csz07.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-t-esxi-uat03.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-t-esxi-uat02.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-t-esxi-uat04.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-t-esxi-uat05.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-t-esxi-uat01.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-t-esxi-uat06.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-csz10.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-csz09.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-csz11.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-csz12.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-csz13.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-csz14.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-dmz02.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-dmz01.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-dmz03.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-vdi03.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-vdi02.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-vdi01.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-p-esxi-vdi04.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    },
+    {
+        "AIIB.No": "1.2",
+        "Name": "Host must have reliable time synchronization sources",
+        "CIS.No": "2.6",
+        "CMD": "Get-VMHost | Select-Object Name, @{Name=\"NTPSetting\"; Expression={ ($_ | Get-VMHostNtpServer)}}",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": {
+            "NTPServers": [
+                "time1.aiib.org",
+                "time2.aiib.org"
+            ],
+            "Count": 2
+        },
+        "Status": "Pass",
+        "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
+        "Error": null
+    }
+]

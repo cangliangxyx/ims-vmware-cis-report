@@ -1,0 +1,452 @@
+[
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-t-esxi-uat08.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-t-esxi-uat09.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-t-esxi-uat07.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-csz08.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-csz02.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-csz04.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-csz01.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-csz05.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-csz06.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-csz03.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-csz07.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-t-esxi-uat03.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-t-esxi-uat02.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-t-esxi-uat04.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-t-esxi-uat05.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-t-esxi-uat01.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-t-esxi-uat06.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-csz10.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-csz09.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-csz11.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-csz12.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-csz13.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-csz14.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-dmz02.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-dmz01.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-dmz03.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-vdi03.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-vdi02.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-vdi01.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.4",
+        "Name": "Host should deactivate SNMP",
+        "CIS.No": "3.6",
+        "CMD": "host->configure->services->snmp server 的值",
+        "Host": "vx-p-esxi-vdi04.vsphere.aiib.org",
+        "Value": {
+            "key": "snmpd",
+            "label": "SNMP Server",
+            "running": false,
+            "required": false
+        },
+        "Description": "snmp_service.running = True → \"running\";\n                    snmp_service.running = False → \"stopped\";\n                    检测方法：\"running\": false\n                    ",
+        "Error": null
+    }
+]

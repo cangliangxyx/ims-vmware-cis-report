@@ -1,0 +1,4562 @@
+[
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-t-esxi-uat08.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-T-VM-PVWA1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-FAS01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-D-VM-Lnx",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-uat-02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-Agt",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ITSP-T-VM-APP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-WS22",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-CPM1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-T-VM-DB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CodeS-T-VM-SCAL",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-T-VM-Ngx",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-AAM",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-t-esxi-uat09.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "CSP-T-VM-RPA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PSMP2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SAMP-T-VM-RHEL8",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-T-VM-FAX",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PSMP1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PVWA2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-t-esxi-uat07.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "CSP-T-VM-LLM",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-T-VM-Web",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SAMP-T-VM-RHEL7",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-GraDB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESG-T-VM-Proxy",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-T-VM-FRE",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-RDS",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "IOKYC-T-VM-APP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-SC",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-GraApp",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ITSP-T-VM-DB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-csz08.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "SWIFT-P-VM-AC02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-GW3",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AWH",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-SQLPAT",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "OPVP-P-VM-SCG",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-CPM2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DB-P-VM-ESG",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PKI-P-VM-Root",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-SQLLA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-Bstn",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-APP1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-csz02.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDI-P-VM-CCC1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-Conn",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "opvp-p-vm-rp01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-SIL2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-Stu",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AAD-P-VM-CPA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UC-P-VM-ALEOV",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-P-VM-OraDB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-GWDB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-WAC02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-EFP2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-DC02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PKI-P-VM-Interm",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RHEL9.4_v1.0_2024-09-24",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PV",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-MAS01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "OPVP-P-VM-VC",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MPS-P-VM-PrtS02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-MBJ2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-csz04.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PKI-P-VM-Issue",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-DNS01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-SF02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "IOKYC-P-VM-APP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-P-VM-EPDP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RFID-P-VM-Mgmt",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-WAC03",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DT-P-VM-PY01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Ness-P-VM-SCSW",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PTA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-A-VM-Conn",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-VF",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MPS-P-VM-PrtS01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-DC01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SMFF-P-VM-Srv",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-P-VM-APP01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-P-VM-RDS",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-AutoMS",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-P-VM-CM01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MPS-P-VM-DB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-CCC2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-LAPS",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-csz01.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PKI-P-VM-CDP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "OPVP-P-VM-Log",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-APP2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AC01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-UD",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-RPA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows Server 2022 Template 202503",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-DB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-Asmt",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows Server 2012r2 Template 2020-5",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-DHCP02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-DDC02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-App",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-P-VM-MSSQL",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RHEL9.4_v1.0_2024-12-13",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-DBBk",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-DBP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-P-VM-EPDA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-P-VM-Efc",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "WSUS-P-VM-BJ",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-csz05.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "CSP-P-VM-GW1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ADP-P-VM-PBIGW",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-SR01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-WEF",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-AAM",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AWHB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-SOLAPP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-DBA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-Web",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MDT-P-VM-Srv",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-csz06.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-P-VM-DB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-P-VM-IC01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-GW2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MPS-P-VM-CNSL01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-MON",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "FS-P-VM-Srv",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MDM-P-VM-AWConn",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-WebBk",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows Server 2019 Template 2022-04",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-FAS01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows Server 2016 Template 2021-02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-CS2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Stge-P-VM-AIQUM",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-UR1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "opvp-p-vm-srm",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-WCSW",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AWP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-P-VM-KMS",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-APPDB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DRP-P-VM-ZFLog",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-WAC01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "OPVP-P-VM-BJVC",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-csz03.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-P-VM-BV",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "opvp-p-vm-rp02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "IOKYC-P-VM-DB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-SF01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-Web",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-PWD1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-Orc",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-Survey",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-PBIGW",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-UR2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-SIL1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-MBJ1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-PWD2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AWPB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-P-VM-Bstn",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ADP-P-VM-IR",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-Con02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-csz07.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "IRBD-P-VM-MSSQL",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-DHCP01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-DDC01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-CS1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-Idx",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AAD-P-VM-Asmt",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-FShare",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-PGDB1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-P-VM-APP02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-P-VM-DB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-SQLNTA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-CPM1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-P-VM-CM02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-WCBJ",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-SOLHA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-P-VM-Proxy",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-t-esxi-uat03.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-D-VM-PVWA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-ADC01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "IOKYC-T-VM-DB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ005",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ001",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-RHEL94",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAX1VBJTMP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MFT-T-VM-MIAS1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CodeS-T-VM-SCAW",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-APPW",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-LMIS02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-DDC01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ007",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "EDH-T-VM-DB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-T-VM-DB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-ES03",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-DBL(2023-11-29)",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-PAMT01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-WK05",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-APPW(2023-11-29)",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-PGDB2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ006",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-T-VM-MSSQL",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-T-VM-DB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-t-esxi-uat02.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "Infra-T-VM-RH92",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "IAR-T-VM-APP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PKI-T-VM-Interm",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "FG-T-VM-FGT01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-T-VM-PGDB1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "EDIS-T-VM-DQ",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-T-VM-APP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-UD",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-T-VM-Server",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SF02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-WebL",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "FG-T-VM-FGT02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-T-VM-CS2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-T-VM-UR1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-T-VM-MBJ4",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-DBW",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SQL01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-DDC02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-WK04",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DB-T-VM-CQ",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-RH9",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-DBL",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows 11 24H2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-t-esxi-uat04.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "ELP-T-VM-ES02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-T-VM-Web",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-T-VM-Orc",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-T-VM-SIL",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-OAI",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-T-VM-DB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-T-VM-APP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-Mast1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-WebL(2023-11-29)",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-LFS",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ002",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AAD-T-VM-CPA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RHEL 8.4 - 2024-03",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-PAMT02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ADP-T-VM-IR",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-WebW",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RHEL9.4_V1.0_2025-06-23",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-APPL",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-T-VM-DC01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-WK02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-t-esxi-uat05.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "AD-T-VM-Conn",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "EDH-T-VM-Mast",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ003",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-T-VM-APP1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-T-VM-Win19",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SQL02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-T-VM-CS1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-T-VM-EFP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PSM1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-T-VM-DC02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-Proxy",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-OORAS",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SQL03",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-T-VM-HA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "INFRA-T-VM-AMDB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-Mast2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-VDA01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ADP-T-VM-PBIGW",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MFT-T-VM-MITS1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SR01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PV",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RD-T-VM-yucao",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-T-VM-APP2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "IAR-T-VM-DB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-t-esxi-uat01.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "SWIFT-T-VM-AC",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "EDH-T-VM-HMS",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-T-VM-DB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DB-T-VM-Win01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DB-T-VM-Lnx01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-AD",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-D-VM-PV",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CodeS-T-VM-SSC",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-TST01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-PGDB1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-T-VM-AWP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-Test",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-APPL(2023-11-29)",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-Cent79",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-DBW(2023-11-29)",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PSM2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-T-VM-MBJ3",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-ADC02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-WK01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-WebW(2023-11-29)",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-T-VM-AWH",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-DsT01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-ADM",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-rhel9az",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-T-VM-RGMON",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-t-esxi-uat06.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-D-VM-Win",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-KA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-Mast3",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PKI-T-VM-Issue",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-ES01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ004",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-LIC",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SF01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "STR-T-VM-AT01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-T-VM-Con",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "samp-t-vm-web",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-T-VM-DC03",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-T-VM-EPD",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-T-VM-Win16",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ADP-U-VM-IR",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PTA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "KRS-T-VM-RW",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SMFF-U-VM-Srv",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "EDH-T-VM-Wk01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-uat-01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-LMIS01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-WK03",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AVS-T-VM-DSMain",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SAMP-T-VM-Core1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NET-T-VM-FMG",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-csz10.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "MCMP-P-VM-Wk04",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-EFP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Mast1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NET-P-VM-FMC",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Wk02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-PGDB1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-VtsDB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-csz09.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "AVS-P-VM-DSM02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-OORAS",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Ness-P-VM-SCSG",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-LFS02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-FRE",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-PGDB2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-GraApp",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-P-VM-AOM",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-ES01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NET-P-VM-NFS",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Mast3",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Wk01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-csz11.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "Infra-P-VM-Proxy_old",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NET-P-VM-DNAC",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-csz12.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "ELP-P-VM-LFS01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AVS-P-VM-PGSQL",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Ness-P-VM-Scan",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-LA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Ness-P-VM-Scan2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Mast2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-CSDR",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-ES03",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NET-P-VM-SPCN",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-csz13.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "ADOT-P-VM-agt01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RHEL9.4_V1.0_2025-06-23-02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Wk05",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-KA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-LFS03",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "samp-p-vm-web",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SAMP-P-VM-CORE1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ADOT-P-VM-agt02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DT-P-VM-Py1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SAMP-P-VM-DB1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Wk03",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Wk06",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DT-P-VM-MGT",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-csz14.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "ELP-P-VM-GraDB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AVS-P-VM-DSM01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-csz02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-ES02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-Con01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-dmz02.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "NET-P-VM-ISE03",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PSMP2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-P-VM-GW01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AV-P-VM-Mgmt",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "STR-P-VM-AT01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-NgxBk",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PSM1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-dmz01.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDI-P-VM-ADC02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PVWA2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-dmz-01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-COL01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MRMS-P-VM-Ngx2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PSMP1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-Ngx",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UCS-P-VM-SBCP1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "IDS-P-VM-APP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "MRMS-P-VM-Ngx1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "test",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-dmz03.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-P-VM-PSM2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PVWA1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-ADC01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-vdi03.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDISWTVBJ005",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ020",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ004",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ022",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ011",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ021",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ002",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMISA2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ001",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ012",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ007",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VBJ004",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ005",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows 11 24H2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ007",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ014",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-PAMP2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIWin11",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAXITMP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ001",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ031",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-vdi02.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDISWTVBJ008",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ003",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ008",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ017",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ004",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ027",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ008",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ004",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ016",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ021",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ032",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS3",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ023",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMISA1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ014",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ018",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS03",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VBJ003",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAVBJTMP02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-PAMP1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows 10 Enterprise 21H2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-PAMP3",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-vdi01.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDISWTVBJ019",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ026",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ001",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ005",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ017",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ009",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ010",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ003",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ016",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ022",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ011",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows 11 22H2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAXICTMP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-PAMP4",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "Windows10-VDI-TEMP-VBS",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ009",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-EAPP1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ028",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ015",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ005",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS04",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAX1VBJTMP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ010",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-EAPP2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Automated)",
+        "CIS.NO": "7.12",
+        "CMD": "Get-VM | Get-USBDevice",
+        "Host": "vx-p-esxi-vdi04.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDISWTVBJ030",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ029",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ024",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VBJ001",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ013",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-vdi-01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ019",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ006",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ015",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VBJ002",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ020",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS4",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ007",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1C003",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJTMP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VBJTMP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ002",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJX1TMP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ001",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1C002",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-CCSR",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1C001",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM USB/XHCI devices",
+        "Error": null
+    }
+]

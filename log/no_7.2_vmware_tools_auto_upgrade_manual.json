@@ -1,0 +1,12 @@
+[
+    {
+        "AIIB.No": "7.2",
+        "Name": "VMware Tools should configure automatic upgrades as appropriate for the environment (Manual)",
+        "CIS.No": "8.3",
+        "CMD": null,
+        "Host": null,
+        "Value": null,
+        "Description": "需要人工检查 VMware Tools 是否为环境配置了自动升级",
+        "Error": null
+    }
+]

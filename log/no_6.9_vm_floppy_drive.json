@@ -1,0 +1,5032 @@
+[
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-t-esxi-uat08.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-T-VM-PVWA1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-FAS01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-D-VM-Lnx",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-uat-02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Floppy 0",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-Agt",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ITSP-T-VM-APP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-WS22",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-CPM1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-T-VM-DB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CodeS-T-VM-SCAL",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-T-VM-Ngx",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-AAM",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-t-esxi-uat09.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "CSP-T-VM-RPA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PSMP2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SAMP-T-VM-RHEL8",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Net-T-VM-FAX",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PSMP1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PVWA2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-t-esxi-uat07.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "CSP-T-VM-LLM",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-T-VM-Web",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SAMP-T-VM-RHEL7",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-GraDB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ESG-T-VM-Proxy",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-T-VM-FRE",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-RDS",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "IOKYC-T-VM-APP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-SC",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-GraApp",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ITSP-T-VM-DB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-csz08.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "SWIFT-P-VM-AC02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-GW3",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AWH",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-SQLPAT",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "OPVP-P-VM-SCG",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-CPM2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "DB-P-VM-ESG",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PKI-P-VM-Root",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Floppy 0",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-SQLLA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-Bstn",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-APP1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-csz02.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDI-P-VM-CCC1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-Conn",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "opvp-p-vm-rp01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-SIL2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-Stu",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AAD-P-VM-CPA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UC-P-VM-ALEOV",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-P-VM-OraDB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-GWDB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-WAC02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-EFP2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-DC02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PKI-P-VM-Interm",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "RHEL9.4_v1.0_2024-09-24",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PV",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-MAS01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "OPVP-P-VM-VC",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MPS-P-VM-PrtS02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-MBJ2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-csz04.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PKI-P-VM-Issue",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-DNS01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-SF02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "IOKYC-P-VM-APP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-P-VM-EPDP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "RFID-P-VM-Mgmt",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-WAC03",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "DT-P-VM-PY01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Ness-P-VM-SCSW",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PTA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AD-A-VM-Conn",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-VF",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MPS-P-VM-PrtS01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-DC01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SMFF-P-VM-Srv",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-P-VM-APP01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-P-VM-RDS",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-AutoMS",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-P-VM-CM01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MPS-P-VM-DB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-CCC2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-LAPS",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-csz01.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PKI-P-VM-CDP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "OPVP-P-VM-Log",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-APP2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AC01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-UD",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-RPA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Windows Server 2022 Template 202503",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-DB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-Asmt",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Windows Server 2012r2 Template 2020-5",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-DHCP02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-DDC02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-App",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-P-VM-MSSQL",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "RHEL9.4_v1.0_2024-12-13",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-DBBk",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-DBP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-P-VM-EPDA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-P-VM-Efc",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "WSUS-P-VM-BJ",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-csz05.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "CSP-P-VM-GW1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ADP-P-VM-PBIGW",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-SR01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-WEF",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-AAM",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AWHB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-SOLAPP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-DBA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-Web",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MDT-P-VM-Srv",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-csz06.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-P-VM-DB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-P-VM-IC01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-GW2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MPS-P-VM-CNSL01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-MON",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "FS-P-VM-Srv",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MDM-P-VM-AWConn",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-WebBk",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Windows Server 2019 Template 2022-04",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-FAS01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Windows Server 2016 Template 2021-02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-CS2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Stge-P-VM-AIQUM",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-UR1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "opvp-p-vm-srm",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-WCSW",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AWP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-P-VM-KMS",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-APPDB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "DRP-P-VM-ZFLog",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-WAC01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "OPVP-P-VM-BJVC",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-csz03.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-P-VM-BV",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "opvp-p-vm-rp02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "IOKYC-P-VM-DB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-SF01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-Web",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-PWD1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-Orc",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-Survey",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-PBIGW",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-UR2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-SIL1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-MBJ1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-PWD2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AWPB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-P-VM-Bstn",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ADP-P-VM-IR",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-Con02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-csz07.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "IRBD-P-VM-MSSQL",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Net-P-VM-DHCP01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-DDC01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-CS1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-Idx",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AAD-P-VM-Asmt",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-FShare",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-PGDB1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-P-VM-APP02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-P-VM-DB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-SQLNTA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-CPM1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-P-VM-CM02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-WCBJ",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-SOLHA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-P-VM-Proxy",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-t-esxi-uat03.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-D-VM-PVWA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-ADC01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "IOKYC-T-VM-DB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ005",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ001",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-RHEL94",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAX1VBJTMP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MFT-T-VM-MIAS1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CodeS-T-VM-SCAW",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-APPW",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-LMIS02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-DDC01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ007",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "EDH-T-VM-DB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-T-VM-DB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-ES03",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-DBL(2023-11-29)",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-PAMT01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-WK05",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-APPW(2023-11-29)",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-PGDB2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ006",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-T-VM-MSSQL",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-T-VM-DB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-t-esxi-uat02.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "Infra-T-VM-RH92",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "IAR-T-VM-APP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PKI-T-VM-Interm",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "FG-T-VM-FGT01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-T-VM-PGDB1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "EDIS-T-VM-DQ",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-T-VM-APP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-UD",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-T-VM-Server",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SF02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-WebL",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "FG-T-VM-FGT02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-T-VM-CS2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-T-VM-UR1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-T-VM-MBJ4",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-DBW",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SQL01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-DDC02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-WK04",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "DB-T-VM-CQ",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-RH9",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-DBL",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Windows 11 24H2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-t-esxi-uat04.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "ELP-T-VM-ES02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-T-VM-Web",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-T-VM-Orc",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-T-VM-SIL",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-OAI",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-T-VM-DB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-T-VM-APP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-Mast1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-WebL(2023-11-29)",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-LFS",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ002",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AAD-T-VM-CPA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "RHEL 8.4 - 2024-03",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-PAMT02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ADP-T-VM-IR",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-WebW",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "RHEL9.4_V1.0_2025-06-23",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-APPL",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AD-T-VM-DC01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-WK02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-t-esxi-uat05.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "AD-T-VM-Conn",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "EDH-T-VM-Mast",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ003",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-T-VM-APP1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-T-VM-Win19",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SQL02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-T-VM-CS1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-T-VM-EFP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PSM1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AD-T-VM-DC02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-Proxy",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-OORAS",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SQL03",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-T-VM-HA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "INFRA-T-VM-AMDB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-Mast2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-VDA01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ADP-T-VM-PBIGW",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MFT-T-VM-MITS1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SR01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PV",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "RD-T-VM-yucao",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-T-VM-APP2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "IAR-T-VM-DB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-t-esxi-uat01.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "SWIFT-T-VM-AC",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "EDH-T-VM-HMS",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-T-VM-DB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "DB-T-VM-Win01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "DB-T-VM-Lnx01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-AD",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-D-VM-PV",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CodeS-T-VM-SSC",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-TST01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-PGDB1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-T-VM-AWP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-Test",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-APPL(2023-11-29)",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-Cent79",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-DBW(2023-11-29)",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PSM2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-T-VM-MBJ3",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-ADC02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-WK01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-WebW(2023-11-29)",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-T-VM-AWH",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-DsT01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-ADM",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-T-VM-rhel9az",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-T-VM-RGMON",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-t-esxi-uat06.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-D-VM-Win",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-KA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-Mast3",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PKI-T-VM-Issue",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-ES01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ004",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-LIC",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SF01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "STR-T-VM-AT01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-T-VM-Con",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "samp-t-vm-web",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AD-T-VM-DC03",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "DLP-T-VM-EPD",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-T-VM-Win16",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ADP-U-VM-IR",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PTA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "KRS-T-VM-RW",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SMFF-U-VM-Srv",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "EDH-T-VM-Wk01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-uat-01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Floppy 0",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-LMIS01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-T-VM-WK03",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AVS-T-VM-DSMain",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SAMP-T-VM-Core1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "NET-T-VM-FMG",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-csz10.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "MCMP-P-VM-Wk04",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-EFP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Mast1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "NET-P-VM-FMC",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Wk02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-PGDB1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-VtsDB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-csz09.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "AVS-P-VM-DSM02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-OORAS",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Ness-P-VM-SCSG",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-LFS02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-FRE",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-PGDB2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-GraApp",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Infra-P-VM-AOM",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-ES01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "NET-P-VM-NFS",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Mast3",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Wk01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-csz11.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "Infra-P-VM-Proxy_old",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "NET-P-VM-DNAC",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-csz12.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "ELP-P-VM-LFS01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AVS-P-VM-PGSQL",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Ness-P-VM-Scan",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-LA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Ness-P-VM-Scan2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Mast2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-CSDR",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-ES03",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "NET-P-VM-SPCN",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-csz13.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "ADOT-P-VM-agt01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "RHEL9.4_V1.0_2025-06-23-02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Wk05",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-KA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-LFS03",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "samp-p-vm-web",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SAMP-P-VM-CORE1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ADOT-P-VM-agt02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "DT-P-VM-Py1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SAMP-P-VM-DB1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Wk03",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MCMP-P-VM-Wk06",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "DT-P-VM-MGT",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-csz14.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "ELP-P-VM-GraDB",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AVS-P-VM-DSM01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-csz02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Floppy 0",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-ES02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-Con01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-dmz02.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "NET-P-VM-ISE03",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PSMP2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UFTP-P-VM-GW01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "AV-P-VM-Mgmt",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "STR-P-VM-AT01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-NgxBk",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PSM1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-dmz01.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDI-P-VM-ADC02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PVWA2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-dmz-01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Floppy 0",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "SOC-P-VM-COL01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MRMS-P-VM-Ngx2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PSMP1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "ESrv-P-VM-Ngx",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Remote",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "UCS-P-VM-SBCP1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "IDS-P-VM-APP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "MRMS-P-VM-Ngx1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "test",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-dmz03.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "PAM-P-VM-PSM2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-P-VM-PVWA1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-ADC01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-vdi03.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDISWTVBJ005",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ020",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ004",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ022",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ011",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ021",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ002",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMISA2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ001",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ012",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ007",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VBJ004",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ005",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Windows 11 24H2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ007",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ014",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-PAMP2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIWin11",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAXITMP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ001",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ031",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-vdi02.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDISWTVBJ008",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ003",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ008",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ017",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ004",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ027",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ008",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ004",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ016",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ021",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ032",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS3",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ023",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMISA1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ014",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ018",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS03",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VBJ003",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAVBJTMP02",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-PAMP1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Windows 10 Enterprise 21H2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-PAMP3",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-vdi01.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDISWTVBJ019",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ026",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ001",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ005",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ017",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ009",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ010",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAVBJ003",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ016",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ022",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ011",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Windows 11 22H2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAXICTMP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-PAMP4",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "Windows10-VDI-TEMP-VBS",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ009",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-EAPP1",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ028",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ015",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ005",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS04",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIOAX1VBJTMP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ010",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-EAPP2",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    },
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Automated)",
+        "CIS.NO": "7.16",
+        "CMD": "Get-VM | Get-FloppyDrive | Select Parent, Name, ConnectionState",
+        "Host": "vx-p-esxi-vdi04.vsphere.aiib.org",
+        "Value": [
+            {
+                "VM": "VDISWTVBJ030",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ029",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ024",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VBJ001",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ013",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-vdi-01",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy drive 1",
+                        "Summary": "Floppy 0",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ019",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ006",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ015",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VBJ002",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ020",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-LMIS4",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ007",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1C003",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJTMP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VBJTMP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ002",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJX1TMP",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ001",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1C002",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-CCSR",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1C001",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            }
+        ],
+        "Description": "Check VM Floppy drives",
+        "Error": null
+    }
+]

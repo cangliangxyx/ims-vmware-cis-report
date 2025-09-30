@@ -1,0 +1,422 @@
+[
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-t-esxi-uat08.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-t-esxi-uat09.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-t-esxi-uat07.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-csz08.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-csz02.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-csz04.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-csz01.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-csz05.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-csz06.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-csz03.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-csz07.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-t-esxi-uat03.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-t-esxi-uat02.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-t-esxi-uat04.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-t-esxi-uat05.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-t-esxi-uat01.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-t-esxi-uat06.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-csz10.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-csz09.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-csz11.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-csz12.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-csz13.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-csz14.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-dmz02.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-dmz01.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-dmz03.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-vdi03.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-vdi02.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-vdi01.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    },
+    {
+        "AIIB.No": "2.6",
+        "Name": "Host must not suppress warnings that the shell is enabled",
+        "CIS.No": "3.10",
+        "CMD": "host->configure->advanced system setting->UserVars.SuppressShellWarning",
+        "Host": "vx-p-esxi-vdi04.vsphere.aiib.org",
+        "Value": {
+            "key": "UserVars.SuppressShellWarning",
+            "value": 0,
+            "type": "long"
+        },
+        "Description": "当 value=1 表示抑制警告，不符合要求；\n当 value=0 表示显示警告，符合要求。\n检测方法：应检查 \"value\" == 0",
+        "Error": null
+    }
+]

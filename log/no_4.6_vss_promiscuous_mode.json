@@ -1,0 +1,512 @@
+[
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-t-esxi-uat08.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-t-esxi-uat09.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-t-esxi-uat07.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-csz08.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-csz02.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchiDRACvusb",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-csz04.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchiDRACvusb",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-csz01.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchiDRACvusb",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-csz05.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-csz06.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-csz03.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchiDRACvusb",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-csz07.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-t-esxi-uat03.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-t-esxi-uat02.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-t-esxi-uat04.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-t-esxi-uat05.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-t-esxi-uat01.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-t-esxi-uat06.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-csz10.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-csz09.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-csz11.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-csz12.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-csz13.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-csz14.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-dmz02.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-dmz01.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-dmz03.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-vdi03.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-vdi02.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-vdi01.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    },
+    {
+        "AIIB.No": "4.6",
+        "Name": "Host standard vSwitch must reject Promiscuous Mode",
+        "CIS.No": "5.8",
+        "CMD": "Get-VirtualSwitch | Select Name, @{Name=\"PromiscuousMode\";Expression={$_.Policy.Security.AllowPromiscuous}}",
+        "Host": "vx-p-esxi-vdi04.vsphere.aiib.org",
+        "Value": [
+            {
+                "vswitch": "vSwitchBMC",
+                "promiscuous_mode": "Reject",
+                "mac_changes": "Reject",
+                "forged_transmits": "Reject"
+            }
+        ],
+        "Description": "Standard vSwitch security policies for Promiscuous mode, MAC changes, and Forged Transmits",
+        "Error": null
+    }
+]
