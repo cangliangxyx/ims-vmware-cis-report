@@ -308,6 +308,10 @@
         "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "CSP-R-VM-RPA",
+                "mks.enable3d": "Not Configured"
+            },
+            {
                 "VM": "CSP-R-VM-GW1",
                 "mks.enable3d": "Not Configured"
             },

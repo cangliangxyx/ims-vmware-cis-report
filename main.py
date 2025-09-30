@@ -76,7 +76,7 @@ os.makedirs(LOG_DIR, exist_ok=True)  # 确保 log/ 存在
 CHECK_MODULES = [
     "vmware_cis_checks.software_general",
     "vmware_cis_checks.ntp_info",
-    "vmware_cis_checks.ime_sync",
+    "vmware_cis_checks.time_sync",
     "vmware_cis_checks.mem_share_salt",
     "vmware_cis_checks.tsm_ssh",
     "vmware_cis_checks.tsm",

@@ -9,7 +9,7 @@
             "key": "TSM-SSH",
             "label": "SSH",
             "policy": "off",
-            "running": false,
+            "running": true,
             "required": false
         },
         "Description": "TSM-SSH service status",

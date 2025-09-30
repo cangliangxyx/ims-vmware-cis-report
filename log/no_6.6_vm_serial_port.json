@@ -643,6 +643,15 @@
         "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "CSP-R-VM-RPA",
+                "Serial Ports": [
+                    {
+                        "Label": "SerialPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "CSP-R-VM-GW1",
                 "Serial Ports": [
                     {

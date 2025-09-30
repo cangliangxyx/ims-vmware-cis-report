@@ -710,6 +710,16 @@
         "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "CSP-R-VM-RPA",
+                "Floppy Drives": [
+                    {
+                        "Label": "Floppy",
+                        "Summary": "Not Present",
+                        "Connected": false
+                    }
+                ]
+            },
+            {
                 "VM": "CSP-R-VM-GW1",
                 "Floppy Drives": [
                     {
