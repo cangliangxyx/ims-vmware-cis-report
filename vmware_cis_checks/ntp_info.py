@@ -1,3 +1,4 @@
+import os
 import logging
 from typing import List, Dict, Any
 from pyVmomi import vim
@@ -38,7 +39,12 @@ def get_hosts_ntp(content) -> List[Dict[str, Any]]:
                 "Error": None
             })
 
-            logger.info("主机: %s, NTP: %s, Status: %s", host.name, ntp_servers if ntp_servers else "未配置", "Pass" if count >= 2 else "Fail")
+            logger.info(
+                "主机: %s, NTP: %s, Status: %s",
+                host.name,
+                ntp_servers if ntp_servers else "未配置",
+                "Pass" if count >= 2 else "Fail"
+            )
 
         except Exception as e:
             results.append({
@@ -59,17 +65,21 @@ def get_hosts_ntp(content) -> List[Dict[str, Any]]:
 
 
 def main(output_dir: str = None):
-    # 如果没有传 output_dir，就用默认目录 ../log
-    if output_dir is None:
-        output_dir = "../log"
-
-    # 拼接输出文件路径
-    output_path = f"{output_dir}/no_1.2_ntp.json"
+    """按主机拆分 NTP 配置并单独存为 JSON 文件"""
+    output_dir = output_dir or "../log"
+    os.makedirs(output_dir, exist_ok=True)
 
     with VsphereConnection() as si:
         content = si.RetrieveContent()
         ntp_info = get_hosts_ntp(content)
-        export_to_json(ntp_info, output_path)
+
+        # 按主机拆分文件
+        for host_entry in ntp_info:
+            hostname = host_entry["Host"]
+            json_path = os.path.join(output_dir, f"no_1.2_{hostname}_ntp.json")
+            export_to_json([host_entry], json_path)
+            logger.info("主机 %s 的 NTP 配置已导出到 %s", hostname, json_path)
+
 
 if __name__ == "__main__":
     main()
