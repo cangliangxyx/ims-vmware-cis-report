@@ -48,7 +48,7 @@ def collect_tsm_service_info(content) -> List[Dict[str, Any]]:
                         "required": service.required
                     },
                     "Status": status,
-                    "Description": "TSM (ESXi Shell) service status, should be stopped / manual start"
+                    "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
                 })
                 logger.info("[TSM] 主机: %s, TSM运行状态: %s, 策略: %s, Status: %s",
                             host.name, service.running, service.policy, status)
