@@ -28,7 +28,7 @@ from vmware_cis_checks import (
     tls_log_verify,  # no_3.5
     firewall_services_manual,  # no_4.1
     dvfilter_manual,  # no_4.2
-    bpdu_filter_manual,  # no_4.3
+    bpdu_filter,  # no_4.3
     forged_transmits,  # no_4.4
     mac_changes,  # no_4.5
     vss_promiscuous_mode,  # no_4.6
@@ -97,7 +97,7 @@ CHECK_MODULES = [
     "vmware_cis_checks.tls_log_verify",
     "vmware_cis_checks.firewall_services_manual",
     "vmware_cis_checks.dvfilter_manual",
-    "vmware_cis_checks.bpdu_filter_manual",
+    "vmware_cis_checks.bpdu_filter",
     "vmware_cis_checks.forged_transmits",
     "vmware_cis_checks.mac_changes",
     "vmware_cis_checks.vss_promiscuous_mode",
