@@ -5,7 +5,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-t-esxi-uat08.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -14,7 +13,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -22,7 +22,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-t-esxi-uat09.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -31,7 +30,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -39,7 +39,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-t-esxi-uat07.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -48,7 +47,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -56,7 +56,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-csz08.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -65,7 +64,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -73,7 +73,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-csz02.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -82,7 +81,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -90,7 +90,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-csz04.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -99,7 +98,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -107,7 +107,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-csz01.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -116,7 +115,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -124,7 +124,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-csz05.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -133,7 +132,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -141,7 +141,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-csz06.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -150,7 +149,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -158,7 +158,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-csz03.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -167,7 +166,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -175,7 +175,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-csz07.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -184,7 +183,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -192,7 +192,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-t-esxi-uat03.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -201,7 +200,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -209,7 +209,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-t-esxi-uat02.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -218,7 +217,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -226,7 +226,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-t-esxi-uat04.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -235,7 +234,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -243,7 +243,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-t-esxi-uat05.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -252,7 +251,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -260,7 +260,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-t-esxi-uat01.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -269,7 +268,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -277,7 +277,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-t-esxi-uat06.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -286,7 +285,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -294,7 +294,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-csz10.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -303,7 +302,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -311,7 +311,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-csz09.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -320,7 +319,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -328,7 +328,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-csz11.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -337,7 +336,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -345,7 +345,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-csz12.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -354,7 +353,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -362,7 +362,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-csz13.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -371,7 +370,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -379,7 +379,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-csz14.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -388,7 +387,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -396,7 +396,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-dmz02.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -405,7 +404,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -413,7 +413,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-dmz01.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -422,7 +421,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -430,7 +430,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-dmz03.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -439,7 +438,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -447,7 +447,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-vdi03.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -456,7 +455,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -464,7 +464,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-vdi02.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -473,7 +472,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -481,7 +481,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-vdi01.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -490,7 +489,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -498,7 +498,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-p-esxi-vdi04.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -507,7 +506,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -515,7 +515,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -524,7 +523,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -532,7 +532,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -541,7 +540,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -549,7 +549,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -558,7 +557,8 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     },
     {
         "AIIB.No": "2.1",
@@ -566,7 +566,6 @@
         "CIS.No": "3.1",
         "CMD": "Get-VMHost | Get-VMHostService | Where { $_.key -eq \"TSM-SSH\" } | Select Key, Label, Policy, Running, Required",
         "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
-        "Error": null,
         "Value": {
             "key": "TSM-SSH",
             "label": "SSH",
@@ -575,6 +574,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',"
+        "Description": "TSM-SSH service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
+        "Error": null
     }
 ]
