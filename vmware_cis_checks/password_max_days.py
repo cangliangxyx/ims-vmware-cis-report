@@ -4,47 +4,41 @@ from typing import List, Dict, Any
 from pyVmomi import vim
 from config.vsphere_conn import VsphereConnection
 from config.export_to_json import export_to_json
-from config import settings  # 假设 settings.get_vsphere_config 可获取多 vCenter 配置
+from config import settings
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
 
-def collect_dcui_access(content) -> List[Dict[str, Any]]:
+def collect_password_max_days(content) -> List[Dict[str, Any]]:
     """
-    收集每台主机 DCUI.Access 配置
-    推荐值：root 必须在列表中
+    收集每台主机 Security.PasswordMaxDays 配置
+    推荐值：99999
+    :param content: vSphere service instance content
+    :return: 每台主机密码最大使用天数策略检查结果列表
     """
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     results: List[Dict[str, Any]] = []
 
     for host in container.view:
         record = {
-            "AIIB.No": "2.14",
-            "Name": "DCUI Access Users (Read Only)",
-            "CIS.No": "3.18",
-            "CMD": r'Get-VMHost | Get-AdvancedSetting -Name DCUI.Access',
+            "AIIB.No": "2.11",
+            "Name": "Host must enforce maximum password age (Automated)",
+            "CIS.No": "3.15",
+            "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Security.PasswordMaxDays',
             "Host": host.name,
             "Value": None,
             "Status": "Fail",
-            "Description": '检测值: "value" 包含 root',
+            "Description": '检测值: "value" == 99999',
             "Error": None
         }
 
         try:
-            adv_settings = host.configManager.advancedOption.QueryOptions("DCUI.Access")
+            adv_settings = host.configManager.advancedOption.QueryOptions("Security.PasswordMaxDays")
             if adv_settings:
                 setting = adv_settings[0]
                 value = setting.value
-                # value 可能是字符串或列表，统一处理为列表
-                if isinstance(value, str):
-                    users = [u.strip() for u in value.split(",")]
-                elif isinstance(value, list):
-                    users = value
-                else:
-                    users = []
-
-                status = "Pass" if "root" in users else "Fail"
+                status = "Pass" if value is not None and int(value) == 99999 else "Fail"
 
                 record.update({
                     "Value": {
@@ -54,24 +48,24 @@ def collect_dcui_access(content) -> List[Dict[str, Any]]:
                     },
                     "Status": status
                 })
-                logger.info("[DCUI.Access] 主机: %s, users=%s, Status=%s", host.name, users, status)
+                logger.info("[PasswordMaxDays] 主机: %s, value=%s, Status=%s", host.name, value, status)
             else:
-                logger.warning("[DCUI.Access] 主机 %s 未配置 DCUI.Access", host.name)
+                logger.warning("[PasswordMaxDays] 主机 %s 未配置 Security.PasswordMaxDays 或不支持该设置", host.name)
 
         except vim.fault.InvalidName as e:
             record.update({
-                "Value": {"key": "DCUI.Access", "value": None, "type": None},
+                "Value": {"key": "Security.PasswordMaxDays", "value": None, "type": None},
                 "Status": "Fail",
                 "Error": str(e)
             })
-            logger.info("[DCUI.Access] 主机 %s 不支持该设置", host.name)
+            logger.info("[PasswordMaxDays] 主机 %s 不支持 Security.PasswordMaxDays 设置", host.name)
         except Exception as e:
             record.update({
-                "Value": {"key": "DCUI.Access", "value": None, "type": None},
+                "Value": {"key": "Security.PasswordMaxDays", "value": None, "type": None},
                 "Status": "Fail",
                 "Error": str(e)
             })
-            logger.error("[DCUI.Access] 主机 %s 查询失败: %s", host.name, e)
+            logger.error("[PasswordMaxDays] 主机 %s 获取 Security.PasswordMaxDays 失败: %s", host.name, e)
 
         results.append(record)
 
@@ -81,13 +75,12 @@ def collect_dcui_access(content) -> List[Dict[str, Any]]:
 
 def main(output_dir: str = None):
     """
-    循环多个 vCenter，收集所有主机 DCUI.Access 配置，统一导出 JSON
+    循环多个 vCenter，收集所有主机密码最大使用天数策略配置，输出为 JSON 文件
     """
     output_dir = output_dir or "../log"
     os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, "no_2.14_dcui_access.json")
+    output_path = os.path.join(output_dir, "no_2.11_password_max_days.json")
 
-    # 获取 vCenter 列表
     vsphere_data = settings.get_vsphere_config(os.getenv("project_env", "prod"))
     host_list = vsphere_data.get("HOST", [])
     if not isinstance(host_list, list):
@@ -99,13 +92,13 @@ def main(output_dir: str = None):
         try:
             with VsphereConnection(host=vc_host) as si:
                 content = si.RetrieveContent()
-                results = collect_dcui_access(content)
+                results = collect_password_max_days(content)
                 all_results.extend(results)
         except Exception as e:
-            logger.error("[DCUI.Access] 连接 vCenter %s 失败: %s", vc_host, e)
+            logger.error("[PasswordMaxDays] 连接 vCenter %s 失败: %s", vc_host, e)
 
     export_to_json(all_results, output_path)
-    logger.info("[DCUI.Access] 所有主机检查结果已导出到 %s", output_path)
+    logger.info("[PasswordMaxDays] 所有主机密码最大使用天数策略检查结果已导出到 %s", output_path)
 
 
 if __name__ == "__main__":

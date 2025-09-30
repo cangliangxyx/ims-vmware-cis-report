@@ -10,29 +10,31 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
 
-def collect_dcui_access(content) -> List[Dict[str, Any]]:
+def collect_exception_users(content) -> List[Dict[str, Any]]:
     """
-    收集每台主机 DCUI.Access 配置
-    推荐值：root 必须在列表中
+    收集每台主机 Lockdown Mode Exception Users 配置
+    推荐值：ESX Admins 必须在列表中
     """
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     results: List[Dict[str, Any]] = []
 
     for host in container.view:
         record = {
-            "AIIB.No": "2.14",
-            "Name": "DCUI Access Users (Read Only)",
-            "CIS.No": "3.18",
-            "CMD": r'Get-VMHost | Get-AdvancedSetting -Name DCUI.Access',
+            "AIIB.No": "2.15",
+            "Name": "Lockdown Mode Exception Users (Read Only)",
+            "CIS.No": "3.19",
+            "CMD": "host->configure->security profile->lockdown mode->exception users",
             "Host": host.name,
             "Value": None,
             "Status": "Fail",
-            "Description": '检测值: "value" 包含 root',
+            "Description": '检测值: "value" 包含 ESX Admins',
             "Error": None
         }
 
         try:
-            adv_settings = host.configManager.advancedOption.QueryOptions("DCUI.Access")
+            adv_settings = host.configManager.advancedOption.QueryOptions(
+                "Config.HostAgent.plugins.hostsvc.esxAdminsGroup"
+            )
             if adv_settings:
                 setting = adv_settings[0]
                 value = setting.value
@@ -44,7 +46,7 @@ def collect_dcui_access(content) -> List[Dict[str, Any]]:
                 else:
                     users = []
 
-                status = "Pass" if "root" in users else "Fail"
+                status = "Pass" if "ESX Admins" in users else "Fail"
 
                 record.update({
                     "Value": {
@@ -54,24 +56,24 @@ def collect_dcui_access(content) -> List[Dict[str, Any]]:
                     },
                     "Status": status
                 })
-                logger.info("[DCUI.Access] 主机: %s, users=%s, Status=%s", host.name, users, status)
+                logger.info("[ExceptionUsers] 主机: %s, users=%s, Status=%s", host.name, users, status)
             else:
-                logger.warning("[DCUI.Access] 主机 %s 未配置 DCUI.Access", host.name)
+                logger.warning("[ExceptionUsers] 主机 %s 未配置 Exception Users", host.name)
 
         except vim.fault.InvalidName as e:
             record.update({
-                "Value": {"key": "DCUI.Access", "value": None, "type": None},
+                "Value": {"key": "Config.HostAgent.plugins.hostsvc.esxAdminsGroup", "value": None, "type": None},
                 "Status": "Fail",
                 "Error": str(e)
             })
-            logger.info("[DCUI.Access] 主机 %s 不支持该设置", host.name)
+            logger.info("[ExceptionUsers] 主机 %s 不支持 Exception Users 设置", host.name)
         except Exception as e:
             record.update({
-                "Value": {"key": "DCUI.Access", "value": None, "type": None},
+                "Value": {"key": "Config.HostAgent.plugins.hostsvc.esxAdminsGroup", "value": None, "type": None},
                 "Status": "Fail",
                 "Error": str(e)
             })
-            logger.error("[DCUI.Access] 主机 %s 查询失败: %s", host.name, e)
+            logger.error("[ExceptionUsers] 主机 %s 查询失败: %s", host.name, e)
 
         results.append(record)
 
@@ -81,11 +83,11 @@ def collect_dcui_access(content) -> List[Dict[str, Any]]:
 
 def main(output_dir: str = None):
     """
-    循环多个 vCenter，收集所有主机 DCUI.Access 配置，统一导出 JSON
+    循环多个 vCenter，收集所有主机 Lockdown Mode Exception Users 配置，统一导出 JSON
     """
     output_dir = output_dir or "../log"
     os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, "no_2.14_dcui_access.json")
+    output_path = os.path.join(output_dir, "no_2.15_exception_users.json")
 
     # 获取 vCenter 列表
     vsphere_data = settings.get_vsphere_config(os.getenv("project_env", "prod"))
@@ -99,13 +101,13 @@ def main(output_dir: str = None):
         try:
             with VsphereConnection(host=vc_host) as si:
                 content = si.RetrieveContent()
-                results = collect_dcui_access(content)
+                results = collect_exception_users(content)
                 all_results.extend(results)
         except Exception as e:
-            logger.error("[DCUI.Access] 连接 vCenter %s 失败: %s", vc_host, e)
+            logger.error("[ExceptionUsers] 连接 vCenter %s 失败: %s", vc_host, e)
 
     export_to_json(all_results, output_path)
-    logger.info("[DCUI.Access] 所有主机检查结果已导出到 %s", output_path)
+    logger.info("[ExceptionUsers] 所有主机检查结果已导出到 %s", output_path)
 
 
 if __name__ == "__main__":

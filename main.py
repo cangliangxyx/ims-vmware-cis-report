@@ -3,26 +3,26 @@ import importlib
 import os
 
 from vmware_cis_checks import (
-    software_general, # no_1.1
+    software_general_manual, # no_1.1
     ntp_info,  # no_1.2
-    time_sync, # no_1.3
+    time_sync_manual, # no_1.3
     mem_share_salt,  # no_1.4
     tsm_ssh,  # no_2.1
     tsm,  # no_2.2
     solo_enable_moob,  # no_2.3
-    snmp_manual,  # no_2.4
+    snmp,  # no_2.4
     dcui_timeout,  # no_2.5
-    shell_warning_manual,  # no_2.6
-    password_complexity_manual,  # no_2.7
+    shell_warning,  # no_2.6
+    password_complexity,  # no_2.7
     account_lock_failure,  # no_2.8
     account_unlock_time,  # no_2.9
-    password_history_manual,  # no_2.10
-    password_max_days_manual,  # no_2.11
-    session_timeout_api_manual,  # no_2.12
-    idle_host_client_manual,  # no_2.13
+    password_history,  # no_2.10
+    password_max_days,  # no_2.11
+    session_timeout_api,  # no_2.12
+    idle_timeout,  # no_2.13
     dcui_access,  # no_2.14
-    exception_users_manual,  # no_2.15
-    tls_version_manual,  # no_2.16
+    exception_users,  # no_2.15
+    tls_version,  # no_2.16
     syslog_persistent,  # no_3.1
     syslog_remote_loghost,  # no_3.2
     hostagent_log_level,  # no_3.3

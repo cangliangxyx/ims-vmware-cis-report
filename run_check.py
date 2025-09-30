@@ -1,26 +1,26 @@
 import os
 import logging
 from vmware_cis_checks import (
-    software_general,                     # 1.1
+    software_general_manual,              # 1.1
     ntp_info,                             # 1.2
-    time_sync,                            # 1.3
+    time_sync_manual,                     # 1.3
     mem_share_salt,                       # 1.4
     tsm_ssh,                              # 2.1
     tsm,                                  # 2.2
     solo_enable_moob,                     # 2.3
-    snmp_manual,                          # 2.4
+    snmp,                          # 2.4
     dcui_timeout,                         # 2.5
-    shell_warning_manual,                  # 2.6
-    password_complexity_manual,            # 2.7
+    shell_warning,                        # 2.6
+    password_complexity,            # 2.7
     account_lock_failure,                  # 2.8
     account_unlock_time,                   # 2.9
-    password_history_manual,               # 2.10
-    password_max_days_manual,              # 2.11
-    session_timeout_api_manual,            # 2.12
-    idle_host_client_manual,               # 2.13
+    password_history,               # 2.10
+    password_max_days,              # 2.11
+    session_timeout_api,            # 2.12
+    idle_timeout,               # 2.13
     dcui_access,                           # 2.14
-    exception_users_manual,                # 2.15
-    tls_version_manual,                    # 2.16
+    exception_users,                # 2.15
+    tls_version,                    # 2.16
     syslog_persistent,                     # 3.1
     syslog_remote_loghost,                 # 3.2
     hostagent_log_level,                   # 3.3
@@ -53,26 +53,26 @@ from vmware_cis_checks import (
 
 # === 模块编号和模块映射 ===
 check_modules = [
-    ("1.1", software_general),  # ok
+    ("1.1", software_general_manual),  # ok
     ("1.2", ntp_info),  # ok
-    ("1.3", time_sync),  # ok
+    ("1.3", time_sync_manual),  # ok
     ("1.4", mem_share_salt),  # ok
     ("2.1", tsm_ssh),  # ok
     ("2.2", tsm),  # ok
     ("2.3", solo_enable_moob),  # ok
-    ("2.4", snmp_manual),  # ok
+    ("2.4", snmp),  # ok
     ("2.5", dcui_timeout),  # ok
-    ("2.6", shell_warning_manual),  # ok
-    ("2.7", password_complexity_manual),  # ok
+    ("2.6", shell_warning),  # ok
+    ("2.7", password_complexity),  # ok
     ("2.8", account_lock_failure),  # ok
     ("2.9", account_unlock_time),  # ok
-    ("2.10", password_history_manual),  # ok
-    ("2.11", password_max_days_manual),
-    ("2.12", session_timeout_api_manual),
-    ("2.13", idle_host_client_manual),
-    ("2.14", dcui_access),
-    ("2.15", exception_users_manual),
-    ("2.16", tls_version_manual),
+    ("2.10", password_history),  # ok
+    ("2.11", password_max_days),  # ok
+    ("2.12", session_timeout_api),  # ok
+    ("2.13", idle_timeout),  # ok
+    ("2.14", dcui_access),  # ok
+    ("2.15", exception_users),  # ok
+    ("2.16", tls_version),  # ok
     ("3.1", syslog_persistent),
     ("3.2", syslog_remote_loghost),
     ("3.3", hostagent_log_level),

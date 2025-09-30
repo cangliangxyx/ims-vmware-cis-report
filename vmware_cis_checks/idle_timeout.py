@@ -10,41 +10,33 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
 
-def collect_dcui_access(content) -> List[Dict[str, Any]]:
+def collect_hostclient_idle_timeout(content) -> List[Dict[str, Any]]:
     """
-    收集每台主机 DCUI.Access 配置
-    推荐值：root 必须在列表中
+    收集每台主机 UserVars.HostClientSessionTimeout 配置
+    推荐值：900
     """
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     results: List[Dict[str, Any]] = []
 
     for host in container.view:
         record = {
-            "AIIB.No": "2.14",
-            "Name": "DCUI Access Users (Read Only)",
-            "CIS.No": "3.18",
-            "CMD": r'Get-VMHost | Get-AdvancedSetting -Name DCUI.Access',
+            "AIIB.No": "2.13",
+            "Name": "Host Client idle session timeout (Read Only)",
+            "CIS.No": "3.17",
+            "CMD": r'Get-VMHost | Get-AdvancedSetting -Name UserVars.HostClientSessionTimeout',
             "Host": host.name,
             "Value": None,
             "Status": "Fail",
-            "Description": '检测值: "value" 包含 root',
+            "Description": '检测值: "value" == 900',
             "Error": None
         }
 
         try:
-            adv_settings = host.configManager.advancedOption.QueryOptions("DCUI.Access")
+            adv_settings = host.configManager.advancedOption.QueryOptions("UserVars.HostClientSessionTimeout")
             if adv_settings:
                 setting = adv_settings[0]
                 value = setting.value
-                # value 可能是字符串或列表，统一处理为列表
-                if isinstance(value, str):
-                    users = [u.strip() for u in value.split(",")]
-                elif isinstance(value, list):
-                    users = value
-                else:
-                    users = []
-
-                status = "Pass" if "root" in users else "Fail"
+                status = "Pass" if value is not None and int(value) == 900 else "Fail"
 
                 record.update({
                     "Value": {
@@ -54,24 +46,24 @@ def collect_dcui_access(content) -> List[Dict[str, Any]]:
                     },
                     "Status": status
                 })
-                logger.info("[DCUI.Access] 主机: %s, users=%s, Status=%s", host.name, users, status)
+                logger.info("[HostClientTimeout] 主机: %s, value=%s, Status=%s", host.name, value, status)
             else:
-                logger.warning("[DCUI.Access] 主机 %s 未配置 DCUI.Access", host.name)
+                logger.warning("[HostClientTimeout] 主机 %s 未配置 UserVars.HostClientSessionTimeout，使用默认值", host.name)
 
         except vim.fault.InvalidName as e:
             record.update({
-                "Value": {"key": "DCUI.Access", "value": None, "type": None},
+                "Value": {"key": "UserVars.HostClientSessionTimeout", "value": None, "type": None},
                 "Status": "Fail",
                 "Error": str(e)
             })
-            logger.info("[DCUI.Access] 主机 %s 不支持该设置", host.name)
+            logger.info("[HostClientTimeout] 主机 %s 不支持该设置", host.name)
         except Exception as e:
             record.update({
-                "Value": {"key": "DCUI.Access", "value": None, "type": None},
+                "Value": {"key": "UserVars.HostClientSessionTimeout", "value": None, "type": None},
                 "Status": "Fail",
                 "Error": str(e)
             })
-            logger.error("[DCUI.Access] 主机 %s 查询失败: %s", host.name, e)
+            logger.error("[HostClientTimeout] 主机 %s 查询失败: %s", host.name, e)
 
         results.append(record)
 
@@ -81,13 +73,12 @@ def collect_dcui_access(content) -> List[Dict[str, Any]]:
 
 def main(output_dir: str = None):
     """
-    循环多个 vCenter，收集所有主机 DCUI.Access 配置，统一导出 JSON
+    循环多个 vCenter，收集所有主机 Host Client idle timeout 配置，统一导出 JSON
     """
     output_dir = output_dir or "../log"
     os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, "no_2.14_dcui_access.json")
+    output_path = os.path.join(output_dir, "no_2.13_idle_host_client_timeout.json")
 
-    # 获取 vCenter 列表
     vsphere_data = settings.get_vsphere_config(os.getenv("project_env", "prod"))
     host_list = vsphere_data.get("HOST", [])
     if not isinstance(host_list, list):
@@ -99,13 +90,13 @@ def main(output_dir: str = None):
         try:
             with VsphereConnection(host=vc_host) as si:
                 content = si.RetrieveContent()
-                results = collect_dcui_access(content)
+                results = collect_hostclient_idle_timeout(content)
                 all_results.extend(results)
         except Exception as e:
-            logger.error("[DCUI.Access] 连接 vCenter %s 失败: %s", vc_host, e)
+            logger.error("[HostClientTimeout] 连接 vCenter %s 失败: %s", vc_host, e)
 
     export_to_json(all_results, output_path)
-    logger.info("[DCUI.Access] 所有主机检查结果已导出到 %s", output_path)
+    logger.info("[HostClientTimeout] 所有主机检查结果已导出到 %s", output_path)
 
 
 if __name__ == "__main__":
