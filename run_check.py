@@ -1,4 +1,10 @@
-# 导入模块并标注检查编号
+import os
+import logging
+from config import settings
+from config.export_to_json import export_to_json
+from config.vsphere_conn import VsphereConnection
+
+# 导入所有检查模块
 from vmware_cis_checks import (
     software_general,                     # 1.1
     ntp_info,                             # 1.2
@@ -7,8 +13,8 @@ from vmware_cis_checks import (
     tsm_ssh,                              # 2.1
     tsm,                                  # 2.2
     solo_enable_moob,                     # 2.3
-    snmp_manual,                           # 2.4
-    dcui_timeout,                          # 2.5
+    snmp_manual,                          # 2.4
+    dcui_timeout,                         # 2.5
     shell_warning_manual,                  # 2.6
     password_complexity_manual,            # 2.7
     account_lock_failure,                  # 2.8
@@ -37,8 +43,8 @@ from vmware_cis_checks import (
     datastore_unique_names,                # 5.1
     vm_3d_graphics_status,                 # 6.1
     vm_pci_passthru,                       # 6.2
-    vm_audio_device_manual,                 # 6.3
-    vm_ahci_device_manual,                  # 6.4
+    vm_audio_device_manual,                # 6.3
+    vm_ahci_device_manual,                 # 6.4
     vm_usb_settings,                        # 6.5
     vm_serial_port,                         # 6.6
     vm_parallel_port,                       # 6.7
@@ -50,7 +56,7 @@ from vmware_cis_checks import (
     vmware_tools_prevent_recustomization_manual  # 7.3
 )
 
-# 将模块和编号整合成统一列表，方便循环执行
+# 统一管理模块和编号
 check_modules = [
     ("1.1", software_general),
     ("1.2", ntp_info),
@@ -102,17 +108,11 @@ check_modules = [
     ("7.3", vmware_tools_prevent_recustomization_manual)
 ]
 
-import os
-from config import settings
-from config.export_to_json import export_to_json
-from config.vsphere_conn import VsphereConnection
-import logging
-
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
 
-output_dir = "log"
-os.makedirs(output_dir, exist_ok=True)
+OUTPUT_DIR = "log"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def run_check():
     vsphere_data = settings.get_vsphere_config(os.getenv('project_env', 'prod'))
@@ -120,28 +120,35 @@ def run_check():
     if not isinstance(host_list, list):
         host_list = [host_list]
 
-    # 循环所有 vCenter
     for vc_host in host_list:
         try:
             with VsphereConnection(host=vc_host) as si:
                 content = si.RetrieveContent()
-                # 循环所有模块
                 for aiib_no, module in check_modules:
                     try:
-                        logger.info("执行检查 %s -> %s", aiib_no, module.__name__)
-                        result_list = module.get_hosts_ntp(content) if hasattr(module, "get_hosts_ntp") else module.main()  # 根据模块类型调用
-                        # 按主机拆分存文件
+                        if hasattr(module, "run"):
+                            result_list = module.run(content)
+                        elif hasattr(module, "get_hosts_ntp"):
+                            result_list = module.get_hosts_ntp(content)
+                        elif hasattr(module, "main"):
+                            result_list = module.main(content)  # 如果 main 可接受 content
+                        else:
+                            logger.warning("模块 %s 没有可调用接口，跳过", module.__name__)
+                            continue
+
                         for entry in result_list:
                             hostname = entry.get("Host", "unknown")
-                            file_path = os.path.join(output_dir, f"{aiib_no}_{hostname}.json")
+                            filename = f"no_{aiib_no}_{hostname}_{module.__name__}.json"
+                            file_path = os.path.join(OUTPUT_DIR, filename)
                             export_to_json([entry], file_path)
-                            logger.info("主机 %s 的 %s 检查结果已导出到 %s", hostname, aiib_no, file_path)
+                            logger.info("✔ %s 主机 %s 检查完成 -> %s", aiib_no, hostname, file_path)
+
                     except Exception as e:
-                        logger.error("执行模块 %s 失败: %s", module.__name__, e)
+                        logger.error("❌ 模块 %s 执行失败: %s", module.__name__, e)
 
         except Exception as e:
-            logger.error("连接 vCenter %s 失败: %s", vc_host, e)
+            logger.error("❌ 连接 vCenter %s 失败: %s", vc_host, e)
 
-# 示例统一 main 调用
+
 if __name__ == "__main__":
     run_check()

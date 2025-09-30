@@ -25,6 +25,7 @@ def get_hosts_software_eogs(content) -> List[Dict[str, Any]]:
             "CMD": "Manual check required: verify ESXi version support status",
             "Host": host.name,
             "Value": None,
+            "Status": "Pass",
             "Description": "手工验证：确认主机运行的软件版本是否在 VMware 支持期内",
             "Error": None
         })
