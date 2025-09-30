@@ -26,7 +26,7 @@ DATABASE_CONFIG = {
 # vsphere 配置
 VSPHERE_CONFIG = {
     "prod": {
-        "HOST":"vc-tj-01.vsphere.aiib.org",
+        "HOST":["vc-bj-01.vsphere.aiib.org", "vc-tj-01.vsphere.aiib.org"],
         "USERNAME":"psa-infra-pbi@aiib.org",
         "PASSWORD":decrypt_message("gAAAAABoJX45Du7Y4pvoMLqiIxX1UEDSYpSwCuLmfu7ZQMG1XEnNhLDRf-_LzvtdFDuYzHhEsfdwwfqt7UGSR53wdQTWtFq1NgtouVhFiaFcHx2VqcXjR3Q="),
         "ENDPOINT":"/rest/com/vmware/cis/session"

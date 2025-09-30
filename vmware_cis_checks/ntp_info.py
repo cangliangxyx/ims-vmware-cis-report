@@ -11,34 +11,44 @@ logging.basicConfig(
 )
 
 def get_hosts_ntp(content) -> List[Dict[str, Any]]:
-    """获取所有主机的 NTP 配置"""
+    """获取所有主机的 NTP 配置并增加 Status 字段"""
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     hosts = container.view
 
     results = []
     for host in hosts:
         try:
-            ntp_config = host.config.dateTimeInfo.ntpConfig.server or []
+            ntp_servers = host.config.dateTimeInfo.ntpConfig.server or []
+            count = len(ntp_servers)
+
+            raw_value = {
+                "NTPServers": ntp_servers,
+                "Count": count
+            }
+
             results.append({
                 "AIIB.No": "1.2",
                 "Name": "Host must have reliable time synchronization sources",
-                "CIS.NO": "2.6",
+                "CIS.No": "2.6",
                 "CMD": r'Get-VMHost | Select-Object Name, @{Name="NTPSetting"; Expression={ ($_ | Get-VMHostNtpServer)}}',
                 "Host": host.name,
-                "Value": ntp_config,  # 始终是 list
-                "Description": "NTP server configuration",
+                "Value": raw_value,  # 包含 NTP 列表和数量
+                "Status": "Pass" if count >= 2 else "Fail",
+                "Description": "检测值: 配置的 NTP 服务器列表, 推荐至少 2 个可靠 NTP 源或使用 PTP 并配置 NTP 备份",
                 "Error": None
             })
-            logger.info("主机: %s, NTP: %s", host.name, ntp_config if ntp_config else "未配置")
+
+            logger.info("主机: %s, NTP: %s, Status: %s", host.name, ntp_servers if ntp_servers else "未配置", "Pass" if count >= 2 else "Fail")
 
         except Exception as e:
             results.append({
                 "AIIB.No": "1.2",
                 "Name": "Host must have reliable time synchronization sources",
-                "CIS.NO": "2.6",
+                "CIS.No": "2.6",
                 "CMD": r'Get-VMHost | Select-Object Name, @{Name="NTPSetting"; Expression={ ($_ | Get-VMHostNtpServer)}}',
                 "Host": host.name,
-                "Value": [],
+                "Value": {"NTPServers": [], "Count": 0},
+                "Status": "Fail",
                 "Description": "NTP server configuration (Error)",
                 "Error": str(e)
             })
@@ -46,6 +56,7 @@ def get_hosts_ntp(content) -> List[Dict[str, Any]]:
 
     container.Destroy()
     return results
+
 
 def main(output_dir: str = None):
     # 如果没有传 output_dir，就用默认目录 ../log
