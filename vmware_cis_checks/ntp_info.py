@@ -85,13 +85,12 @@ def main(output_dir: str = None):
                 # 按每台 ESXi 主机拆分文件
                 for host_entry in ntp_info:
                     hostname = host_entry["Host"]
-                    json_path = os.path.join(output_dir, f"no_1.2_{hostname}_ntp.json")
+                    json_path = os.path.join(output_dir, f"no_1.2_ntp_{hostname}.json")
                     export_to_json([host_entry], json_path)
                     logger.info("主机 %s 的 NTP 配置已导出到 %s", hostname, json_path)
 
         except Exception as e:
             logger.error("连接 vCenter %s 失败: %s", vc_host, e)
-
 
 if __name__ == "__main__":
     main()
