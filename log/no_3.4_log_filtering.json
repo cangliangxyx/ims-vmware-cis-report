@@ -1,0 +1,42 @@
+[
+    {
+        "AIIB.No": "3.4",
+        "Name": "Syslog log filtering configuration (Read Only)",
+        "CIS.No": "4.5",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logFiltersEnable",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": false,
+        "Description": "检测值: Syslog.global.logFiltersEnable。检测方法：'value': 'false'",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.4",
+        "Name": "Syslog log filtering configuration (Read Only)",
+        "CIS.No": "4.5",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logFiltersEnable",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": false,
+        "Description": "检测值: Syslog.global.logFiltersEnable。检测方法：'value': 'false'",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.4",
+        "Name": "Syslog log filtering configuration (Read Only)",
+        "CIS.No": "4.5",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logFiltersEnable",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": false,
+        "Description": "检测值: Syslog.global.logFiltersEnable。检测方法：'value': 'false'",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.4",
+        "Name": "Syslog log filtering configuration (Read Only)",
+        "CIS.No": "4.5",
+        "CMD": "Get-VMHost | Get-AdvancedSetting -Name Syslog.global.logFiltersEnable",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": false,
+        "Description": "检测值: Syslog.global.logFiltersEnable。检测方法：'value': 'false'",
+        "Error": null
+    }
+]

@@ -93,7 +93,7 @@ CHECK_MODULES = [
     "vmware_cis_checks.syslog_persistent",
     "vmware_cis_checks.syslog_remote_loghost",
     "vmware_cis_checks.hostagent_log_level",
-    "vmware_cis_checks.log_filtering_manual",
+    "vmware_cis_checks.log_filtering",
     "vmware_cis_checks.tls_log_verify_manual",
     "vmware_cis_checks.firewall_services_manual",
     "vmware_cis_checks.dvfilter_manual",
