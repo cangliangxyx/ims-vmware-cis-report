@@ -46,7 +46,7 @@ def collect_solo_enable_mob_info(content) -> List[Dict[str, Any]]:
                         "type": type(setting.value).__name__
                     },
                     "Status": status,
-                    "Description": "Direct MOB access should be disabled"
+                    "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false"
                 })
                 logger.info("[MOB] 主机: %s, %s = %s, Status: %s", host.name, setting.key, setting.value, status)
             else:
