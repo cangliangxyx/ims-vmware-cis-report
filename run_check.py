@@ -1,10 +1,5 @@
 import os
 import logging
-from config import settings
-from config.export_to_json import export_to_json
-from config.vsphere_conn import VsphereConnection
-
-# 导入所有检查模块
 from vmware_cis_checks import (
     software_general,                     # 1.1
     ntp_info,                             # 1.2
@@ -45,18 +40,18 @@ from vmware_cis_checks import (
     vm_pci_passthru,                       # 6.2
     vm_audio_device_manual,                # 6.3
     vm_ahci_device_manual,                 # 6.4
-    vm_usb_settings,                        # 6.5
-    vm_serial_port,                         # 6.6
-    vm_parallel_port,                       # 6.7
-    vm_cd_drive,                            # 6.8
-    vm_floppy_drive,                        # 6.9
-    vm_hardware_version_manual,             # 6.10
-    vmware_tools_update_manual,             # 7.1
-    vmware_tools_auto_upgrade_manual,       # 7.2
+    vm_usb_settings,                       # 6.5
+    vm_serial_port,                        # 6.6
+    vm_parallel_port,                      # 6.7
+    vm_cd_drive,                           # 6.8
+    vm_floppy_drive,                       # 6.9
+    vm_hardware_version_manual,            # 6.10
+    vmware_tools_update_manual,            # 7.1
+    vmware_tools_auto_upgrade_manual,      # 7.2
     vmware_tools_prevent_recustomization_manual  # 7.3
 )
 
-# 统一管理模块和编号
+# === 模块编号和模块映射 ===
 check_modules = [
     ("1.1", software_general),
     ("1.2", ntp_info),
@@ -111,44 +106,24 @@ check_modules = [
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
 
-OUTPUT_DIR = "log"
+OUTPUT_DIR = "./log"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-def run_check():
-    vsphere_data = settings.get_vsphere_config(os.getenv('project_env', 'prod'))
-    host_list = vsphere_data["HOST"]
-    if not isinstance(host_list, list):
-        host_list = [host_list]
 
-    for vc_host in host_list:
+def run_all_checks():
+    """调用每个模块的 main() 方法，统一指定输出路径"""
+    for aiib_no, module in check_modules:
+        if not hasattr(module, "main"):
+            logger.warning("模块 %s 没有 main() 方法，跳过", module.__name__)
+            continue
+
         try:
-            with VsphereConnection(host=vc_host) as si:
-                content = si.RetrieveContent()
-                for aiib_no, module in check_modules:
-                    try:
-                        if hasattr(module, "run"):
-                            result_list = module.run(content)
-                        elif hasattr(module, "get_hosts_ntp"):
-                            result_list = module.get_hosts_ntp(content)
-                        elif hasattr(module, "main"):
-                            result_list = module.main(content)  # 如果 main 可接受 content
-                        else:
-                            logger.warning("模块 %s 没有可调用接口，跳过", module.__name__)
-                            continue
-
-                        for entry in result_list:
-                            hostname = entry.get("Host", "unknown")
-                            filename = f"no_{aiib_no}_{hostname}_{module.__name__}.json"
-                            file_path = os.path.join(OUTPUT_DIR, filename)
-                            export_to_json([entry], file_path)
-                            logger.info("✔ %s 主机 %s 检查完成 -> %s", aiib_no, hostname, file_path)
-
-                    except Exception as e:
-                        logger.error("❌ 模块 %s 执行失败: %s", module.__name__, e)
-
+            logger.info("运行检查 %s -> %s.main()", aiib_no, module.__name__)
+            module.main(output_dir=OUTPUT_DIR)
+            logger.info("检查 %s 完成", aiib_no)
         except Exception as e:
-            logger.error("❌ 连接 vCenter %s 失败: %s", vc_host, e)
+            logger.error("检查 %s 运行失败: %s", aiib_no, e)
 
 
 if __name__ == "__main__":
-    run_check()
+    run_all_checks()
