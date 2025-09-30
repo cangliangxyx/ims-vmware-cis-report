@@ -23,28 +23,28 @@ def get_hosts_hostagent_log_level(content) -> List[Dict[str, Any]]:
             adv_settings = host.configManager.advancedOption.QueryOptions("Config.HostAgent.log.level")
             if adv_settings:
                 setting = adv_settings[0]
-                is_info = str(setting.value).lower() == "info"
+                raw_value = {
+                    "key": setting.key,
+                    "value": setting.value,
+                    "type": type(setting.value).__name__
+                }
                 results.append({
                     "AIIB.No": "4.4",
                     "Name": "Config.HostAgent.log.level (Read Only)",
                     "CIS.No": "4.4",
-                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.log.level',
+                    "CMD": r'host-->configure->advanced system setting --> config.hostagent.log.level',
                     "Host": host.name,
-                    "Value": {"key": setting.key, "value": setting.value, "type": type(setting.value).__name__},
-                    "Compliant": is_info,
-                    "Description": (
-                        "Host Agent 日志级别配置。推荐值为 'info'，当前值为 "
-                        f"'{setting.value}'。{'符合要求' if is_info else '不符合要求，应调整为 info。'}"
-                    ),
+                    "Value": raw_value,
+                    "Description": """检测值: Host Agent 日志级别配置。检测方法："value": 'info'""",
                     "Error": None
                 })
-                logger.info("主机 %s Config.HostAgent.log.level = %s (符合: %s)", host.name, setting.value, is_info)
+                logger.info("主机 %s Config.HostAgent.log.level = %s (符合: %s)", host.name, raw_value)
             else:
                 results.append({
                     "AIIB.No": "4.4",
                     "Name": "Config.HostAgent.log.level (Read Only)",
                     "CIS.No": "4.4",
-                    "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.log.level',
+                    "CMD": r'host-->configure->advanced system setting --> config.hostagent.log.level',
                     "Host": host.name,
                     "Value": {"key": "Config.HostAgent.log.level", "value": None, "type": None},
                     "Compliant": False,
@@ -58,7 +58,7 @@ def get_hosts_hostagent_log_level(content) -> List[Dict[str, Any]]:
                 "AIIB.No": "4.4",
                 "Name": "Config.HostAgent.log.level (Read Only)",
                 "CIS.No": "4.4",
-                "CMD": r'Get-VMHost | Get-AdvancedSetting -Name Config.HostAgent.log.level',
+                "CMD": r'host-->configure->advanced system setting --> config.hostagent.log.level',
                 "Host": host.name,
                 "Value": None,
                 "Compliant": False,
