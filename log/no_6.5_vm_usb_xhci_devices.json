@@ -301,7 +301,7 @@
         "Host": "vx-p-esxi-csz08.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "SWIFT-P-VM-AC02",
+                "VM": "Infra-P-VM-Bstn",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -310,7 +310,16 @@
                 ]
             },
             {
-                "VM": "CSP-P-VM-GW3",
+                "VM": "AD-P-VM-FShare",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-Orc",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -346,7 +355,7 @@
                 ]
             },
             {
-                "VM": "PAM-P-VM-CPM2",
+                "VM": "DB-P-VM-ESG",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -355,7 +364,7 @@
                 ]
             },
             {
-                "VM": "DB-P-VM-ESG",
+                "VM": "SWIFT-P-VM-SIL2",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -373,7 +382,16 @@
                 ]
             },
             {
-                "VM": "vrm-bj-01",
+                "VM": "UC-P-VM-ALEOV",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AC01",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -420,15 +438,6 @@
         "Host": "vx-p-esxi-csz02.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDI-P-VM-CCC1",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "AD-P-VM-Conn",
                 "USB/XHCI Devices": [
                     {
@@ -438,7 +447,7 @@
                 ]
             },
             {
-                "VM": "opvp-p-vm-rp01",
+                "VM": "opvp-p-vm-srm",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -447,7 +456,7 @@
                 ]
             },
             {
-                "VM": "SWIFT-P-VM-SIL2",
+                "VM": "Ness-P-VM-SCSW",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -456,7 +465,7 @@
                 ]
             },
             {
-                "VM": "RPA-P-VM-Stu",
+                "VM": "ELP-P-VM-PBIGW",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -465,7 +474,7 @@
                 ]
             },
             {
-                "VM": "AAD-P-VM-CPA",
+                "VM": "PAM-P-VM-CPM1",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -474,7 +483,16 @@
                 ]
             },
             {
-                "VM": "UC-P-VM-ALEOV",
+                "VM": "PAM-P-VM-AAM",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-CCC2",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -510,6 +528,15 @@
                 ]
             },
             {
+                "VM": "Infra-P-VM-KMS",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "SOC-P-VM-EFP2",
                 "USB/XHCI Devices": [
                     {
@@ -519,7 +546,7 @@
                 ]
             },
             {
-                "VM": "AD-P-VM-DC02",
+                "VM": "PKI-P-VM-Interm",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -528,7 +555,7 @@
                 ]
             },
             {
-                "VM": "PKI-P-VM-Interm",
+                "VM": "PKI-P-VM-CDP",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -573,6 +600,15 @@
                 ]
             },
             {
+                "VM": "AD-A-VM-Conn",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "MPS-P-VM-PrtS02",
                 "USB/XHCI Devices": [
                     {
@@ -602,25 +638,52 @@
         "Host": "vx-p-esxi-csz04.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PKI-P-VM-Issue",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "NMS-P-VM-DNS01",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDI-P-VM-SF02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-CCC1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-PWD2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-Web",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-PWD1",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PKI-P-VM-Issue",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -674,25 +737,7 @@
                 ]
             },
             {
-                "VM": "Ness-P-VM-SCSW",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "PAM-P-VM-PTA",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "AD-A-VM-Conn",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -728,25 +773,7 @@
                 ]
             },
             {
-                "VM": "SMFF-P-VM-Srv",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "UFTP-P-VM-APP01",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "Infra-P-VM-RDS",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -782,15 +809,6 @@
                 ]
             },
             {
-                "VM": "VDI-P-VM-CCC2",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "AD-P-VM-LAPS",
                 "USB/XHCI Devices": [
                     {
@@ -811,7 +829,25 @@
         "Host": "vx-p-esxi-csz01.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PKI-P-VM-CDP",
+                "VM": "RPA-P-VM-Stu",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-RPA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SMFF-P-VM-Srv",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -838,15 +874,6 @@
                 ]
             },
             {
-                "VM": "SWIFT-P-VM-AC01",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "MCMP-P-VM-UD",
                 "USB/XHCI Devices": [
                     {
@@ -856,25 +883,7 @@
                 ]
             },
             {
-                "VM": "CSP-P-VM-RPA",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "Windows Server 2022 Template 202503",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "RPA-P-VM-DB",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -893,6 +902,15 @@
             },
             {
                 "VM": "Windows Server 2012r2 Template 2020-5",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-UR2",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -920,6 +938,15 @@
             },
             {
                 "VM": "SOC-P-VM-App",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "opvp-p-vm-rp01",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1002,7 +1029,16 @@
         "Host": "vx-p-esxi-csz05.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "CSP-P-VM-GW1",
+                "VM": "CSP-P-VM-GW2",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-01",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1030,15 +1066,6 @@
             },
             {
                 "VM": "AD-P-VM-WEF",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "PAM-P-VM-AAM",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1112,7 +1139,7 @@
                 ]
             },
             {
-                "VM": "MECM-P-VM-IC01",
+                "VM": "SWIFT-P-VM-SIL1",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1121,7 +1148,25 @@
                 ]
             },
             {
-                "VM": "CSP-P-VM-GW2",
+                "VM": "SOC-P-VM-Survey",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-DNS01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-GW1",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1131,15 +1176,6 @@
             },
             {
                 "VM": "MPS-P-VM-CNSL01",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "CSP-P-VM-MON",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1193,6 +1229,15 @@
                 ]
             },
             {
+                "VM": "opvp-p-vm-rp02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "Windows Server 2016 Template 2021-02",
                 "USB/XHCI Devices": [
                     {
@@ -1211,25 +1256,7 @@
                 ]
             },
             {
-                "VM": "Stge-P-VM-AIQUM",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "RPA-P-VM-UR1",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "opvp-p-vm-srm",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1256,7 +1283,7 @@
                 ]
             },
             {
-                "VM": "Infra-P-VM-KMS",
+                "VM": "CSP-P-VM-APPDB",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1265,7 +1292,7 @@
                 ]
             },
             {
-                "VM": "CSP-P-VM-APPDB",
+                "VM": "AAD-P-VM-CPA",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1312,7 +1339,7 @@
         "Host": "vx-p-esxi-csz03.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PAM-P-VM-BV",
+                "VM": "Net-P-VM-DHCP01",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1321,7 +1348,7 @@
                 ]
             },
             {
-                "VM": "opvp-p-vm-rp02",
+                "VM": "MECM-P-VM-IC01",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1330,7 +1357,16 @@
                 ]
             },
             {
-                "VM": "IOKYC-P-VM-DB",
+                "VM": "Infra-P-VM-RDS",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AC02",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1348,7 +1384,7 @@
                 ]
             },
             {
-                "VM": "UDBP-P-VM-Web",
+                "VM": "CSP-P-VM-MON",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1357,7 +1393,7 @@
                 ]
             },
             {
-                "VM": "AD-P-VM-PWD1",
+                "VM": "CSP-P-VM-GW3",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1366,7 +1402,7 @@
                 ]
             },
             {
-                "VM": "RPA-P-VM-Orc",
+                "VM": "RPA-P-VM-DB",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1375,7 +1411,7 @@
                 ]
             },
             {
-                "VM": "SOC-P-VM-Survey",
+                "VM": "IOKYC-P-VM-DB",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1384,7 +1420,7 @@
                 ]
             },
             {
-                "VM": "ELP-P-VM-PBIGW",
+                "VM": "SOC-P-VM-WCBJ",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1393,16 +1429,7 @@
                 ]
             },
             {
-                "VM": "RPA-P-VM-UR2",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "SWIFT-P-VM-SIL1",
+                "VM": "PAM-P-VM-BV",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1420,15 +1447,6 @@
                 ]
             },
             {
-                "VM": "AD-P-VM-PWD2",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "SWIFT-P-VM-AWPB",
                 "USB/XHCI Devices": [
                     {
@@ -1438,7 +1456,7 @@
                 ]
             },
             {
-                "VM": "Infra-P-VM-Bstn",
+                "VM": "AD-P-VM-DC02",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1476,7 +1494,7 @@
         "Host": "vx-p-esxi-csz07.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "IRBD-P-VM-MSSQL",
+                "VM": "PAM-P-VM-CPM2",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1485,7 +1503,16 @@
                 ]
             },
             {
-                "VM": "Net-P-VM-DHCP01",
+                "VM": "Stge-P-VM-AIQUM",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "IRBD-P-VM-MSSQL",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1530,15 +1557,6 @@
                 ]
             },
             {
-                "VM": "AD-P-VM-FShare",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "CSP-P-VM-PGDB1",
                 "USB/XHCI Devices": [
                     {
@@ -1575,25 +1593,7 @@
                 ]
             },
             {
-                "VM": "PAM-P-VM-CPM1",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "MECM-P-VM-CM02",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "SOC-P-VM-WCBJ",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1631,24 +1631,6 @@
         "Host": "vx-t-esxi-uat03.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PAM-D-VM-PVWA",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDI-T-VM-ADC01",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "IOKYC-T-VM-DB",
                 "USB/XHCI Devices": [
                     {
@@ -1658,7 +1640,7 @@
                 ]
             },
             {
-                "VM": "VDIDevVBJ005",
+                "VM": "VDI-T-VM-ADC02",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1667,7 +1649,16 @@
                 ]
             },
             {
-                "VM": "VDIDevVBJ001",
+                "VM": "RD-T-VM-yucao",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SF02",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1686,6 +1677,15 @@
             },
             {
                 "VM": "VDIOAX1VBJTMP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ004",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1748,15 +1748,6 @@
                 ]
             },
             {
-                "VM": "EDH-T-VM-DB",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "NMS-T-VM-DB",
                 "USB/XHCI Devices": [
                     {
@@ -1811,7 +1802,7 @@
                 ]
             },
             {
-                "VM": "MCMP-T-VM-PGDB2",
+                "VM": "STR-T-VM-AT01",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1820,7 +1811,7 @@
                 ]
             },
             {
-                "VM": "VDIDevVBJ006",
+                "VM": "MCMP-T-VM-PGDB2",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1858,6 +1849,24 @@
         "Host": "vx-t-esxi-uat02.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "VDI-T-VM-ADC01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-D-VM-PVWA",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "Infra-T-VM-RH92",
                 "USB/XHCI Devices": [
                     {
@@ -1885,15 +1894,6 @@
                 ]
             },
             {
-                "VM": "FG-T-VM-FGT01",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "CSP-T-VM-PGDB1",
                 "USB/XHCI Devices": [
                     {
@@ -1904,15 +1904,6 @@
             },
             {
                 "VM": "EDIS-T-VM-DQ",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "UFTP-T-VM-APP",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1939,25 +1930,7 @@
                 ]
             },
             {
-                "VM": "VDI-T-VM-SF02",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "Infra-T-VM-WebL",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "FG-T-VM-FGT02",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1975,7 +1948,16 @@
                 ]
             },
             {
-                "VM": "RPA-T-VM-UR1",
+                "VM": "EDH-T-VM-HMS",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ003",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -1994,6 +1976,15 @@
             },
             {
                 "VM": "Infra-T-VM-DBW",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "EDH-T-VM-DB",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -2076,7 +2067,7 @@
         "Host": "vx-t-esxi-uat04.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "ELP-T-VM-ES02",
+                "VM": "CSP-T-VM-APP1",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -2085,7 +2076,16 @@
                 ]
             },
             {
-                "VM": "NMS-T-VM-Web",
+                "VM": "UFTP-T-VM-APP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-ES02",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -2130,6 +2130,15 @@
                 ]
             },
             {
+                "VM": "IAR-T-VM-DB",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "SOC-T-VM-APP",
                 "USB/XHCI Devices": [
                     {
@@ -2149,15 +2158,6 @@
             },
             {
                 "VM": "Infra-T-VM-WebL(2023-11-29)",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "ELP-T-VM-LFS",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -2267,6 +2267,60 @@
         "Host": "vx-t-esxi-uat05.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "FG-T-VM-FGT01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ001",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-ES01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-T-VM-DC02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "FG-T-VM-FGT02",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PV",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "AD-T-VM-Conn",
                 "USB/XHCI Devices": [
                     {
@@ -2276,25 +2330,7 @@
                 ]
             },
             {
-                "VM": "EDH-T-VM-Mast",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIDevVBJ003",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "CSP-T-VM-APP1",
+                "VM": "RPA-T-VM-UR1",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -2348,7 +2384,16 @@
                 ]
             },
             {
-                "VM": "AD-T-VM-DC02",
+                "VM": "DB-T-VM-Win01",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DB-T-VM-Lnx01",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -2447,34 +2492,7 @@
                 ]
             },
             {
-                "VM": "PAM-T-VM-PV",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "RD-T-VM-yucao",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "CSP-T-VM-APP2",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "IAR-T-VM-DB",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -2494,6 +2512,15 @@
         "Host": "vx-t-esxi-uat01.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "EDH-T-VM-Mast",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "SWIFT-T-VM-AC",
                 "USB/XHCI Devices": [
                     {
@@ -2503,34 +2530,7 @@
                 ]
             },
             {
-                "VM": "EDH-T-VM-HMS",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "RPA-T-VM-DB",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "DB-T-VM-Win01",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "DB-T-VM-Lnx01",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -2549,6 +2549,15 @@
             },
             {
                 "VM": "PAM-D-VM-PV",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ006",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -2647,15 +2656,6 @@
                 ]
             },
             {
-                "VM": "VDI-T-VM-ADC02",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "MCMP-T-VM-WK01",
                 "USB/XHCI Devices": [
                     {
@@ -2730,6 +2730,24 @@
         "Host": "vx-t-esxi-uat06.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "VDIDevVBJ005",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-T-VM-Web",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "PAM-D-VM-Win",
                 "USB/XHCI Devices": [
                     {
@@ -2766,16 +2784,7 @@
                 ]
             },
             {
-                "VM": "ELP-T-VM-ES01",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIDevVBJ004",
+                "VM": "ELP-T-VM-LFS",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -2794,15 +2803,6 @@
             },
             {
                 "VM": "VDI-T-VM-SF01",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "STR-T-VM-AT01",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -3686,7 +3686,7 @@
         "Host": "vx-p-esxi-vdi03.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDISWTVBJ005",
+                "VM": "VDIAOAVBJ002",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -3695,7 +3695,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ020",
+                "VM": "VDIAOAX1VBJ001",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -3704,25 +3704,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ004",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTVBJ022",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ011",
+                "VM": "VDISWTVBJ019",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -3740,7 +3722,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAVBJ002",
+                "VM": "VDI-P-VM-LMISA2",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -3749,7 +3731,7 @@
                 ]
             },
             {
-                "VM": "VDI-P-VM-LMISA2",
+                "VM": "VDISWTX1VBJ003",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -3768,6 +3750,24 @@
             },
             {
                 "VM": "VDIAOAVBJ001",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ011",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ006",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -3795,6 +3795,15 @@
             },
             {
                 "VM": "VDISWTX1VBJ004",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ007",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -3857,15 +3866,6 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ014",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDI-P-VM-PAMP2",
                 "USB/XHCI Devices": [
                     {
@@ -3893,7 +3893,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ001",
+                "VM": "VDISWTVBJ015",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -3922,7 +3922,7 @@
         "Host": "vx-p-esxi-vdi02.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDISWTVBJ008",
+                "VM": "VDISWTVBJ005",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -3931,7 +3931,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ003",
+                "VM": "VDISWTVBJ010",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -3940,7 +3940,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ008",
+                "VM": "VDIAOAX1VBJ019",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -3949,7 +3949,25 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ017",
+                "VM": "VDIAOAX1VBJ010",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ024",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ009",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -3967,24 +3985,6 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ027",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIVOAVBJ008",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDIAOAVBJ004",
                 "USB/XHCI Devices": [
                     {
@@ -3994,16 +3994,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ016",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTVBJ021",
+                "VM": "VDISWTVBJ029",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -4039,6 +4030,33 @@
                 ]
             },
             {
+                "VM": "VDIAOAX1VBJ015",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ022",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ016",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "VDI-P-VM-LMISA1",
                 "USB/XHCI Devices": [
                     {
@@ -4048,34 +4066,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ014",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ018",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDI-P-VM-LMIS03",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTX1VBJ003",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -4111,6 +4102,15 @@
                 ]
             },
             {
+                "VM": "VDIAOAX1VBJ009",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "VDI-P-VM-PAMP3",
                 "USB/XHCI Devices": [
                     {
@@ -4131,7 +4131,34 @@
         "Host": "vx-p-esxi-vdi01.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDISWTVBJ019",
+                "VM": "VDISWTVBJ030",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ020",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ013",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ008",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -4149,15 +4176,6 @@
                 ]
             },
             {
-                "VM": "VDIVOAVBJ001",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDIAOAVBJ005",
                 "USB/XHCI Devices": [
                     {
@@ -4167,7 +4185,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ017",
+                "VM": "VDISWTX1VBJ002",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -4176,16 +4194,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ009",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ010",
+                "VM": "VDISWTVBJ001",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -4203,7 +4212,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ016",
+                "VM": "VDIVOAVBJ008",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -4213,15 +4222,6 @@
             },
             {
                 "VM": "VDIAOAX1VBJ022",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTVBJ011",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -4248,6 +4248,24 @@
                 ]
             },
             {
+                "VM": "VDISWTVBJ014",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ018",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "VDI-P-VM-PAMP4",
                 "USB/XHCI Devices": [
                     {
@@ -4266,15 +4284,6 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ009",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDI-P-VM-EAPP1",
                 "USB/XHCI Devices": [
                     {
@@ -4285,15 +4294,6 @@
             },
             {
                 "VM": "VDISWTVBJ028",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ015",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -4329,15 +4329,6 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ010",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDI-P-VM-EAPP2",
                 "USB/XHCI Devices": [
                     {
@@ -4358,7 +4349,7 @@
         "Host": "vx-p-esxi-vdi04.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDISWTVBJ030",
+                "VM": "VDISWTVBJ004",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -4367,7 +4358,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ029",
+                "VM": "VDISWTVBJ017",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -4376,7 +4367,43 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ024",
+                "VM": "VDISWTVBJ008",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ003",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ017",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ021",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ027",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -4394,52 +4421,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ013",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "vrm-bj-vdi-01",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ019",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ006",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTVBJ015",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTX1VBJ002",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -4466,15 +4448,6 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ007",
-                "USB/XHCI Devices": [
-                    {
-                        "Label": "USB/XHCI",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDIAOAX1C003",
                 "USB/XHCI Devices": [
                     {
@@ -4493,7 +4466,34 @@
                 ]
             },
             {
+                "VM": "VDIAOAX1VBJ011",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ001",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "VDISWTX1VBJTMP",
+                "USB/XHCI Devices": [
+                    {
+                        "Label": "USB/XHCI",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ014",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -4511,7 +4511,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJX1TMP",
+                "VM": "VDISWTVBJ016",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",
@@ -4520,7 +4520,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ001",
+                "VM": "VDISWTVBJX1TMP",
                 "USB/XHCI Devices": [
                     {
                         "Label": "USB/XHCI",

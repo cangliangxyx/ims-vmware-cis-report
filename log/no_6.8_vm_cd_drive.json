@@ -301,7 +301,7 @@
         "Host": "vx-p-esxi-csz08.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "SWIFT-P-VM-AC02",
+                "VM": "Infra-P-VM-Bstn",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -310,11 +310,20 @@
                 ]
             },
             {
-                "VM": "CSP-P-VM-GW3",
+                "VM": "AD-P-VM-FShare",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD drive 1",
-                        "Summary": "Remote ATAPI"
+                        "Summary": "Remote device"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-Orc",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
                     }
                 ]
             },
@@ -346,16 +355,16 @@
                 ]
             },
             {
-                "VM": "PAM-P-VM-CPM2",
+                "VM": "DB-P-VM-ESG",
                 "CD/DVD Drives": [
                     {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "Remote device"
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
                     }
                 ]
             },
             {
-                "VM": "DB-P-VM-ESG",
+                "VM": "SWIFT-P-VM-SIL2",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -373,7 +382,16 @@
                 ]
             },
             {
-                "VM": "vrm-bj-01",
+                "VM": "UC-P-VM-ALEOV",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AC01",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -420,15 +438,6 @@
         "Host": "vx-p-esxi-csz02.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDI-P-VM-CCC1",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "ISO [NAS-Prod-Datastore01] ISO/Win_Server_STD_CORE_2022_2108.37_64Bit_English.ISO"
-                    }
-                ]
-            },
-            {
                 "VM": "AD-P-VM-Conn",
                 "CD/DVD Drives": [
                     {
@@ -438,7 +447,7 @@
                 ]
             },
             {
-                "VM": "opvp-p-vm-rp01",
+                "VM": "opvp-p-vm-srm",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD drive 1",
@@ -447,7 +456,16 @@
                 ]
             },
             {
-                "VM": "SWIFT-P-VM-SIL2",
+                "VM": "Ness-P-VM-SCSW",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "ISO [NAS-Prod-Datastore01] ISO/Win_Server_STD_CORE_2022_2108.37_64Bit_English.ISO"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-P-VM-PBIGW",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -456,29 +474,29 @@
                 ]
             },
             {
-                "VM": "RPA-P-VM-Stu",
+                "VM": "PAM-P-VM-CPM1",
                 "CD/DVD Drives": [
                     {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "Remote device"
                     }
                 ]
             },
             {
-                "VM": "AAD-P-VM-CPA",
+                "VM": "PAM-P-VM-AAM",
                 "CD/DVD Drives": [
                     {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "Remote device"
                     }
                 ]
             },
             {
-                "VM": "UC-P-VM-ALEOV",
+                "VM": "VDI-P-VM-CCC2",
                 "CD/DVD Drives": [
                     {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "ISO [NAS-Prod-Datastore01] ISO/Win_Server_STD_CORE_2022_2108.37_64Bit_English.ISO"
                     }
                 ]
             },
@@ -510,6 +528,15 @@
                 ]
             },
             {
+                "VM": "Infra-P-VM-KMS",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "SOC-P-VM-EFP2",
                 "CD/DVD Drives": [
                     {
@@ -519,7 +546,7 @@
                 ]
             },
             {
-                "VM": "AD-P-VM-DC02",
+                "VM": "PKI-P-VM-Interm",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -528,7 +555,7 @@
                 ]
             },
             {
-                "VM": "PKI-P-VM-Interm",
+                "VM": "PKI-P-VM-CDP",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -573,6 +600,15 @@
                 ]
             },
             {
+                "VM": "AD-A-VM-Conn",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "Remote device"
+                    }
+                ]
+            },
+            {
                 "VM": "MPS-P-VM-PrtS02",
                 "CD/DVD Drives": [
                     {
@@ -602,25 +638,52 @@
         "Host": "vx-p-esxi-csz04.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PKI-P-VM-Issue",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "NMS-P-VM-DNS01",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDI-P-VM-SF02",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-CCC1",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "ISO [NAS-Prod-Datastore01] ISO/Win_Server_STD_CORE_2022_2108.37_64Bit_English.ISO"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-PWD2",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-Web",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-PWD1",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PKI-P-VM-Issue",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -674,29 +737,11 @@
                 ]
             },
             {
-                "VM": "Ness-P-VM-SCSW",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "ISO [NAS-Prod-Datastore01] ISO/Win_Server_STD_CORE_2022_2108.37_64Bit_English.ISO"
-                    }
-                ]
-            },
-            {
                 "VM": "PAM-P-VM-PTA",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD drive 1",
                         "Summary": "Remote ATAPI"
-                    }
-                ]
-            },
-            {
-                "VM": "AD-A-VM-Conn",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "Remote device"
                     }
                 ]
             },
@@ -728,25 +773,7 @@
                 ]
             },
             {
-                "VM": "SMFF-P-VM-Srv",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "Remote ATAPI"
-                    }
-                ]
-            },
-            {
                 "VM": "UFTP-P-VM-APP01",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "Infra-P-VM-RDS",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -782,15 +809,6 @@
                 ]
             },
             {
-                "VM": "VDI-P-VM-CCC2",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "ISO [NAS-Prod-Datastore01] ISO/Win_Server_STD_CORE_2022_2108.37_64Bit_English.ISO"
-                    }
-                ]
-            },
-            {
                 "VM": "AD-P-VM-LAPS",
                 "CD/DVD Drives": [
                     {
@@ -811,11 +829,29 @@
         "Host": "vx-p-esxi-csz01.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PKI-P-VM-CDP",
+                "VM": "RPA-P-VM-Stu",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
                         "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-RPA",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SMFF-P-VM-Srv",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "Remote ATAPI"
                     }
                 ]
             },
@@ -838,15 +874,6 @@
                 ]
             },
             {
-                "VM": "SWIFT-P-VM-AC01",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "MCMP-P-VM-UD",
                 "CD/DVD Drives": [
                     {
@@ -856,25 +883,7 @@
                 ]
             },
             {
-                "VM": "CSP-P-VM-RPA",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "Windows Server 2022 Template 202503",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "RPA-P-VM-DB",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -897,6 +906,15 @@
                     {
                         "Label": "CD/DVD drive 1",
                         "Summary": "Remote ATAPI"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-UR2",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
                     }
                 ]
             },
@@ -924,6 +942,15 @@
                     {
                         "Label": "CD/DVD Drive",
                         "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "opvp-p-vm-rp01",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "ATAPI"
                     }
                 ]
             },
@@ -1002,11 +1029,20 @@
         "Host": "vx-p-esxi-csz05.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "CSP-P-VM-GW1",
+                "VM": "CSP-P-VM-GW2",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD drive 1",
                         "Summary": "Remote ATAPI"
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-01",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
                     }
                 ]
             },
@@ -1034,15 +1070,6 @@
                     {
                         "Label": "CD/DVD drive 1",
                         "Summary": "Remote ATAPI"
-                    }
-                ]
-            },
-            {
-                "VM": "PAM-P-VM-AAM",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "Remote device"
                     }
                 ]
             },
@@ -1112,7 +1139,7 @@
                 ]
             },
             {
-                "VM": "MECM-P-VM-IC01",
+                "VM": "SWIFT-P-VM-SIL1",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -1121,7 +1148,25 @@
                 ]
             },
             {
-                "VM": "CSP-P-VM-GW2",
+                "VM": "SOC-P-VM-Survey",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-DNS01",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-GW1",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD drive 1",
@@ -1135,15 +1180,6 @@
                     {
                         "Label": "CD/DVD Drive",
                         "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "CSP-P-VM-MON",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "Remote ATAPI"
                     }
                 ]
             },
@@ -1193,6 +1229,15 @@
                 ]
             },
             {
+                "VM": "opvp-p-vm-rp02",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "ATAPI"
+                    }
+                ]
+            },
+            {
                 "VM": "Windows Server 2016 Template 2021-02",
                 "CD/DVD Drives": [
                     {
@@ -1211,29 +1256,11 @@
                 ]
             },
             {
-                "VM": "Stge-P-VM-AIQUM",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "ISO [NAS-Prod-Datastore01] ISO/UDBP/ActiveIQUnifiedManager-9.12-virtual-update.iso"
-                    }
-                ]
-            },
-            {
                 "VM": "RPA-P-VM-UR1",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
                         "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "opvp-p-vm-srm",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "ATAPI"
                     }
                 ]
             },
@@ -1256,20 +1283,20 @@
                 ]
             },
             {
-                "VM": "Infra-P-VM-KMS",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "CSP-P-VM-APPDB",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD drive 1",
                         "Summary": "Remote ATAPI"
+                    }
+                ]
+            },
+            {
+                "VM": "AAD-P-VM-CPA",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
                     }
                 ]
             },
@@ -1312,7 +1339,16 @@
         "Host": "vx-p-esxi-csz03.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PAM-P-VM-BV",
+                "VM": "Net-P-VM-DHCP01",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "Remote ATAPI"
+                    }
+                ]
+            },
+            {
+                "VM": "MECM-P-VM-IC01",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -1321,16 +1357,16 @@
                 ]
             },
             {
-                "VM": "opvp-p-vm-rp02",
+                "VM": "Infra-P-VM-RDS",
                 "CD/DVD Drives": [
                     {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "ATAPI"
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
                     }
                 ]
             },
             {
-                "VM": "IOKYC-P-VM-DB",
+                "VM": "SWIFT-P-VM-AC02",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -1348,7 +1384,25 @@
                 ]
             },
             {
-                "VM": "UDBP-P-VM-Web",
+                "VM": "CSP-P-VM-MON",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "Remote ATAPI"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-GW3",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "Remote ATAPI"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-DB",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -1357,7 +1411,7 @@
                 ]
             },
             {
-                "VM": "AD-P-VM-PWD1",
+                "VM": "IOKYC-P-VM-DB",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -1366,7 +1420,7 @@
                 ]
             },
             {
-                "VM": "RPA-P-VM-Orc",
+                "VM": "SOC-P-VM-WCBJ",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -1375,34 +1429,7 @@
                 ]
             },
             {
-                "VM": "SOC-P-VM-Survey",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "ELP-P-VM-PBIGW",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "RPA-P-VM-UR2",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "SWIFT-P-VM-SIL1",
+                "VM": "PAM-P-VM-BV",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -1420,15 +1447,6 @@
                 ]
             },
             {
-                "VM": "AD-P-VM-PWD2",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "SWIFT-P-VM-AWPB",
                 "CD/DVD Drives": [
                     {
@@ -1438,7 +1456,7 @@
                 ]
             },
             {
-                "VM": "Infra-P-VM-Bstn",
+                "VM": "AD-P-VM-DC02",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -1476,20 +1494,29 @@
         "Host": "vx-p-esxi-csz07.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "PAM-P-VM-CPM2",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "Remote device"
+                    }
+                ]
+            },
+            {
+                "VM": "Stge-P-VM-AIQUM",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "ISO [NAS-Prod-Datastore01] ISO/UDBP/ActiveIQUnifiedManager-9.12-virtual-update.iso"
+                    }
+                ]
+            },
+            {
                 "VM": "IRBD-P-VM-MSSQL",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
                         "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "Net-P-VM-DHCP01",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "Remote ATAPI"
                     }
                 ]
             },
@@ -1522,15 +1549,6 @@
             },
             {
                 "VM": "AAD-P-VM-Asmt",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "Remote device"
-                    }
-                ]
-            },
-            {
-                "VM": "AD-P-VM-FShare",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD drive 1",
@@ -1575,25 +1593,7 @@
                 ]
             },
             {
-                "VM": "PAM-P-VM-CPM1",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "Remote device"
-                    }
-                ]
-            },
-            {
                 "VM": "MECM-P-VM-CM02",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "SOC-P-VM-WCBJ",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -1631,24 +1631,6 @@
         "Host": "vx-t-esxi-uat03.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PAM-D-VM-PVWA",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDI-T-VM-ADC01",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "IOKYC-T-VM-DB",
                 "CD/DVD Drives": [
                     {
@@ -1658,7 +1640,7 @@
                 ]
             },
             {
-                "VM": "VDIDevVBJ005",
+                "VM": "VDI-T-VM-ADC02",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -1667,11 +1649,20 @@
                 ]
             },
             {
-                "VM": "VDIDevVBJ001",
+                "VM": "RD-T-VM-yucao",
                 "CD/DVD Drives": [
                     {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "Remote ATAPI"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SF02",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "ISO [NAS-Test-Datastore01] ISO/Citrix_Virtual_Apps_and_Desktops_7_2203_5000.iso"
                     }
                 ]
             },
@@ -1686,6 +1677,15 @@
             },
             {
                 "VM": "VDIOAX1VBJTMP",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ004",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -1748,15 +1748,6 @@
                 ]
             },
             {
-                "VM": "EDH-T-VM-DB",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "NMS-T-VM-DB",
                 "CD/DVD Drives": [
                     {
@@ -1811,7 +1802,7 @@
                 ]
             },
             {
-                "VM": "MCMP-T-VM-PGDB2",
+                "VM": "STR-T-VM-AT01",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -1820,7 +1811,7 @@
                 ]
             },
             {
-                "VM": "VDIDevVBJ006",
+                "VM": "MCMP-T-VM-PGDB2",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -1858,6 +1849,24 @@
         "Host": "vx-t-esxi-uat02.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "VDI-T-VM-ADC01",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-D-VM-PVWA",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "Infra-T-VM-RH92",
                 "CD/DVD Drives": [
                     {
@@ -1885,15 +1894,6 @@
                 ]
             },
             {
-                "VM": "FG-T-VM-FGT01",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "CSP-T-VM-PGDB1",
                 "CD/DVD Drives": [
                     {
@@ -1904,15 +1904,6 @@
             },
             {
                 "VM": "EDIS-T-VM-DQ",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "UFTP-T-VM-APP",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -1939,29 +1930,11 @@
                 ]
             },
             {
-                "VM": "VDI-T-VM-SF02",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "ISO [NAS-Test-Datastore01] ISO/Citrix_Virtual_Apps_and_Desktops_7_2203_5000.iso"
-                    }
-                ]
-            },
-            {
                 "VM": "Infra-T-VM-WebL",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD drive 1",
                         "Summary": "Remote ATAPI"
-                    }
-                ]
-            },
-            {
-                "VM": "FG-T-VM-FGT02",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
                     }
                 ]
             },
@@ -1975,7 +1948,16 @@
                 ]
             },
             {
-                "VM": "RPA-T-VM-UR1",
+                "VM": "EDH-T-VM-HMS",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ003",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -1994,6 +1976,15 @@
             },
             {
                 "VM": "Infra-T-VM-DBW",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "EDH-T-VM-DB",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -2076,7 +2067,7 @@
         "Host": "vx-t-esxi-uat04.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "ELP-T-VM-ES02",
+                "VM": "CSP-T-VM-APP1",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD drive 1",
@@ -2085,11 +2076,20 @@
                 ]
             },
             {
-                "VM": "NMS-T-VM-Web",
+                "VM": "UFTP-T-VM-APP",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
                         "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-ES02",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "Remote ATAPI"
                     }
                 ]
             },
@@ -2130,6 +2130,15 @@
                 ]
             },
             {
+                "VM": "IAR-T-VM-DB",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "SOC-T-VM-APP",
                 "CD/DVD Drives": [
                     {
@@ -2149,15 +2158,6 @@
             },
             {
                 "VM": "Infra-T-VM-WebL(2023-11-29)",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "Remote ATAPI"
-                    }
-                ]
-            },
-            {
-                "VM": "ELP-T-VM-LFS",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD drive 1",
@@ -2267,6 +2267,60 @@
         "Host": "vx-t-esxi-uat05.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "FG-T-VM-FGT01",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ001",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-ES01",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD drive 1",
+                        "Summary": "Remote ATAPI"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-T-VM-DC02",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "FG-T-VM-FGT02",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PV",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "AD-T-VM-Conn",
                 "CD/DVD Drives": [
                     {
@@ -2276,29 +2330,11 @@
                 ]
             },
             {
-                "VM": "EDH-T-VM-Mast",
+                "VM": "RPA-T-VM-UR1",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
                         "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIDevVBJ003",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "CSP-T-VM-APP1",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "Remote ATAPI"
                     }
                 ]
             },
@@ -2348,7 +2384,16 @@
                 ]
             },
             {
-                "VM": "AD-T-VM-DC02",
+                "VM": "DB-T-VM-Win01",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DB-T-VM-Lnx01",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -2447,38 +2492,11 @@
                 ]
             },
             {
-                "VM": "PAM-T-VM-PV",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "RD-T-VM-yucao",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD drive 1",
-                        "Summary": "Remote ATAPI"
-                    }
-                ]
-            },
-            {
                 "VM": "CSP-T-VM-APP2",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD drive 1",
                         "Summary": "Remote ATAPI"
-                    }
-                ]
-            },
-            {
-                "VM": "IAR-T-VM-DB",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
                     }
                 ]
             }
@@ -2494,6 +2512,15 @@
         "Host": "vx-t-esxi-uat01.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "EDH-T-VM-Mast",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "SWIFT-T-VM-AC",
                 "CD/DVD Drives": [
                     {
@@ -2503,34 +2530,7 @@
                 ]
             },
             {
-                "VM": "EDH-T-VM-HMS",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "RPA-T-VM-DB",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "DB-T-VM-Win01",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "DB-T-VM-Lnx01",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -2549,6 +2549,15 @@
             },
             {
                 "VM": "PAM-D-VM-PV",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ006",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -2647,15 +2656,6 @@
                 ]
             },
             {
-                "VM": "VDI-T-VM-ADC02",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "MCMP-T-VM-WK01",
                 "CD/DVD Drives": [
                     {
@@ -2730,6 +2730,24 @@
         "Host": "vx-t-esxi-uat06.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "VDIDevVBJ005",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-T-VM-Web",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "PAM-D-VM-Win",
                 "CD/DVD Drives": [
                     {
@@ -2766,20 +2784,11 @@
                 ]
             },
             {
-                "VM": "ELP-T-VM-ES01",
+                "VM": "ELP-T-VM-LFS",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD drive 1",
                         "Summary": "Remote ATAPI"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIDevVBJ004",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
                     }
                 ]
             },
@@ -2798,15 +2807,6 @@
                     {
                         "Label": "CD/DVD drive 1",
                         "Summary": "ISO [NAS-Test-Datastore01] ISO/Citrix_Virtual_Apps_and_Desktops_7_2203_5000.iso"
-                    }
-                ]
-            },
-            {
-                "VM": "STR-T-VM-AT01",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
                     }
                 ]
             },
@@ -3686,7 +3686,7 @@
         "Host": "vx-p-esxi-vdi03.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDISWTVBJ005",
+                "VM": "VDIAOAVBJ002",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -3695,7 +3695,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ020",
+                "VM": "VDIAOAX1VBJ001",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -3704,25 +3704,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ004",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTVBJ022",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ011",
+                "VM": "VDISWTVBJ019",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -3740,20 +3722,20 @@
                 ]
             },
             {
-                "VM": "VDIAOAVBJ002",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDI-P-VM-LMISA2",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD drive 1",
                         "Summary": "ISO [VxRail-Virtual-SAN-Datastore-VDI E660F] 0b467b63-2685-68fb-52c5-6805cafe1784/Citrix_Virtual_Apps_and_Desktops_7_2203_5000.iso"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTX1VBJ003",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
                     }
                 ]
             },
@@ -3768,6 +3750,24 @@
             },
             {
                 "VM": "VDIAOAVBJ001",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ011",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ006",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -3795,6 +3795,15 @@
             },
             {
                 "VM": "VDISWTX1VBJ004",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ007",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -3857,15 +3866,6 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ014",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDI-P-VM-PAMP2",
                 "CD/DVD Drives": [
                     {
@@ -3893,7 +3893,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ001",
+                "VM": "VDISWTVBJ015",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -3922,7 +3922,7 @@
         "Host": "vx-p-esxi-vdi02.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDISWTVBJ008",
+                "VM": "VDISWTVBJ005",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -3931,7 +3931,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ003",
+                "VM": "VDISWTVBJ010",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -3940,7 +3940,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ008",
+                "VM": "VDIAOAX1VBJ019",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -3949,7 +3949,25 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ017",
+                "VM": "VDIAOAX1VBJ010",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ024",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ009",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -3967,24 +3985,6 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ027",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIVOAVBJ008",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDIAOAVBJ004",
                 "CD/DVD Drives": [
                     {
@@ -3994,16 +3994,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ016",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTVBJ021",
+                "VM": "VDISWTVBJ029",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -4039,6 +4030,33 @@
                 ]
             },
             {
+                "VM": "VDIAOAX1VBJ015",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ022",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ016",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "VDI-P-VM-LMISA1",
                 "CD/DVD Drives": [
                     {
@@ -4048,34 +4066,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ014",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ018",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDI-P-VM-LMIS03",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTX1VBJ003",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -4111,6 +4102,15 @@
                 ]
             },
             {
+                "VM": "VDIAOAX1VBJ009",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "VDI-P-VM-PAMP3",
                 "CD/DVD Drives": [
                     {
@@ -4131,7 +4131,34 @@
         "Host": "vx-p-esxi-vdi01.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDISWTVBJ019",
+                "VM": "VDISWTVBJ030",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ020",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ013",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ008",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -4149,15 +4176,6 @@
                 ]
             },
             {
-                "VM": "VDIVOAVBJ001",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDIAOAVBJ005",
                 "CD/DVD Drives": [
                     {
@@ -4167,7 +4185,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ017",
+                "VM": "VDISWTX1VBJ002",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -4176,16 +4194,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ009",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ010",
+                "VM": "VDISWTVBJ001",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -4203,7 +4212,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ016",
+                "VM": "VDIVOAVBJ008",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -4213,15 +4222,6 @@
             },
             {
                 "VM": "VDIAOAX1VBJ022",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTVBJ011",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -4248,6 +4248,24 @@
                 ]
             },
             {
+                "VM": "VDISWTVBJ014",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ018",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "VDI-P-VM-PAMP4",
                 "CD/DVD Drives": [
                     {
@@ -4266,15 +4284,6 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ009",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDI-P-VM-EAPP1",
                 "CD/DVD Drives": [
                     {
@@ -4285,15 +4294,6 @@
             },
             {
                 "VM": "VDISWTVBJ028",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ015",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -4329,15 +4329,6 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ010",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDI-P-VM-EAPP2",
                 "CD/DVD Drives": [
                     {
@@ -4358,7 +4349,7 @@
         "Host": "vx-p-esxi-vdi04.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDISWTVBJ030",
+                "VM": "VDISWTVBJ004",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -4367,7 +4358,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ029",
+                "VM": "VDISWTVBJ017",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -4376,7 +4367,43 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ024",
+                "VM": "VDISWTVBJ008",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ003",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ017",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ021",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ027",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -4394,52 +4421,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ013",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "vrm-bj-vdi-01",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ019",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ006",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTVBJ015",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTX1VBJ002",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -4466,15 +4448,6 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ007",
-                "CD/DVD Drives": [
-                    {
-                        "Label": "CD/DVD Drive",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDIAOAX1C003",
                 "CD/DVD Drives": [
                     {
@@ -4493,7 +4466,34 @@
                 ]
             },
             {
+                "VM": "VDIAOAX1VBJ011",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ001",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "VDISWTX1VBJTMP",
+                "CD/DVD Drives": [
+                    {
+                        "Label": "CD/DVD Drive",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ014",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -4511,7 +4511,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJX1TMP",
+                "VM": "VDISWTVBJ016",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",
@@ -4520,7 +4520,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ001",
+                "VM": "VDISWTVBJX1TMP",
                 "CD/DVD Drives": [
                     {
                         "Label": "CD/DVD Drive",

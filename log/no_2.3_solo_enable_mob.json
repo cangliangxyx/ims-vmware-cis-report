@@ -11,7 +11,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -26,7 +26,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -41,7 +41,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -56,7 +56,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -71,7 +71,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -86,7 +86,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -101,7 +101,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -116,7 +116,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -131,7 +131,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -146,7 +146,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -161,7 +161,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -176,7 +176,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -191,7 +191,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -206,7 +206,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -221,7 +221,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -236,7 +236,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -251,7 +251,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -266,7 +266,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -281,7 +281,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -296,7 +296,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -311,7 +311,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -326,7 +326,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -341,7 +341,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -356,7 +356,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -371,7 +371,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -386,7 +386,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -401,7 +401,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -416,7 +416,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -431,7 +431,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -446,7 +446,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -461,7 +461,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -476,7 +476,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -491,7 +491,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     },
     {
@@ -506,7 +506,7 @@
             "type": "bool"
         },
         "Status": "Pass",
-        "Description": "Direct MOB access should be disabled",
+        "Description": "Config.HostAgent.plugins.solo.enableMob not checked, 检测值:'value': false",
         "Error": null
     }
 ]

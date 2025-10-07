@@ -13,7 +13,7 @@
             "required": false
         },
         "Status": "Fail",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -30,7 +30,7 @@
             "required": false
         },
         "Status": "Fail",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -47,7 +47,7 @@
             "required": false
         },
         "Status": "Fail",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -64,7 +64,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -81,7 +81,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -98,7 +98,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -115,7 +115,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -132,7 +132,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -149,7 +149,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -166,7 +166,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -183,7 +183,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -200,7 +200,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -217,7 +217,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -234,7 +234,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -251,7 +251,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -268,7 +268,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -285,7 +285,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -302,7 +302,7 @@
             "required": false
         },
         "Status": "Fail",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -319,7 +319,7 @@
             "required": false
         },
         "Status": "Fail",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -336,7 +336,7 @@
             "required": false
         },
         "Status": "Fail",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -353,7 +353,7 @@
             "required": false
         },
         "Status": "Fail",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -370,7 +370,7 @@
             "required": false
         },
         "Status": "Fail",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -387,7 +387,7 @@
             "required": false
         },
         "Status": "Fail",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -404,7 +404,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -421,7 +421,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -438,7 +438,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -455,7 +455,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -472,7 +472,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -489,7 +489,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -506,7 +506,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -523,7 +523,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -540,7 +540,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -557,7 +557,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     },
     {
@@ -574,7 +574,7 @@
             "required": false
         },
         "Status": "Pass",
-        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start",
+        "Description": "TSM (ESXi Shell) service status, should be stopped / manual start，检测值:'policy': 'off', 'running': 'false',",
         "Error": null
     }
 ]

@@ -156,11 +156,15 @@
         "Host": "vx-p-esxi-csz08.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "SWIFT-P-VM-AC02",
+                "VM": "Infra-P-VM-Bstn",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "CSP-P-VM-GW3",
+                "VM": "AD-P-VM-FShare",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "RPA-P-VM-Orc",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -176,11 +180,11 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "PAM-P-VM-CPM2",
+                "VM": "DB-P-VM-ESG",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "DB-P-VM-ESG",
+                "VM": "SWIFT-P-VM-SIL2",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -188,7 +192,11 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "vrm-bj-01",
+                "VM": "UC-P-VM-ALEOV",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "SWIFT-P-VM-AC01",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -215,31 +223,31 @@
         "Host": "vx-p-esxi-csz02.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDI-P-VM-CCC1",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "AD-P-VM-Conn",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "opvp-p-vm-rp01",
+                "VM": "opvp-p-vm-srm",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "SWIFT-P-VM-SIL2",
+                "VM": "Ness-P-VM-SCSW",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "RPA-P-VM-Stu",
+                "VM": "ELP-P-VM-PBIGW",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "AAD-P-VM-CPA",
+                "VM": "PAM-P-VM-CPM1",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "UC-P-VM-ALEOV",
+                "VM": "PAM-P-VM-AAM",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDI-P-VM-CCC2",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -255,15 +263,19 @@
                 "mks.enable3d": "Not Configured"
             },
             {
+                "VM": "Infra-P-VM-KMS",
+                "mks.enable3d": "Not Configured"
+            },
+            {
                 "VM": "SOC-P-VM-EFP2",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "AD-P-VM-DC02",
+                "VM": "PKI-P-VM-Interm",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "PKI-P-VM-Interm",
+                "VM": "PKI-P-VM-CDP",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -280,6 +292,10 @@
             },
             {
                 "VM": "OPVP-P-VM-VC",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "AD-A-VM-Conn",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -302,15 +318,27 @@
         "Host": "vx-p-esxi-csz04.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PKI-P-VM-Issue",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "NMS-P-VM-DNS01",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "VDI-P-VM-SF02",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDI-P-VM-CCC1",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "AD-P-VM-PWD2",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "UDBP-P-VM-Web",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "AD-P-VM-PWD1",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "PKI-P-VM-Issue",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -334,15 +362,7 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "Ness-P-VM-SCSW",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "PAM-P-VM-PTA",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "AD-A-VM-Conn",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -358,15 +378,7 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "SMFF-P-VM-Srv",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "UFTP-P-VM-APP01",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "Infra-P-VM-RDS",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -379,10 +391,6 @@
             },
             {
                 "VM": "MPS-P-VM-DB",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDI-P-VM-CCC2",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -401,7 +409,15 @@
         "Host": "vx-p-esxi-csz01.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PKI-P-VM-CDP",
+                "VM": "RPA-P-VM-Stu",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "CSP-P-VM-RPA",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "SMFF-P-VM-Srv",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -413,23 +429,11 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "SWIFT-P-VM-AC01",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "MCMP-P-VM-UD",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "CSP-P-VM-RPA",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "Windows Server 2022 Template 202503",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "RPA-P-VM-DB",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -438,6 +442,10 @@
             },
             {
                 "VM": "Windows Server 2012r2 Template 2020-5",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "RPA-P-VM-UR2",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -450,6 +458,10 @@
             },
             {
                 "VM": "SOC-P-VM-App",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "opvp-p-vm-rp01",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -492,7 +504,11 @@
         "Host": "vx-p-esxi-csz05.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "CSP-P-VM-GW1",
+                "VM": "CSP-P-VM-GW2",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "vrm-bj-01",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -505,10 +521,6 @@
             },
             {
                 "VM": "AD-P-VM-WEF",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "PAM-P-VM-AAM",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -547,19 +559,23 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "MECM-P-VM-IC01",
+                "VM": "SWIFT-P-VM-SIL1",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "CSP-P-VM-GW2",
+                "VM": "SOC-P-VM-Survey",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "NMS-P-VM-DNS01",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "CSP-P-VM-GW1",
                 "mks.enable3d": "Not Configured"
             },
             {
                 "VM": "MPS-P-VM-CNSL01",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "CSP-P-VM-MON",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -583,6 +599,10 @@
                 "mks.enable3d": "Not Configured"
             },
             {
+                "VM": "opvp-p-vm-rp02",
+                "mks.enable3d": "Not Configured"
+            },
+            {
                 "VM": "Windows Server 2016 Template 2021-02",
                 "mks.enable3d": "Not Configured"
             },
@@ -591,15 +611,7 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "Stge-P-VM-AIQUM",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "RPA-P-VM-UR1",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "opvp-p-vm-srm",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -611,11 +623,11 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "Infra-P-VM-KMS",
+                "VM": "CSP-P-VM-APPDB",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "CSP-P-VM-APPDB",
+                "VM": "AAD-P-VM-CPA",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -642,15 +654,19 @@
         "Host": "vx-p-esxi-csz03.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PAM-P-VM-BV",
+                "VM": "Net-P-VM-DHCP01",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "opvp-p-vm-rp02",
+                "VM": "MECM-P-VM-IC01",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "IOKYC-P-VM-DB",
+                "VM": "Infra-P-VM-RDS",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "SWIFT-P-VM-AC02",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -658,31 +674,27 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "UDBP-P-VM-Web",
+                "VM": "CSP-P-VM-MON",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "AD-P-VM-PWD1",
+                "VM": "CSP-P-VM-GW3",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "RPA-P-VM-Orc",
+                "VM": "RPA-P-VM-DB",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "SOC-P-VM-Survey",
+                "VM": "IOKYC-P-VM-DB",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "ELP-P-VM-PBIGW",
+                "VM": "SOC-P-VM-WCBJ",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "RPA-P-VM-UR2",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "SWIFT-P-VM-SIL1",
+                "VM": "PAM-P-VM-BV",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -690,15 +702,11 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "AD-P-VM-PWD2",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "SWIFT-P-VM-AWPB",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "Infra-P-VM-Bstn",
+                "VM": "AD-P-VM-DC02",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -721,11 +729,15 @@
         "Host": "vx-p-esxi-csz07.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "IRBD-P-VM-MSSQL",
+                "VM": "PAM-P-VM-CPM2",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "Net-P-VM-DHCP01",
+                "VM": "Stge-P-VM-AIQUM",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "IRBD-P-VM-MSSQL",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -745,10 +757,6 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "AD-P-VM-FShare",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "CSP-P-VM-PGDB1",
                 "mks.enable3d": "Not Configured"
             },
@@ -765,15 +773,7 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "PAM-P-VM-CPM1",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "MECM-P-VM-CM02",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "SOC-P-VM-WCBJ",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -796,23 +796,19 @@
         "Host": "vx-t-esxi-uat03.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PAM-D-VM-PVWA",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDI-T-VM-ADC01",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "IOKYC-T-VM-DB",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDIDevVBJ005",
+                "VM": "VDI-T-VM-ADC02",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDIDevVBJ001",
+                "VM": "RD-T-VM-yucao",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDI-T-VM-SF02",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -821,6 +817,10 @@
             },
             {
                 "VM": "VDIOAX1VBJTMP",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIDevVBJ004",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -848,10 +848,6 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "EDH-T-VM-DB",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "NMS-T-VM-DB",
                 "mks.enable3d": "Not Configured"
             },
@@ -876,11 +872,11 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "MCMP-T-VM-PGDB2",
+                "VM": "STR-T-VM-AT01",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDIDevVBJ006",
+                "VM": "MCMP-T-VM-PGDB2",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -903,6 +899,14 @@
         "Host": "vx-t-esxi-uat02.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "VDI-T-VM-ADC01",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "PAM-D-VM-PVWA",
+                "mks.enable3d": "Not Configured"
+            },
+            {
                 "VM": "Infra-T-VM-RH92",
                 "mks.enable3d": "Not Configured"
             },
@@ -915,19 +919,11 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "FG-T-VM-FGT01",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "CSP-T-VM-PGDB1",
                 "mks.enable3d": "Not Configured"
             },
             {
                 "VM": "EDIS-T-VM-DQ",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "UFTP-T-VM-APP",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -939,15 +935,7 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDI-T-VM-SF02",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "Infra-T-VM-WebL",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "FG-T-VM-FGT02",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -955,7 +943,11 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "RPA-T-VM-UR1",
+                "VM": "EDH-T-VM-HMS",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIDevVBJ003",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -964,6 +956,10 @@
             },
             {
                 "VM": "Infra-T-VM-DBW",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "EDH-T-VM-DB",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1006,11 +1002,15 @@
         "Host": "vx-t-esxi-uat04.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "ELP-T-VM-ES02",
+                "VM": "CSP-T-VM-APP1",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "NMS-T-VM-Web",
+                "VM": "UFTP-T-VM-APP",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "ELP-T-VM-ES02",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1030,6 +1030,10 @@
                 "mks.enable3d": "Not Configured"
             },
             {
+                "VM": "IAR-T-VM-DB",
+                "mks.enable3d": "Not Configured"
+            },
+            {
                 "VM": "SOC-T-VM-APP",
                 "mks.enable3d": "Not Configured"
             },
@@ -1039,10 +1043,6 @@
             },
             {
                 "VM": "Infra-T-VM-WebL(2023-11-29)",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "ELP-T-VM-LFS",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1097,19 +1097,35 @@
         "Host": "vx-t-esxi-uat05.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "FG-T-VM-FGT01",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIDevVBJ001",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "ELP-T-VM-ES01",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "AD-T-VM-DC02",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "FG-T-VM-FGT02",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "PAM-T-VM-PV",
+                "mks.enable3d": "Not Configured"
+            },
+            {
                 "VM": "AD-T-VM-Conn",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "EDH-T-VM-Mast",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDIDevVBJ003",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "CSP-T-VM-APP1",
+                "VM": "RPA-T-VM-UR1",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1133,7 +1149,11 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "AD-T-VM-DC02",
+                "VM": "DB-T-VM-Win01",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "DB-T-VM-Lnx01",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1177,19 +1197,7 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "PAM-T-VM-PV",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "RD-T-VM-yucao",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "CSP-T-VM-APP2",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "IAR-T-VM-DB",
                 "mks.enable3d": "Not Configured"
             }
         ],
@@ -1204,23 +1212,15 @@
         "Host": "vx-t-esxi-uat01.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "EDH-T-VM-Mast",
+                "mks.enable3d": "Not Configured"
+            },
+            {
                 "VM": "SWIFT-T-VM-AC",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "EDH-T-VM-HMS",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "RPA-T-VM-DB",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "DB-T-VM-Win01",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "DB-T-VM-Lnx01",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1229,6 +1229,10 @@
             },
             {
                 "VM": "PAM-D-VM-PV",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIDevVBJ006",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1272,10 +1276,6 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDI-T-VM-ADC02",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "MCMP-T-VM-WK01",
                 "mks.enable3d": "Not Configured"
             },
@@ -1315,6 +1315,14 @@
         "Host": "vx-t-esxi-uat06.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "VDIDevVBJ005",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "NMS-T-VM-Web",
+                "mks.enable3d": "Not Configured"
+            },
+            {
                 "VM": "PAM-D-VM-Win",
                 "mks.enable3d": "Not Configured"
             },
@@ -1331,11 +1339,7 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "ELP-T-VM-ES01",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDIDevVBJ004",
+                "VM": "ELP-T-VM-LFS",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1344,10 +1348,6 @@
             },
             {
                 "VM": "VDI-T-VM-SF01",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "STR-T-VM-AT01",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1801,23 +1801,15 @@
         "Host": "vx-p-esxi-vdi03.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDISWTVBJ005",
+                "VM": "VDIAOAVBJ002",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDISWTVBJ020",
+                "VM": "VDIAOAX1VBJ001",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDISWTVBJ004",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDISWTVBJ022",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDIAOAX1VBJ011",
+                "VM": "VDISWTVBJ019",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1825,11 +1817,11 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDIAOAVBJ002",
+                "VM": "VDI-P-VM-LMISA2",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDI-P-VM-LMISA2",
+                "VM": "VDISWTX1VBJ003",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1838,6 +1830,14 @@
             },
             {
                 "VM": "VDIAOAVBJ001",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDISWTVBJ011",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIAOAX1VBJ006",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1850,6 +1850,10 @@
             },
             {
                 "VM": "VDISWTX1VBJ004",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDISWTVBJ007",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1877,10 +1881,6 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDIAOAX1VBJ014",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "VDI-P-VM-PAMP2",
                 "mks.enable3d": "Not Configured"
             },
@@ -1893,7 +1893,7 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDISWTVBJ001",
+                "VM": "VDISWTVBJ015",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1912,19 +1912,27 @@
         "Host": "vx-p-esxi-vdi02.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDISWTVBJ008",
+                "VM": "VDISWTVBJ005",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDIAOAX1VBJ003",
+                "VM": "VDISWTVBJ010",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDIAOAX1VBJ008",
+                "VM": "VDIAOAX1VBJ019",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDIAOAX1VBJ017",
+                "VM": "VDIAOAX1VBJ010",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDISWTVBJ024",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDISWTVBJ009",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1932,23 +1940,11 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDISWTVBJ027",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDIVOAVBJ008",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "VDIAOAVBJ004",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDISWTVBJ016",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDISWTVBJ021",
+                "VM": "VDISWTVBJ029",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1964,23 +1960,23 @@
                 "mks.enable3d": "Not Configured"
             },
             {
+                "VM": "VDIAOAX1VBJ015",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDISWTVBJ022",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIAOAX1VBJ016",
+                "mks.enable3d": "Not Configured"
+            },
+            {
                 "VM": "VDI-P-VM-LMISA1",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDISWTVBJ014",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDIAOAX1VBJ018",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "VDI-P-VM-LMIS03",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDISWTX1VBJ003",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -1993,6 +1989,10 @@
             },
             {
                 "VM": "Windows 10 Enterprise 21H2",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIAOAX1VBJ009",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -2011,7 +2011,19 @@
         "Host": "vx-p-esxi-vdi01.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDISWTVBJ019",
+                "VM": "VDISWTVBJ030",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDISWTVBJ020",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIAOAX1VBJ013",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIAOAX1VBJ008",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -2019,23 +2031,15 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDIVOAVBJ001",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "VDIAOAVBJ005",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDISWTVBJ017",
+                "VM": "VDISWTX1VBJ002",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDIAOAX1VBJ009",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDIAOAX1VBJ010",
+                "VM": "VDISWTVBJ001",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -2043,15 +2047,11 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDIAOAX1VBJ016",
+                "VM": "VDIVOAVBJ008",
                 "mks.enable3d": "Not Configured"
             },
             {
                 "VM": "VDIAOAX1VBJ022",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDISWTVBJ011",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -2063,6 +2063,14 @@
                 "mks.enable3d": "Not Configured"
             },
             {
+                "VM": "VDISWTVBJ014",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIAOAX1VBJ018",
+                "mks.enable3d": "Not Configured"
+            },
+            {
                 "VM": "VDI-P-VM-PAMP4",
                 "mks.enable3d": "Not Configured"
             },
@@ -2071,19 +2079,11 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDISWTVBJ009",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "VDI-P-VM-EAPP1",
                 "mks.enable3d": "Not Configured"
             },
             {
                 "VM": "VDISWTVBJ028",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDIAOAX1VBJ015",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -2096,10 +2096,6 @@
             },
             {
                 "VM": "VDIOAX1VBJTMP",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDISWTVBJ010",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -2118,15 +2114,31 @@
         "Host": "vx-p-esxi-vdi04.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDISWTVBJ030",
+                "VM": "VDISWTVBJ004",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDISWTVBJ029",
+                "VM": "VDISWTVBJ017",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDISWTVBJ024",
+                "VM": "VDISWTVBJ008",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIAOAX1VBJ003",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIAOAX1VBJ017",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDISWTVBJ021",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDISWTVBJ027",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -2134,27 +2146,7 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDIAOAX1VBJ013",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "vrm-bj-vdi-01",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDIAOAX1VBJ019",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDIAOAX1VBJ006",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDISWTVBJ015",
-                "mks.enable3d": "Not Configured"
-            },
-            {
-                "VM": "VDISWTX1VBJ002",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -2166,10 +2158,6 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDISWTVBJ007",
-                "mks.enable3d": "Not Configured"
-            },
-            {
                 "VM": "VDIAOAX1C003",
                 "mks.enable3d": "Not Configured"
             },
@@ -2178,7 +2166,19 @@
                 "mks.enable3d": "Not Configured"
             },
             {
+                "VM": "VDIAOAX1VBJ011",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIVOAVBJ001",
+                "mks.enable3d": "Not Configured"
+            },
+            {
                 "VM": "VDISWTX1VBJTMP",
+                "mks.enable3d": "Not Configured"
+            },
+            {
+                "VM": "VDIAOAX1VBJ014",
                 "mks.enable3d": "Not Configured"
             },
             {
@@ -2186,11 +2186,11 @@
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDISWTVBJX1TMP",
+                "VM": "VDISWTVBJ016",
                 "mks.enable3d": "Not Configured"
             },
             {
-                "VM": "VDIAOAX1VBJ001",
+                "VM": "VDISWTVBJX1TMP",
                 "mks.enable3d": "Not Configured"
             },
             {
