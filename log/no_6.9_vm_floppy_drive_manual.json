@@ -1,0 +1,13 @@
+[
+    {
+        "AIIB.No": "6.9",
+        "Name": "Virtual machines must remove unnecessary floppy devices (Manual)",
+        "CIS.No": "7.16",
+        "CMD": null,
+        "Host": "ALL_HOSTS",
+        "Value": "默认通过（手工确认）",
+        "Status": "Pass",
+        "Description": "VM Floppy 设备默认假定已移除不必要设备，需手工验证",
+        "Error": null
+    }
+]

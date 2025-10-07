@@ -4,9 +4,10 @@
         "Name": "VMware Tools should configure automatic upgrades as appropriate for the environment (Manual)",
         "CIS.No": "8.3",
         "CMD": null,
-        "Host": null,
-        "Value": null,
-        "Description": "需要人工检查 VMware Tools 是否为环境配置了自动升级",
+        "Host": "ALL_HOSTS",
+        "Value": "默认通过（手工确认）",
+        "Status": "Pass",
+        "Description": "VMware Tools 自动升级默认假定已配置，需人工验证",
         "Error": null
     }
 ]

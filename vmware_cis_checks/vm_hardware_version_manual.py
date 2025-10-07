@@ -7,12 +7,12 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
 
-def get_vm_hardware_version_manual(content=None) -> List[Dict[str, Any]]:
+def get_vm_hardware_version_manual(content=None) -> List[Dict]:
     """
     手工检查：Virtual machines should have virtual machine hardware version 19 or newer
     默认通过
     """
-    results: List[Dict[str, Any]] = [{
+    results: List[Dict] = [{
         "AIIB.No": "6.10",
         "Name": "Virtual machines should have virtual machine hardware version 19 or newer (Manual)",
         "CIS.No": "7.29",

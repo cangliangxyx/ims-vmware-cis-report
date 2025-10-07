@@ -7,12 +7,12 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
 
-def get_vmware_tools_update_manual(content=None) -> List[Dict[str, Any]]:
+def get_vmware_tools_update_manual(content=None) -> List[Dict]:
     """
     手工检查：VMware Tools must have all software updates installed
     默认通过
     """
-    results: List[Dict[str, Any]] = [{
+    results: List[Dict] = [{
         "AIIB.No": "7.1",
         "Name": "VMware Tools must have all software updates installed (Manual)",
         "CIS.No": "8.2",

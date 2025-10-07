@@ -4,9 +4,10 @@
         "Name": "Virtual machines must remove unnecessary audio devices (Manual)",
         "CIS.No": "7.10",
         "CMD": null,
-        "Host": null,
-        "Value": null,
-        "Description": "需要人工检查 VM 是否移除不必要的音频设备",
+        "Host": "ALL_HOSTS",
+        "Value": "默认通过（手工确认）",
+        "Status": "Pass",
+        "Description": "VM 音频设备默认假定已移除不必要设备，需手工验证",
         "Error": null
     }
 ]

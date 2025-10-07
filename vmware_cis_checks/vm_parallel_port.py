@@ -7,12 +7,12 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
 
-def get_vm_parallel_port_manual(content=None) -> List[Dict[str, Any]]:
+def get_vm_parallel_port_manual(content=None) -> List[Dict]:
     """
     手工检查：Virtual machines must remove unnecessary parallel port devices
     默认通过
     """
-    results: List[Dict[str, Any]] = [{
+    results: List[Dict] = [{
         "AIIB.No": "6.7",
         "Name": "Virtual machines must remove unnecessary parallel port devices (Manual)",
         "CIS.No": "7.14",

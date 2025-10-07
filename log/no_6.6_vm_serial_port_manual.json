@@ -1,0 +1,13 @@
+[
+    {
+        "AIIB.No": "6.6",
+        "Name": "Virtual machines must remove unnecessary serial port devices (Manual)",
+        "CIS.No": "7.13",
+        "CMD": null,
+        "Host": "ALL_HOSTS",
+        "Value": "默认通过（手工确认）",
+        "Status": "Pass",
+        "Description": "VM Serial Port 设备默认假定已移除不必要设备，需手工验证",
+        "Error": null
+    }
+]

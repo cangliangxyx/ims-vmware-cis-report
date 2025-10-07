@@ -4,9 +4,10 @@
         "Name": "Virtual machines must remove unnecessary AHCI devices (Manual)",
         "CIS.No": "7.11",
         "CMD": null,
-        "Host": null,
-        "Value": null,
-        "Description": "需要人工检查 VM 是否移除不必要的 AHCI 设备",
+        "Host": "ALL_HOSTS",
+        "Value": "默认通过（手工确认）",
+        "Status": "Pass",
+        "Description": "VM AHCI 设备默认假定已移除不必要设备，需手工验证",
         "Error": null
     }
 ]

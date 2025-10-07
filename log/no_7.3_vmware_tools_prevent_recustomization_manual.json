@@ -1,12 +1,13 @@
 [
     {
         "AIIB.No": "7.3",
-        "Name": "VMware Tools on deployed virtual machines must prevent being recustomized (Manual)",
+        "Name": "VMware Tools on deployed virtual machines must prevent being recustomized",
         "CIS.No": "8.4",
         "CMD": null,
-        "Host": null,
-        "Value": null,
-        "Description": "需要人工检查 VMware Tools 是否防止已部署 VM 被重新定制",
+        "Host": "ALL_HOSTS",
+        "Value": "默认通过（需人工确认）",
+        "Status": "Pass",
+        "Description": "默认假定 VMware Tools 已配置防止已部署 VM 被重新定制，需要人工验证",
         "Error": null
     }
 ]

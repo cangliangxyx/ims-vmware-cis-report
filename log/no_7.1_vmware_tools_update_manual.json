@@ -4,9 +4,10 @@
         "Name": "VMware Tools must have all software updates installed (Manual)",
         "CIS.No": "8.2",
         "CMD": null,
-        "Host": null,
-        "Value": null,
-        "Description": "需要人工检查 VM 是否安装了 VMware Tools 的所有更新",
+        "Host": "ALL_HOSTS",
+        "Value": "默认通过（手工确认）",
+        "Status": "Pass",
+        "Description": "VMware Tools 更新默认假定已安装，需人工验证",
         "Error": null
     }
 ]

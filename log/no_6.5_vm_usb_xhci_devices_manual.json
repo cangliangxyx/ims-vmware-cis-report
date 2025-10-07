@@ -1,0 +1,13 @@
+[
+    {
+        "AIIB.No": "6.5",
+        "Name": "Virtual machines must remove unnecessary USB/XHCI devices (Manual)",
+        "CIS.No": "7.12",
+        "CMD": null,
+        "Host": "ALL_HOSTS",
+        "Value": "默认通过（手工确认）",
+        "Status": "Pass",
+        "Description": "VM USB/XHCI 设备默认假定已移除不必要设备，需手工验证",
+        "Error": null
+    }
+]

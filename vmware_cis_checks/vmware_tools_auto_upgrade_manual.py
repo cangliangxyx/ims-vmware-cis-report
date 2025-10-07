@@ -7,12 +7,12 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
 
-def get_vmware_tools_auto_upgrade_manual(content=None) -> List[Dict[str, Any]]:
+def get_vmware_tools_auto_upgrade_manual(content=None) -> List[Dict]:
     """
     手工检查：VMware Tools should configure automatic upgrades as appropriate for the environment
     默认通过
     """
-    results: List[Dict[str, Any]] = [{
+    results: List[Dict] = [{
         "AIIB.No": "7.2",
         "Name": "VMware Tools should configure automatic upgrades as appropriate for the environment (Manual)",
         "CIS.No": "8.3",
