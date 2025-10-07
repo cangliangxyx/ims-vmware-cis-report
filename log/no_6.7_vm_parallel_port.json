@@ -301,7 +301,7 @@
         "Host": "vx-p-esxi-csz08.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "SWIFT-P-VM-AC02",
+                "VM": "Infra-P-VM-Bstn",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -310,7 +310,16 @@
                 ]
             },
             {
-                "VM": "CSP-P-VM-GW3",
+                "VM": "AD-P-VM-FShare",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-Orc",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -346,7 +355,7 @@
                 ]
             },
             {
-                "VM": "PAM-P-VM-CPM2",
+                "VM": "DB-P-VM-ESG",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -355,7 +364,7 @@
                 ]
             },
             {
-                "VM": "DB-P-VM-ESG",
+                "VM": "SWIFT-P-VM-SIL2",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -373,7 +382,16 @@
                 ]
             },
             {
-                "VM": "vrm-bj-01",
+                "VM": "UC-P-VM-ALEOV",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AC01",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -420,15 +438,6 @@
         "Host": "vx-p-esxi-csz02.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDI-P-VM-CCC1",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "AD-P-VM-Conn",
                 "Parallel Ports": [
                     {
@@ -438,7 +447,7 @@
                 ]
             },
             {
-                "VM": "opvp-p-vm-rp01",
+                "VM": "opvp-p-vm-srm",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -447,7 +456,7 @@
                 ]
             },
             {
-                "VM": "SWIFT-P-VM-SIL2",
+                "VM": "Ness-P-VM-SCSW",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -456,7 +465,7 @@
                 ]
             },
             {
-                "VM": "RPA-P-VM-Stu",
+                "VM": "ELP-P-VM-PBIGW",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -465,7 +474,7 @@
                 ]
             },
             {
-                "VM": "AAD-P-VM-CPA",
+                "VM": "PAM-P-VM-CPM1",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -474,7 +483,16 @@
                 ]
             },
             {
-                "VM": "UC-P-VM-ALEOV",
+                "VM": "PAM-P-VM-AAM",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-CCC2",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -510,6 +528,15 @@
                 ]
             },
             {
+                "VM": "Infra-P-VM-KMS",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "SOC-P-VM-EFP2",
                 "Parallel Ports": [
                     {
@@ -519,7 +546,7 @@
                 ]
             },
             {
-                "VM": "AD-P-VM-DC02",
+                "VM": "PKI-P-VM-Interm",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -528,7 +555,7 @@
                 ]
             },
             {
-                "VM": "PKI-P-VM-Interm",
+                "VM": "PKI-P-VM-CDP",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -573,6 +600,15 @@
                 ]
             },
             {
+                "VM": "AD-A-VM-Conn",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "MPS-P-VM-PrtS02",
                 "Parallel Ports": [
                     {
@@ -602,25 +638,52 @@
         "Host": "vx-p-esxi-csz04.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PKI-P-VM-Issue",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "NMS-P-VM-DNS01",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDI-P-VM-SF02",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-P-VM-CCC1",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-PWD2",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "UDBP-P-VM-Web",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-P-VM-PWD1",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PKI-P-VM-Issue",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -674,25 +737,7 @@
                 ]
             },
             {
-                "VM": "Ness-P-VM-SCSW",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "PAM-P-VM-PTA",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "AD-A-VM-Conn",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -728,25 +773,7 @@
                 ]
             },
             {
-                "VM": "SMFF-P-VM-Srv",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "UFTP-P-VM-APP01",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "Infra-P-VM-RDS",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -782,15 +809,6 @@
                 ]
             },
             {
-                "VM": "VDI-P-VM-CCC2",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "AD-P-VM-LAPS",
                 "Parallel Ports": [
                     {
@@ -811,7 +829,25 @@
         "Host": "vx-p-esxi-csz01.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PKI-P-VM-CDP",
+                "VM": "RPA-P-VM-Stu",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-RPA",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SMFF-P-VM-Srv",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -838,15 +874,6 @@
                 ]
             },
             {
-                "VM": "SWIFT-P-VM-AC01",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "MCMP-P-VM-UD",
                 "Parallel Ports": [
                     {
@@ -856,25 +883,7 @@
                 ]
             },
             {
-                "VM": "CSP-P-VM-RPA",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "Windows Server 2022 Template 202503",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "RPA-P-VM-DB",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -893,6 +902,15 @@
             },
             {
                 "VM": "Windows Server 2012r2 Template 2020-5",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "RPA-P-VM-UR2",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -920,6 +938,15 @@
             },
             {
                 "VM": "SOC-P-VM-App",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "opvp-p-vm-rp01",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1002,7 +1029,16 @@
         "Host": "vx-p-esxi-csz05.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "CSP-P-VM-GW1",
+                "VM": "CSP-P-VM-GW2",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "vrm-bj-01",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1030,15 +1066,6 @@
             },
             {
                 "VM": "AD-P-VM-WEF",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "PAM-P-VM-AAM",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1112,7 +1139,7 @@
                 ]
             },
             {
-                "VM": "MECM-P-VM-IC01",
+                "VM": "SWIFT-P-VM-SIL1",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1121,7 +1148,25 @@
                 ]
             },
             {
-                "VM": "CSP-P-VM-GW2",
+                "VM": "SOC-P-VM-Survey",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-P-VM-DNS01",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "CSP-P-VM-GW1",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1131,15 +1176,6 @@
             },
             {
                 "VM": "MPS-P-VM-CNSL01",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "CSP-P-VM-MON",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1193,6 +1229,15 @@
                 ]
             },
             {
+                "VM": "opvp-p-vm-rp02",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "Windows Server 2016 Template 2021-02",
                 "Parallel Ports": [
                     {
@@ -1211,25 +1256,7 @@
                 ]
             },
             {
-                "VM": "Stge-P-VM-AIQUM",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "RPA-P-VM-UR1",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "opvp-p-vm-srm",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1256,7 +1283,7 @@
                 ]
             },
             {
-                "VM": "Infra-P-VM-KMS",
+                "VM": "CSP-P-VM-APPDB",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1265,7 +1292,7 @@
                 ]
             },
             {
-                "VM": "CSP-P-VM-APPDB",
+                "VM": "AAD-P-VM-CPA",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1312,7 +1339,7 @@
         "Host": "vx-p-esxi-csz03.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PAM-P-VM-BV",
+                "VM": "Net-P-VM-DHCP01",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1321,7 +1348,7 @@
                 ]
             },
             {
-                "VM": "opvp-p-vm-rp02",
+                "VM": "MECM-P-VM-IC01",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1330,7 +1357,16 @@
                 ]
             },
             {
-                "VM": "IOKYC-P-VM-DB",
+                "VM": "Infra-P-VM-RDS",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "SWIFT-P-VM-AC02",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1348,7 +1384,7 @@
                 ]
             },
             {
-                "VM": "UDBP-P-VM-Web",
+                "VM": "CSP-P-VM-MON",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1357,7 +1393,7 @@
                 ]
             },
             {
-                "VM": "AD-P-VM-PWD1",
+                "VM": "CSP-P-VM-GW3",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1366,7 +1402,7 @@
                 ]
             },
             {
-                "VM": "RPA-P-VM-Orc",
+                "VM": "RPA-P-VM-DB",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1375,7 +1411,7 @@
                 ]
             },
             {
-                "VM": "SOC-P-VM-Survey",
+                "VM": "IOKYC-P-VM-DB",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1384,7 +1420,7 @@
                 ]
             },
             {
-                "VM": "ELP-P-VM-PBIGW",
+                "VM": "SOC-P-VM-WCBJ",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1393,16 +1429,7 @@
                 ]
             },
             {
-                "VM": "RPA-P-VM-UR2",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "SWIFT-P-VM-SIL1",
+                "VM": "PAM-P-VM-BV",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1420,15 +1447,6 @@
                 ]
             },
             {
-                "VM": "AD-P-VM-PWD2",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "SWIFT-P-VM-AWPB",
                 "Parallel Ports": [
                     {
@@ -1438,7 +1456,7 @@
                 ]
             },
             {
-                "VM": "Infra-P-VM-Bstn",
+                "VM": "AD-P-VM-DC02",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1476,7 +1494,7 @@
         "Host": "vx-p-esxi-csz07.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "IRBD-P-VM-MSSQL",
+                "VM": "PAM-P-VM-CPM2",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1485,7 +1503,16 @@
                 ]
             },
             {
-                "VM": "Net-P-VM-DHCP01",
+                "VM": "Stge-P-VM-AIQUM",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "IRBD-P-VM-MSSQL",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1530,15 +1557,6 @@
                 ]
             },
             {
-                "VM": "AD-P-VM-FShare",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "CSP-P-VM-PGDB1",
                 "Parallel Ports": [
                     {
@@ -1575,25 +1593,7 @@
                 ]
             },
             {
-                "VM": "PAM-P-VM-CPM1",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "MECM-P-VM-CM02",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "SOC-P-VM-WCBJ",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1631,24 +1631,6 @@
         "Host": "vx-t-esxi-uat03.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "PAM-D-VM-PVWA",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDI-T-VM-ADC01",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "IOKYC-T-VM-DB",
                 "Parallel Ports": [
                     {
@@ -1658,7 +1640,7 @@
                 ]
             },
             {
-                "VM": "VDIDevVBJ005",
+                "VM": "VDI-T-VM-ADC02",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1667,7 +1649,16 @@
                 ]
             },
             {
-                "VM": "VDIDevVBJ001",
+                "VM": "RD-T-VM-yucao",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDI-T-VM-SF02",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1686,6 +1677,15 @@
             },
             {
                 "VM": "VDIOAX1VBJTMP",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ004",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1748,15 +1748,6 @@
                 ]
             },
             {
-                "VM": "EDH-T-VM-DB",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "NMS-T-VM-DB",
                 "Parallel Ports": [
                     {
@@ -1811,7 +1802,7 @@
                 ]
             },
             {
-                "VM": "MCMP-T-VM-PGDB2",
+                "VM": "STR-T-VM-AT01",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1820,7 +1811,7 @@
                 ]
             },
             {
-                "VM": "VDIDevVBJ006",
+                "VM": "MCMP-T-VM-PGDB2",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1858,6 +1849,24 @@
         "Host": "vx-t-esxi-uat02.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "VDI-T-VM-ADC01",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-D-VM-PVWA",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "Infra-T-VM-RH92",
                 "Parallel Ports": [
                     {
@@ -1885,15 +1894,6 @@
                 ]
             },
             {
-                "VM": "FG-T-VM-FGT01",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "CSP-T-VM-PGDB1",
                 "Parallel Ports": [
                     {
@@ -1904,15 +1904,6 @@
             },
             {
                 "VM": "EDIS-T-VM-DQ",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "UFTP-T-VM-APP",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1939,25 +1930,7 @@
                 ]
             },
             {
-                "VM": "VDI-T-VM-SF02",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "Infra-T-VM-WebL",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "FG-T-VM-FGT02",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1975,7 +1948,16 @@
                 ]
             },
             {
-                "VM": "RPA-T-VM-UR1",
+                "VM": "EDH-T-VM-HMS",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ003",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -1994,6 +1976,15 @@
             },
             {
                 "VM": "Infra-T-VM-DBW",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "EDH-T-VM-DB",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -2076,7 +2067,7 @@
         "Host": "vx-t-esxi-uat04.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "ELP-T-VM-ES02",
+                "VM": "CSP-T-VM-APP1",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -2085,7 +2076,16 @@
                 ]
             },
             {
-                "VM": "NMS-T-VM-Web",
+                "VM": "UFTP-T-VM-APP",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-ES02",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -2130,6 +2130,15 @@
                 ]
             },
             {
+                "VM": "IAR-T-VM-DB",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "SOC-T-VM-APP",
                 "Parallel Ports": [
                     {
@@ -2149,15 +2158,6 @@
             },
             {
                 "VM": "Infra-T-VM-WebL(2023-11-29)",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "ELP-T-VM-LFS",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -2267,6 +2267,60 @@
         "Host": "vx-t-esxi-uat05.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "FG-T-VM-FGT01",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ001",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "ELP-T-VM-ES01",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "AD-T-VM-DC02",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "FG-T-VM-FGT02",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "PAM-T-VM-PV",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "AD-T-VM-Conn",
                 "Parallel Ports": [
                     {
@@ -2276,25 +2330,7 @@
                 ]
             },
             {
-                "VM": "EDH-T-VM-Mast",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIDevVBJ003",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "CSP-T-VM-APP1",
+                "VM": "RPA-T-VM-UR1",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -2348,7 +2384,16 @@
                 ]
             },
             {
-                "VM": "AD-T-VM-DC02",
+                "VM": "DB-T-VM-Win01",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "DB-T-VM-Lnx01",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -2447,34 +2492,7 @@
                 ]
             },
             {
-                "VM": "PAM-T-VM-PV",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "RD-T-VM-yucao",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "CSP-T-VM-APP2",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "IAR-T-VM-DB",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -2494,6 +2512,15 @@
         "Host": "vx-t-esxi-uat01.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "EDH-T-VM-Mast",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "SWIFT-T-VM-AC",
                 "Parallel Ports": [
                     {
@@ -2503,34 +2530,7 @@
                 ]
             },
             {
-                "VM": "EDH-T-VM-HMS",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "RPA-T-VM-DB",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "DB-T-VM-Win01",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "DB-T-VM-Lnx01",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -2549,6 +2549,15 @@
             },
             {
                 "VM": "PAM-D-VM-PV",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIDevVBJ006",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -2647,15 +2656,6 @@
                 ]
             },
             {
-                "VM": "VDI-T-VM-ADC02",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "MCMP-T-VM-WK01",
                 "Parallel Ports": [
                     {
@@ -2730,6 +2730,24 @@
         "Host": "vx-t-esxi-uat06.vsphere.aiib.org",
         "Value": [
             {
+                "VM": "VDIDevVBJ005",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "NMS-T-VM-Web",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "PAM-D-VM-Win",
                 "Parallel Ports": [
                     {
@@ -2766,16 +2784,7 @@
                 ]
             },
             {
-                "VM": "ELP-T-VM-ES01",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIDevVBJ004",
+                "VM": "ELP-T-VM-LFS",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -2794,15 +2803,6 @@
             },
             {
                 "VM": "VDI-T-VM-SF01",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "STR-T-VM-AT01",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -3686,7 +3686,7 @@
         "Host": "vx-p-esxi-vdi03.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDISWTVBJ005",
+                "VM": "VDIAOAVBJ002",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -3695,7 +3695,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ020",
+                "VM": "VDIAOAX1VBJ001",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -3704,25 +3704,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ004",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTVBJ022",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ011",
+                "VM": "VDISWTVBJ019",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -3740,7 +3722,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAVBJ002",
+                "VM": "VDI-P-VM-LMISA2",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -3749,7 +3731,7 @@
                 ]
             },
             {
-                "VM": "VDI-P-VM-LMISA2",
+                "VM": "VDISWTX1VBJ003",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -3768,6 +3750,24 @@
             },
             {
                 "VM": "VDIAOAVBJ001",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ011",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ006",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -3795,6 +3795,15 @@
             },
             {
                 "VM": "VDISWTX1VBJ004",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ007",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -3857,15 +3866,6 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ014",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDI-P-VM-PAMP2",
                 "Parallel Ports": [
                     {
@@ -3893,7 +3893,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ001",
+                "VM": "VDISWTVBJ015",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -3922,7 +3922,7 @@
         "Host": "vx-p-esxi-vdi02.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDISWTVBJ008",
+                "VM": "VDISWTVBJ005",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -3931,7 +3931,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ003",
+                "VM": "VDISWTVBJ010",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -3940,7 +3940,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ008",
+                "VM": "VDIAOAX1VBJ019",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -3949,7 +3949,25 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ017",
+                "VM": "VDIAOAX1VBJ010",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ024",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ009",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -3967,24 +3985,6 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ027",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIVOAVBJ008",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDIAOAVBJ004",
                 "Parallel Ports": [
                     {
@@ -3994,16 +3994,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ016",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTVBJ021",
+                "VM": "VDISWTVBJ029",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -4039,6 +4030,33 @@
                 ]
             },
             {
+                "VM": "VDIAOAX1VBJ015",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ022",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ016",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "VDI-P-VM-LMISA1",
                 "Parallel Ports": [
                     {
@@ -4048,34 +4066,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ014",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ018",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDI-P-VM-LMIS03",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTX1VBJ003",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -4111,6 +4102,15 @@
                 ]
             },
             {
+                "VM": "VDIAOAX1VBJ009",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "VDI-P-VM-PAMP3",
                 "Parallel Ports": [
                     {
@@ -4131,7 +4131,34 @@
         "Host": "vx-p-esxi-vdi01.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDISWTVBJ019",
+                "VM": "VDISWTVBJ030",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ020",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ013",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ008",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -4149,15 +4176,6 @@
                 ]
             },
             {
-                "VM": "VDIVOAVBJ001",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDIAOAVBJ005",
                 "Parallel Ports": [
                     {
@@ -4167,7 +4185,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ017",
+                "VM": "VDISWTX1VBJ002",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -4176,16 +4194,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ009",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ010",
+                "VM": "VDISWTVBJ001",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -4203,7 +4212,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ016",
+                "VM": "VDIVOAVBJ008",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -4213,15 +4222,6 @@
             },
             {
                 "VM": "VDIAOAX1VBJ022",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTVBJ011",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -4248,6 +4248,24 @@
                 ]
             },
             {
+                "VM": "VDISWTVBJ014",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ018",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "VDI-P-VM-PAMP4",
                 "Parallel Ports": [
                     {
@@ -4266,15 +4284,6 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ009",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDI-P-VM-EAPP1",
                 "Parallel Ports": [
                     {
@@ -4285,15 +4294,6 @@
             },
             {
                 "VM": "VDISWTVBJ028",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ015",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -4329,15 +4329,6 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ010",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDI-P-VM-EAPP2",
                 "Parallel Ports": [
                     {
@@ -4358,7 +4349,7 @@
         "Host": "vx-p-esxi-vdi04.vsphere.aiib.org",
         "Value": [
             {
-                "VM": "VDISWTVBJ030",
+                "VM": "VDISWTVBJ004",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -4367,7 +4358,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ029",
+                "VM": "VDISWTVBJ017",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -4376,7 +4367,43 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ024",
+                "VM": "VDISWTVBJ008",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ003",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ017",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ021",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDISWTVBJ027",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -4394,52 +4421,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ013",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "vrm-bj-vdi-01",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ019",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDIAOAX1VBJ006",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTVBJ015",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
-                "VM": "VDISWTX1VBJ002",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -4466,15 +4448,6 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJ007",
-                "Parallel Ports": [
-                    {
-                        "Label": "ParallelPort",
-                        "Summary": "Not Present"
-                    }
-                ]
-            },
-            {
                 "VM": "VDIAOAX1C003",
                 "Parallel Ports": [
                     {
@@ -4493,7 +4466,34 @@
                 ]
             },
             {
+                "VM": "VDIAOAX1VBJ011",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIVOAVBJ001",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
                 "VM": "VDISWTX1VBJTMP",
+                "Parallel Ports": [
+                    {
+                        "Label": "ParallelPort",
+                        "Summary": "Not Present"
+                    }
+                ]
+            },
+            {
+                "VM": "VDIAOAX1VBJ014",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -4511,7 +4511,7 @@
                 ]
             },
             {
-                "VM": "VDISWTVBJX1TMP",
+                "VM": "VDISWTVBJ016",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
@@ -4520,7 +4520,7 @@
                 ]
             },
             {
-                "VM": "VDIAOAX1VBJ001",
+                "VM": "VDISWTVBJX1TMP",
                 "Parallel Ports": [
                     {
                         "Label": "ParallelPort",
