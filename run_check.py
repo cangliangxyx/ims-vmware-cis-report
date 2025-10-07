@@ -27,7 +27,7 @@ from vmware_cis_checks import (
     log_filtering,                         # 3.4
     tls_log_verify,                        # 3.5
     firewall_services_manual,              # 4.1
-    dvfilter_manual,                       # 4.2
+    collect_dvfilter,                       # 4.2
     bpdu_filter,                           # 4.3
     forged_transmits,                      # 4.4
     mac_changes,                           # 4.5

@@ -29,7 +29,7 @@ from vmware_cis_checks import (
     log_filtering,  # no_3.4
     tls_log_verify,  # no_3.5
     firewall_services_manual,  # no_4.1
-    dvfilter_manual,  # no_4.2
+    collect_dvfilter,  # no_4.2
     bpdu_filter,  # no_4.3
     forged_transmits,  # no_4.4
     mac_changes,  # no_4.5
