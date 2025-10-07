@@ -34,7 +34,7 @@ async function loadJsonFilesForHost(targetHost) {
                 const data = await res.json();
                 if (!data || data.length === 0) continue;
 
-                const filteredData = data.filter(item => item.Host === targetHost || item.Host === null);
+                const filteredData = data.filter(item => item.Host === targetHost || item.Host === "ALL_HOSTS");
                 if (filteredData.length === 0) continue;
 
                 const h2 = document.createElement('h2');
