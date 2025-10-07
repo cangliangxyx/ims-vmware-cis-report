@@ -1,80 +1,96 @@
+import os
 import logging
 from typing import List, Dict, Any
 from pyVmomi import vim
 from config.vsphere_conn import VsphereConnection
 from config.export_to_json import export_to_json
+from config import settings
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
 
-def get_hosts_hostagent_log_level(content) -> List[Dict[str, Any]]:
+def collect_hostagent_log_level(content) -> List[Dict[str, Any]]:
     """
-    获取每台主机的 Config.HostAgent.log.level 配置，并检查是否为 "info"
+    检查所有主机的 Config.HostAgent.log.level 配置，并增加状态字段。
+    对应安全基线项：4.4 (L1) Host must set the logging informational level to info
     """
     container = content.viewManager.CreateContainerView(content.rootFolder, [vim.HostSystem], True)
     hosts = container.view
-    results = []
+    results: List[Dict[str, Any]] = []
 
     for host in hosts:
         try:
             adv_settings = host.configManager.advancedOption.QueryOptions("Config.HostAgent.log.level")
+
             if adv_settings:
                 setting = adv_settings[0]
-                raw_value = {
-                    "key": setting.key,
-                    "value": setting.value,
-                    "type": type(setting.value).__name__
-                }
+                value = setting.value.strip() if setting.value else ""
+
+                # 状态判断逻辑：推荐值为 "info"
+                if value.lower() == "info":
+                    status = "Pass"
+                else:
+                    status = "Fail"
+
                 results.append({
                     "AIIB.No": "3.3",
-                    "Name": "Config.HostAgent.log.level (Read Only)",
+                    "Name": "Host must set the logging informational level to info",
                     "CIS.No": "4.4",
-                    "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+                    "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
                     "Host": host.name,
-                    "Value": raw_value,
-                    "Description": """检测值: Host Agent 日志级别配置。检测方法："value": 'info'""",
+                    "Value": value,
+                    "Status": status,
+                    "Description": (
+                        f"检测值: Config.HostAgent.log.level = '{value or '未配置'}' | "
+                        "推荐值: 日志级别 'info' "
+                    ),
                     "Error": None
                 })
-                logger.info("主机 %s Config.HostAgent.log.level = %s", host.name, setting.value)
+
+                logger.info("[HostAgent Log] 主机: %s | 值: %s | 状态: %s", host.name, value or "未配置", status)
+
             else:
                 results.append({
                     "AIIB.No": "3.3",
-                    "Name": "Config.HostAgent.log.level (Read Only)",
+                    "Name": "Host must set the logging informational level to info",
                     "CIS.No": "4.4",
-                    "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+                    "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
                     "Host": host.name,
-                    "Value": {"key": "Config.HostAgent.log.level", "value": None, "type": None},
+                    "Value": None,
+                    "Status": "Fail",
                     "Description": "未配置 Config.HostAgent.log.level，建议显式设置为 'info'。",
                     "Error": None
                 })
-                logger.warning("主机 %s 未配置 Config.HostAgent.log.level", host.name)
+                logger.warning("[HostAgent Log] 主机 %s 未配置 Config.HostAgent.log.level", host.name)
 
         except vim.fault.InvalidName as e:
             results.append({
                 "AIIB.No": "3.3",
-                "Name": "Config.HostAgent.log.level (Read Only)",
+                "Name": "Host must set the logging informational level to info",
                 "CIS.No": "4.4",
-                "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+                "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
                 "Host": host.name,
                 "Value": None,
-                "Description": "该主机不支持 Config.HostAgent.log.level 设置",
+                "Status": "Fail",
+                "Description": "该主机不支持 Config.HostAgent.log.level 配置项。",
                 "Error": str(e)
             })
-            logger.info("主机 %s 不支持 Config.HostAgent.log.level 设置", host.name)
+            logger.info("[HostAgent Log] 主机 %s 不支持 Config.HostAgent.log.level 设置", host.name)
 
         except Exception as e:
             results.append({
                 "AIIB.No": "3.3",
-                "Name": "Config.HostAgent.log.level (Read Only)",
+                "Name": "Host must set the logging informational level to info",
                 "CIS.No": "4.4",
-                "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+                "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
                 "Host": host.name,
                 "Value": None,
-                "Description": "查询 Config.HostAgent.log.level 失败",
+                "Status": "Fail",
+                "Description": "获取 Config.HostAgent.log.level 失败。",
                 "Error": str(e)
             })
-            logger.error("主机 %s 获取 Config.HostAgent.log.level 失败: %s", host.name, e)
+            logger.error("[HostAgent Log] 主机 %s 获取 Config.HostAgent.log.level 失败: %s", host.name, e)
 
     container.Destroy()
     return results
@@ -82,17 +98,31 @@ def get_hosts_hostagent_log_level(content) -> List[Dict[str, Any]]:
 
 def main(output_dir: str = None):
     """
-    检查 Config.HostAgent.log.level 是否为 info 并导出 JSON。
-    :param output_dir: 输出目录路径（默认 ../log）
+    循环多个 vCenter，检查所有主机的 Config.HostAgent.log.level 并导出为 JSON。
     """
     output_dir = output_dir or "../log"
-    output_path = f"{output_dir}/no_3.3_hostagent_log_level.json"
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, "no_3.3_hostagent_log_level.json")
 
-    with VsphereConnection() as si:
-        content = si.RetrieveContent()
-        hostagent_log_info = get_hosts_hostagent_log_level(content)
-        export_to_json(hostagent_log_info, output_path)
-        logger.info("Config.HostAgent.log.level 检查结果已导出到 %s", output_path)
+    # 读取 vCenter 列表
+    vsphere_data = settings.get_vsphere_config(os.getenv('project_env', 'prod'))
+    host_list = vsphere_data.get("HOST", [])
+    if not isinstance(host_list, list):
+        host_list = [host_list]
+
+    all_results: List[Dict[str, Any]] = []
+
+    for vc_host in host_list:
+        try:
+            with VsphereConnection(host=vc_host) as si:
+                content = si.RetrieveContent()
+                results = collect_hostagent_log_level(content)
+                all_results.extend(results)
+        except Exception as e:
+            logger.error("[HostAgent Log] 无法连接 vCenter %s: %s", vc_host, e)
+
+    export_to_json(all_results, output_path)
+    logger.info("[HostAgent Log] 所有主机 Config.HostAgent.log.level 检查结果已导出到 %s", output_path)
 
 
 if __name__ == "__main__":
