@@ -1,422 +1,376 @@
 [
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-t-esxi-uat08.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-t-esxi-uat09.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-t-esxi-uat07.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-csz08.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-csz02.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-csz04.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-csz01.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-csz05.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-csz06.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-csz03.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-csz07.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-t-esxi-uat03.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-t-esxi-uat02.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-t-esxi-uat04.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-t-esxi-uat05.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-t-esxi-uat01.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-t-esxi-uat06.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-csz10.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-csz09.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-csz11.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-csz12.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-csz13.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-csz14.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-dmz02.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-dmz01.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-dmz03.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-vdi03.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-vdi02.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-vdi01.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     },
     {
         "AIIB.No": "3.3",
-        "Name": "Config.HostAgent.log.level (Read Only)",
+        "Name": "Host must set the logging informational level to info",
         "CIS.No": "4.4",
-        "CMD": "host-->configure->advanced system setting --> Config.HostAgent.log.level",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
         "Host": "vx-p-esxi-vdi04.vsphere.aiib.org",
-        "Value": {
-            "key": "Config.HostAgent.log.level",
-            "value": "info",
-            "type": "str"
-        },
-        "Description": "检测值: Host Agent 日志级别配置。检测方法：\"value\": 'info'",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.3",
+        "Name": "Host must set the logging informational level to info",
+        "CIS.No": "4.4",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
+        "Host": "vx-r-esxi-csz01.vsphere.aiib.org",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.3",
+        "Name": "Host must set the logging informational level to info",
+        "CIS.No": "4.4",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
+        "Host": "vx-r-esxi-csz04.vsphere.aiib.org",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.3",
+        "Name": "Host must set the logging informational level to info",
+        "CIS.No": "4.4",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
+        "Host": "vx-r-esxi-csz03.vsphere.aiib.org",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
+        "Error": null
+    },
+    {
+        "AIIB.No": "3.3",
+        "Name": "Host must set the logging informational level to info",
+        "CIS.No": "4.4",
+        "CMD": "host -> configure -> advanced system setting -> Config.HostAgent.log.level",
+        "Host": "vx-r-esxi-csz02.vsphere.aiib.org",
+        "Value": "info",
+        "Status": "Pass",
+        "Description": "检测值: Config.HostAgent.log.level = 'info' | 推荐值: 日志级别 'info' ",
         "Error": null
     }
 ]
