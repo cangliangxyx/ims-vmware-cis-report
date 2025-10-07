@@ -73,19 +73,19 @@ check_modules = [
     ("2.14", dcui_access),  # ok
     ("2.15", exception_users),  # ok
     ("2.16", tls_version),  # ok
-    ("3.1", syslog_persistent),
-    ("3.2", syslog_remote_loghost),
-    ("3.3", hostagent_log_level),
-    ("3.4", log_filtering),
-    ("3.5", tls_log_verify),
+    ("3.1", syslog_persistent),  # ok
+    ("3.2", syslog_remote_loghost),  # ok
+    ("3.3", hostagent_log_level),  # ok
+    ("3.4", log_filtering),  # ok
+    ("3.5", tls_log_verify),  # ok
     ("4.1", firewall_services_manual),  # 默认通过
-    ("4.2", collect_dvfilter),
-    ("4.3", bpdu_filter),
-    ("4.4", forged_transmits),
-    ("4.5", mac_changes),
-    ("4.6", vss_promiscuous_mode),
-    ("4.7", vss_vlan_restrict),
-    ("4.8", vss_vgt_check),
+    ("4.2", collect_dvfilter),  # ok
+    ("4.3", bpdu_filter),  # ok
+    ("4.4", forged_transmits),  # 默认通过
+    ("4.5", mac_changes),   # 默认通过
+    ("4.6", vss_promiscuous_mode),  # 默认通过
+    ("4.7", vss_vlan_restrict),  # 默认通过
+    ("4.8", vss_vgt_check),  # 默认通过
     ("4.9", management_network_manual),
     ("5.1", datastore_unique_names),
     ("6.1", vm_3d_graphics_status),
