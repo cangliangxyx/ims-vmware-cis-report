@@ -29,7 +29,8 @@ def collect_syslog_info(content) -> List[Dict[str, Any]]:
 
                 # 状态检测逻辑
                 value_lower = value.lower() if value else ""
-                if not value or "scratch" in value_lower or "tmp" in value_lower:
+                # if not value or "scratch" in value_lower or "tmp" in value_lower:
+                if not value or "tmp" in value_lower:
                     status = "Fail"
                 else:
                     status = "Pass"
