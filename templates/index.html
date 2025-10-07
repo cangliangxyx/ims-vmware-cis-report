@@ -8,7 +8,12 @@
 </head>
 <body>
     <div class="header">
+        <!-- 新增统计显示 -->
         <h1>VMware Baseline Report</h1>
+        <!-- 统计显示 -->
+        <div id="statusSummary" style="font-weight:bold;">
+            Pass: 0 / Fail: 0
+        </div>
         <div class="host-select">
             <label for="hostSelect">选择主机:</label>
             <select id="hostSelect">
@@ -22,10 +27,7 @@
                 <option value="Fail">Fail</option>
             </select>
         </div>
-    </div>
-
     <div id="tables"></div>
-
     <!-- 引入外部 JS -->
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
