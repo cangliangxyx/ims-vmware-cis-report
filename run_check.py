@@ -86,7 +86,7 @@ check_modules = [
     ("4.6", vss_promiscuous_mode),  # 默认通过
     ("4.7", vss_vlan_restrict),  # 默认通过
     ("4.8", vss_vgt_check),  # 默认通过
-    ("4.9", management_network_manual),
+    ("4.9", management_network_manual),  # 默认通过
     ("5.1", datastore_unique_names),
     ("6.1", vm_3d_graphics_status),
     ("6.2", vm_pci_passthru),
