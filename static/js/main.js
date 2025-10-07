@@ -1,13 +1,17 @@
 const tablesDiv = document.getElementById('tables');
 const hostSelect = document.getElementById('hostSelect');
+const statusSelect = document.getElementById('statusSelect');
+
+let allData = []; // 保存所有 JSON 数据，方便筛选
 
 function friendlyFileName(filePath) {
     return filePath.split('/').pop().replace('.json', '');
 }
 
+// 加载主机下拉列表
 async function loadHostOptions() {
     try {
-        const response = await fetch('/all_hosts'); // Flask 后端返回所有 host.name 列表
+        const response = await fetch('/all_hosts');
         const hosts = await response.json();
 
         hosts.forEach(host => {
@@ -22,8 +26,11 @@ async function loadHostOptions() {
     }
 }
 
-async function loadJsonFilesForHost(targetHost) {
-    tablesDiv.innerHTML = ""; // 切换 host 时清空之前表格
+// 加载所有 JSON 文件数据
+async function loadAllJsonData() {
+    tablesDiv.innerHTML = "";
+    allData = [];
+
     try {
         const response = await fetch('/log_files');
         const jsonFiles = await response.json();
@@ -32,63 +39,96 @@ async function loadJsonFilesForHost(targetHost) {
             try {
                 const res = await fetch(file);
                 const data = await res.json();
-                if (!data || data.length === 0) continue;
-
-                const filteredData = data.filter(item => item.Host === targetHost || item.Host === "ALL_HOSTS");
-                if (filteredData.length === 0) continue;
-
-                const h2 = document.createElement('h2');
-                h2.textContent = friendlyFileName(file);
-                tablesDiv.appendChild(h2);
-
-                const table = document.createElement('table');
-                const thead = document.createElement('thead');
-                const tbody = document.createElement('tbody');
-
-                const headerRow = document.createElement('tr');
-                Object.keys(filteredData[0]).forEach(key => {
-                    const th = document.createElement('th');
-                    th.textContent = key;
-                    headerRow.appendChild(th);
-                });
-                thead.appendChild(headerRow);
-                table.appendChild(thead);
-
-                filteredData.forEach(item => {
-                    const tr = document.createElement('tr');
-                    tr.style.backgroundColor = item.Status === "Pass" ? "#d4edda" : "#f8d7da";
-                    Object.values(item).forEach(val => {
-                        const td = document.createElement('td');
-                        td.textContent = (typeof val === 'object' && val !== null)
-                            ? JSON.stringify(val, null, 2)
-                            : (val !== null ? val : '');
-                        tr.appendChild(td);
-                    });
-                    tbody.appendChild(tr);
-                });
-
-                table.appendChild(tbody);
-                tablesDiv.appendChild(table);
-
+                if (data && data.length > 0) {
+                    data.forEach(item => item._file = friendlyFileName(file)); // 保存文件名
+                    allData = allData.concat(data);
+                }
             } catch (err) {
                 console.error("加载 JSON 文件失败:", file, err);
             }
         }
 
+        renderTables(); // 初始渲染
     } catch (err) {
         console.error("获取 JSON 文件列表失败:", err);
     }
 }
 
-// 当用户选择主机时加载数据
-hostSelect.addEventListener('change', () => {
-    const targetHost = hostSelect.value;
-    if (targetHost) {
-        loadJsonFilesForHost(targetHost);
-    } else {
-        tablesDiv.innerHTML = "";
-    }
-});
+// 渲染表格函数
+function renderTables() {
+    tablesDiv.innerHTML = "";
 
-// 页面加载时先获取主机列表
+    const targetHost = hostSelect.value;
+    const statusFilter = statusSelect.value;
+
+    // 筛选数据
+    let filteredData = allData;
+    if (targetHost) {
+        filteredData = filteredData.filter(item => item.Host === targetHost || item.Host === "ALL_HOSTS");
+    }
+    if (statusFilter) {
+        filteredData = filteredData.filter(item => item.Status === statusFilter);
+    }
+
+    if (filteredData.length === 0) {
+        tablesDiv.innerHTML = "<p>没有匹配的数据</p>";
+        return;
+    }
+
+    // 按文件名分组
+    const grouped = {};
+    filteredData.forEach(item => {
+        const file = item._file || "Unknown";
+        if (!grouped[file]) grouped[file] = [];
+        grouped[file].push(item);
+    });
+
+    for (const file in grouped) {
+        const h2 = document.createElement('h2');
+        h2.textContent = file;
+        tablesDiv.appendChild(h2);
+
+        const table = document.createElement('table');
+        const thead = document.createElement('thead');
+        const tbody = document.createElement('tbody');
+
+        // 表头
+        const headerRow = document.createElement('tr');
+        Object.keys(grouped[file][0]).forEach(key => {
+            if (key === "_file") return; // 不显示内部字段
+            const th = document.createElement('th');
+            th.textContent = key;
+            headerRow.appendChild(th);
+        });
+        thead.appendChild(headerRow);
+        table.appendChild(thead);
+
+        // 表体
+        grouped[file].forEach(item => {
+            const tr = document.createElement('tr');
+            tr.style.backgroundColor = item.Status === "Pass" ? "#d4edda" : "#f8d7da";
+
+            Object.entries(item).forEach(([key, val]) => {
+                if (key === "_file") return;
+                const td = document.createElement('td');
+                td.textContent = (typeof val === 'object' && val !== null)
+                    ? JSON.stringify(val, null, 2)
+                    : (val !== null ? val : '');
+                tr.appendChild(td);
+            });
+
+            tbody.appendChild(tr);
+        });
+
+        table.appendChild(tbody);
+        tablesDiv.appendChild(table);
+    }
+}
+
+// 主机或状态变化时重新渲染
+hostSelect.addEventListener('change', renderTables);
+statusSelect.addEventListener('change', renderTables);
+
+// 页面加载时初始化
 loadHostOptions();
+loadAllJsonData();
