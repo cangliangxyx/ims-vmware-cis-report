@@ -96,7 +96,7 @@ def main(output_dir: str = None):
     """
     output_dir = output_dir or "../log"
     os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, "no_4.2_dvfilter_manual.json")
+    output_path = os.path.join(output_dir, "no_4.2_collect_dvfilter.json")
 
     # 读取 vCenter 配置
     vsphere_data = settings.get_vsphere_config(os.getenv("project_env", "prod"))

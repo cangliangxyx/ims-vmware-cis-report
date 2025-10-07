@@ -78,7 +78,7 @@ check_modules = [
     ("3.3", hostagent_log_level),
     ("3.4", log_filtering),
     ("3.5", tls_log_verify),
-    ("4.1", firewall_services_manual),
+    ("4.1", firewall_services_manual),  # 默认通过
     ("4.2", dvfilter_manual),
     ("4.3", bpdu_filter),
     ("4.4", forged_transmits),
